@@ -1,0 +1,240 @@
+*
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/*-------------------------------------------------header---------------------------------------------------*/
+#header{
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    background-color: black;
+    padding-top: 0.5%;
+    padding-bottom:0.5%;
+    justify-content: space-around;
+}
+/*-----------------------------------------------left_header-------------------------------------------*/
+    #left_header{
+        display: flex;
+        width: 15%;
+        justify-content: left;
+        align-items: center;
+    }
+        /*--------------------------------------------logo------------------------------------------------*/
+        #logo{
+            width: 52px;
+            height: same-as-width;
+            min-width: 40px;
+            margin-right: 10px;
+            border: 1px solid black;
+            border-radius: 50%;
+            overflow: hidden;
+            animation-name: logo_rotate;
+            -webkit-animation-name: logo_rotate;
+            -moz-animation-name: logo_rotate;
+            -o-animation-name: logo_rotate;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -o-animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-timing-function: ease-in-out;
+            -moz-animation-timing-function: ease-in-out;
+            -o-animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            -webkit-animation-direction: alternate;
+            -moz-animation-direction: alternate;
+            -o-animation-direction: alternate;
+            animation-duration: 10s;
+            -webkit-animation-duration: 10s;
+            -moz-animation-duration: 10s;
+            -o-animation-duration: 10s;
+            
+        }
+            /*------------------------------logo_img----------------------------------*/
+            #logo_img{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            @-webkit-keyframes logo_rotate{
+                to
+                {
+                    -webkit-transform: rotate(360deg);
+                } 
+            }
+            @keyframes logo_rotate{
+                to
+                {
+                    transform: rotate(360deg);
+                }
+            }
+            @-o-keyframes logo_rotate{
+                to
+                {
+                    -o-transform: rotate(360deg);
+                }
+            }
+            @-moz-keyframes logo_rotate{
+                to
+                {
+                    -moz-transform: rotate(360deg);
+                }
+            }
+        /*--------------------------------page_name--------------------------------------*/
+        #Page_name{
+            display: flex;
+        }
+        #Page_name> #Page_name_1{
+            font-family: Page_name_font;
+            padding-left: 2%;
+            padding-right: 2%;
+            font-weight: bolder;
+            font-size: 30px;
+            background-image: linear-gradient(to top,white,white);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            color: transparent;
+        }
+        #Page_name> #Page_name_2{
+            font-family: Page_name_font;
+            padding-left: 2%;
+            padding-right: 2%;
+            font-weight: bolder;
+            font-size: 30px;
+            background-image: linear-gradient(to top,rgb(118, 254, 118),rgb(1, 190, 1));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            color: transparent;
+        }
+/*-----------------------------------------------mid_header-------------------------------------------*/
+#mid_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .mid_header_item > a{
+        text-decoration: none;
+        color: gray;
+        font-size: 15px;
+        transition: 0.5s;
+    }
+    .mid_header_item_choose > a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .mid_header_item:hover >a{
+        color: white;
+        transition: 0.5s;
+    }
+/*-----------------------------------------------right_header-------------------------------------------*/
+#right_header{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 25%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 20px;
+    }
+    /*----------------login_register------------------------------*/
+    #login_register{
+        display: flex;
+        justify-content: right;
+        width: 60%;
+    }
+    #register,#login{
+        text-align: center;
+        margin-right: 5%;
+    }
+    #register > a,#login > a{
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    /*-------------------------------------language-----------------------------------*/
+    #language{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 18%;
+        margin-left: 5%;
+        padding-left: 5%;
+        border-left: 1px solid white;
+    }
+    #english > a{
+        text-decoration: none;
+        color: gray;
+        transition: 0.5s;
+    }
+    #vietnamese > a{
+        text-decoration: none;
+        color: gray;
+        transition: 0.5s;
+    }
+    .choose_language > a{
+        font-weight: bold;
+        color: white !important;
+    }
+    .unchoose_language:hover > a{
+        color: white !important;
+        transition: 0.5s;
+    } 
+    /*--------------------------------three_line_menu-------------------------------*/
+    #three_line{
+        margin-right: 1%;
+        justify-self: right;
+        align-self: right;
+    }
+/*--------------------------------------responsive-header-------------------------------------------*/
+@media only screen and (max-width: 1020px) {
+    #mid_header{
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+    }
+    #right_header{
+        width: 46%;
+    }
+        #language{
+            width: 0px;
+            height: same-as-width;
+            overflow: hidden;
+            border: none;
+        }
+    #left_header{
+        width: 46%;
+    }
+    #logo{
+        max-width: 45px;
+        max-height: 45px;
+    }
+    #header{
+        max-height: 60px;
+        overflow: hidden;
+    }
+}
+/*-----------------------------------------------screen >= 1021px----------------------------------------*/
+@media only screen and (min-width: 1021px) {
+    #three_line{
+        width: 0px;
+        height: same-as-width;
+        overflow: hidden;
+    }
+}
+/*---------------------------------------------screen <583px---------------------------------------*/
+@media only screen and (max-width: 583px) {
+    #login_register{
+            width: 0px;
+            height: same-as-width;
+            overflow: hidden;
+            all: none;
+        }
+}
