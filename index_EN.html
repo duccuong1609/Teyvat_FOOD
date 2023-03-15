@@ -7,12 +7,7 @@
     <title>Teyvat FOOD</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/header/header.css">
-    <style>
-         @font-face {
-            font-family: Page_name_font;
-            src: url(./rsc/font/MotionPersonalUseBold-2O0od.ttf) format("truetype");
-        }
-    </style>
+    <link rel="stylesheet" href="./css/banner_home_page.css">
 </head>
 <body>
 <!-------------------------------------------------header--------------------------------------------------->
@@ -40,12 +35,56 @@
             </div>
             <i class="fa fa-shopping-cart" aria-hidden="true" style="color: white;font-size: 35px;"></i>
             <div id="language">
-                <div id="english" class="choose_language"><a href="#">EN</a></div>
+                <div id="english" class="choose_language"><a href="index_EN.html">EN</a></div>
                 <div id="/" class="choose_language">/</div>
-                <div id="vietnamese" class="unchoose_language"><a href="#">VN</a></div>
+                <div id="vietnamese" class="unchoose_language"><a href="index_VN.html">VN</a></div>
             </div>
             <i class="fa fa-bars" id="three_line" aria-hidden="true" style="color: white;font-size: 35px;"></i>
         </div>
     </div>
+<!----------------------------------------------banner_slide_show-------------------------------------------->
+    <div id="banner_slide_show">
+        
+        <div class="slide_show_img_item fade">
+            <img src="rsc/image/banner_img_1.jpg" style="width:100%;" class="">
+        </div>
+
+        <div class="slide_show_img_item fade">
+            <img src="rsc/image/banner_img_2.png" style="width:100%;" class="">
+        </div>
+
+        <div class="slide_show_img_item fade">
+            <img src="rsc/image/banner_img_3.webp" style="width:100%;" class="">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">
+            <div class="left_to_left">❮❮</div>
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+            <div class="right_to_right">❯❯</div>
+        </a>
+        <div class="title_banner">EXPLORER TEYVAT</div>
+        <div class="title_banner">40+ NEW REPICES</div>
+        <div class="title_banner">TASTY & NUTRITIOUS MEALS</div>
+        <div class="description_banner">5000+ NEWS EVERYDAY</div>
+        <div class="description_banner">ALL REPICES OF TEYVAT</div>
+        <div class="description_banner">YET AFFORDABLE</div>
+        <div class="Page_button_container">
+            <div class="Page_button">
+                <a href="#">Xem Thêm</a>
+            </div>
+        </div>
+        <div class="Page_button_container">
+            <div class="Page_button">
+                <a href="#">Xem Ngay</a>
+            </div>
+        </div>
+        <div class="Page_button_container">
+            <div class="Page_button">
+                <a href="#">Đặt Ngay</a>
+            </div>
+        </div>
+    </div>
+    <script src="script/Slideshow_auto.js" ></script>
+    <script src="script/Slideshow_click.js"></script>
 </body>
 </html>
