@@ -40,9 +40,9 @@
                 <div id="/" class="choose_language">/</div>
                 <div id="vietnamese" class="choose_language"><a href="index_VN.html">VN</a></div>
             </div>
-            <div id="three_line_menu">
-                <i class="fa fa-bars"  aria-hidden="true" style="color: white;font-size: 32px;"></i>
-                <div id="myDropdown" class="dropdown-content">
+            <div id="three_line_menu" onclick="dropdown_menu()">
+                <i class="fa fa-bars" aria-hidden="true" style="color: white;font-size: 32px;"></i>
+                <div id="dropdown-content">
                     <div id="login_register_mobile">
                         <div id="register"><a href="#">Đăng Ký</a></div>
                         <div id="login"><a href="#"> Đăng Nhập</a></div>
@@ -103,7 +103,27 @@
             </div>
         </div>
     </div>
-    <script src="script/Slideshow_auto.js" ></script>
-    <script src="script/Slideshow_click.js"></script>
+<!--------------------------------------------------About_us----------------------------------------------------->
+    <div id="About_Us_container">
+        <img id ="About_us_img" src="https://images.ctfassets.net/vfkpgemp7ek3/67qu4uSDKte20MTDw52IxR/1819c75ae8859a4fb3dc2dc37d24db79/genshin-impact-surpasses-3-billion.jpg" alt="">
+        <div id="About_us">
+            <h1>ABOUT US</h1>
+            <div id="About_us_des">
+                <i>&nbsp;Trên con đường phiêu lưu của nhà lữ hành thực phẩm đã trở thành một người bạn<br>
+                   không thể thiếu, TEYVAT <font style="color: rgb(118, 254, 118);">FOOD</font>  ở đây giúp nhà lữ hành có được những thông tin<br>
+                   hữu ích nhất về các loại thực phẩm (Công thức nấu ăn, BUFF của thực phẩm ...).<br>
+                   &nbsp;Bên cạnh đó TEYVAT <font style="color: rgb(118, 254, 118);">FOOD</font> không chỉ hỗ trợ bạn về mặt tinh thần mà còn cả về<br>
+                   mặt thể chất. Chúng tôi cung cấp những bữa ăn tươi ngon bổ dưỡng được lấy cảm<br>
+                   hứng từ nguyên gốc trong Genshin Impact nhằm cho bạn những trải nghiệm tốt nhất.
+                   </i>
+            </div>
+            <div id="border_left_top"></div>
+            <div id="border_right_top"></div>
+            <div id="border_left_bot"></div>
+            <div id="border_right_bot"></div>
+            <div id="center_line"></div>
+        </div>
+    </div>
+    <script src="script/Slideshow_DropMenu.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@
     <div id="header">
         <div id="left_header">
             <div id="logo">
-                <img src="https://media.tenor.com/3b7V-dx9L1cAAAAC/genshin-paimon.gif" alt="" id="logo_img">
+                <a href="index_EN.html"><img src="https://media.tenor.com/3b7V-dx9L1cAAAAC/genshin-paimon.gif" alt="" id="logo_img"></a>
             </div>
             <div id="Page_name">
                 <div id="Page_name_1">Teyvat</div>
@@ -39,9 +39,9 @@
                 <div id="/" class="choose_language">/</div>
                 <div id="vietnamese" class="unchoose_language"><a href="index_VN.html">VN</a></div>
             </div>
-            <div id="three_line_menu">
-                <i class="fa fa-bars"  aria-hidden="true" style="color: white;font-size: 32px;"></i>
-                <div id="myDropdown" class="dropdown-content">
+            <div id="three_line_menu" onclick="dropdown_menu()">
+                <i class="fa fa-bars" aria-hidden="true" style="color: white;font-size: 32px;"></i>
+                <div id="dropdown-content">
                     <div id="login_register_mobile">
                         <div id="register"><a href="#">Register</a></div>
                         <div id="login"><a href="#">Login</a></div>
@@ -101,7 +101,6 @@
             </div>
         </div>
     </div>
-    <script src="script/Slideshow_auto.js" ></script>
-    <script src="script/Slideshow_click.js"></script>
+    <script src="script/Slideshow_DropMenu.js" ></script>
 </body>
 </html>
