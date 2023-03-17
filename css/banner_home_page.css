@@ -219,15 +219,20 @@
             }
         }
 /*-------------------------------------About_us---------------------------------------*/
+@font-face {
+    font-family: About_des_font;
+    src: url(../rsc/font/MisterGiacco-Medium.ttf) format("truetype");
+}
 #About_Us_container{
     display: flex;
     width: 100%;
     height: fit-content;
-    background-color: rgba(16, 16, 16, 0.3);
+    position: absolute;
     overflow: hidden;
-    position: relative;
+    top: 3%;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 #About_us_img{
     width: 100%;
@@ -246,68 +251,31 @@
 #About_us > h1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    color: white;
-    font-size: 5.8vw;
-    text-shadow: 0.5vw 0.5vw rgb(0, 0, 0);
+    background-image: linear-gradient(to top,rgb(108,165,173),rgb(172, 222, 223));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    color: transparent;
+    font-size: 5vw;
+
 }
 #About_us_des{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    font-family: About_des_font;
+    background-image: linear-gradient(to right,rgb(86, 134, 141),black,black,rgb(86, 134, 141));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    color: transparent;
     font-size: 2vw;
-    text-shadow: 0.25vw 0.25vw rgb(0, 0, 0);
+
 }
-#border_left_top{
-    position: absolute;
-    width: 5%;
-    height: 7%;
-    border-left: 5px solid white;
-    border-top: 5px solid white;
-    border-style: double;
-    border-right: none;
-    border-bottom: none;
-    left: 0px;
-    top: 0px; 
-}
-#border_right_top{
-    position: absolute;
-    width: 5%;
-    height: 7%;
-    border-right: 5px solid white;
-    border-top: 5px solid white;
-    border-style: double;
-    border-left: none;
-    border-bottom: none;
-    right: 0px;
-    top: 0px; 
-}
-#border_left_bot{
-    position: absolute;
-    width: 5%;
-    height: 7%;
-    border-left: 5px solid white;
-    border-bottom: 5px solid white;
-    border-style: double;
-    border-right: none;
-    border-top: none;
-    left: 0px;
-    bottom: 0px; 
-}
-#border_right_bot{
-    position: absolute;
-    width: 5%;
-    height: 7%;
-    border-right: 5px solid white;
-    border-bottom: 5px solid white;
-    border-style: double;
-    border-left: none;
-    border-top: none;
-    right: 0px;
-    bottom: 0px; 
-}
+
 #center_line{
     position: absolute;
-    background-color: white;
-    width: 80%;
-    height: 0.2vw;
-    top: 23vw;
+    background-color: rgb(172, 222, 223);
+    width: 50%;
+    height: 0.3vw;
+    top: 21vw;
 }

@@ -34,7 +34,7 @@ function banner_Slideshow_auto() {
     description[slideIndex-1].style.display = 'block';
     Page_button[slideIndex-1].style.display = 'flex';
 
-    setTimeout(banner_Slideshow_auto, 20000);//thời gian tự động chuyển là 20s   
+    setTimeout(banner_Slideshow_auto, 10000);//thời gian tự động chuyển là 10s   
 }
 
 /*----------------------slide_show_click------------------------------*/
