@@ -249,7 +249,7 @@
     /* border-style: double; */
 }
 #About_us > h1{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     text-align: center;
     background-image: linear-gradient(to top,rgb(108,165,173),rgb(172, 222, 223));
     background-clip: text;
@@ -257,7 +257,9 @@
     -moz-background-clip: text;
     -o-background-clip: text;
     color: transparent;
-    font-size: 5vw;
+    font-weight: bold !important;
+    font-size: 5vw !important;
+    margin: 4.8% !important;
 
 }
 #About_us_des{
