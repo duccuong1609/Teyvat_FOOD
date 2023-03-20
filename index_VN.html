@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="./css/header_footer/header_footer.css">
     <link rel="stylesheet" href="./css/Home_Page/banner_home_page.css">
     <link rel="stylesheet" href="./css/Home_Page/Content_Home_Page.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
-
+    
 <!-------------------------------------------------header--------------------------------------------------->
     <div id="header">
         <div id="left_header">
@@ -24,38 +29,38 @@
             </div>
         </div>
         <div id="mid_header">
-            <div class="mid_header_item_choose"><a href="#">TRANG CHỦ</a></div>
-            <div class="mid_header_item"><a href="#">CÔNG THỨC</a></div>
-            <div class="mid_header_item"><a href="#">ĐẶT HÀNG</a></div>
-            <div class="mid_header_item"><a href="#">TIN TỨC</a></div>
-            <div class="mid_header_item"><a href="#">FAQS</a></div>
+            <div class="mid_header_item_choose"><a href="#" id="home_page">TRANG CHỦ</a></div>
+            <div class="mid_header_item"><a href="#" id="repices_page">CÔNG THỨC</a></div>
+            <div class="mid_header_item"><a href="#" id="order_page">ĐẶT HÀNG</a></div>
+            <div class="mid_header_item"><a href="#" id="news_page">TIN TỨC</a></div>
+            <div class="mid_header_item"><a href="#" id="faqs_page">FAQS</a></div>
         </div>
         <div id="right_header">
             <div id="login_register">
-                <div id="register"><a href="#">Đăng Ký</a></div>
-                <div id="login"><a href="#">Đăng Nhập</a></div>
+                <div id="register"><a href="#" id="register_text">Đăng Ký</a></div>
+                <div id="login"><a href="#" id="login_text">Đăng Nhập</a></div>
             </div>
             <i class="fa fa-shopping-cart" aria-hidden="true" style="color: white;font-size: 35px;"></i>
             <div id="language">
-                <div id="english" class="unchoose_language"><a href="index_EN.html">EN</a></div>
+                <div id="english" class="unchoose_language" onclick="change_language_english()">EN</div>
                 <div id="/" class="choose_language">/</div>
-                <div id="vietnamese" class="choose_language"><a href="index_VN.html">VN</a></div>
+                <div id="vietnamese" class="choose_language" onclick="change_language_vietnamese()">VN</div>
             </div>
             <div id="three_line_menu" onclick="dropdown_menu()">
-                <i class="fa fa-bars" aria-hidden="true" style="color: white;font-size: 32px;"></i>
+                <i id="icon_menu" class="fa fa-bars" aria-hidden="true" style="color: white;font-size: 32px;"></i>
                 <div id="dropdown-content">
                     <div id="login_register_mobile">
-                        <div id="register"><a href="#">Đăng Ký</a></div>
-                        <div id="login"><a href="#"> Đăng Nhập</a></div>
+                        <div id="register"><a href="#" id="register_text_mobile">Đăng Ký</a></div>
+                        <div id="login"><a href="#" id="login_text_mobile">Đăng Nhập</a></div>
                     </div>
-                    <div class="mid_header_item_choose"><a href="#">TRANG CHỦ</a></div>
-                    <div class="mid_header_item"><a href="#">CÔNG THỨC</a></div>
-                    <div class="mid_header_item"><a href="#">ĐẶT HÀNG</a></div>
-                    <div class="mid_header_item"><a href="#">TIN TỨC</a></div>
-                    <div class="mid_header_item"><a href="#">FAQS</a></div>
+                    <div class="mid_header_item_choose"><a href="#" id="home_page_mobile">TRANG CHỦ</a></div>
+                    <div class="mid_header_item"><a href="#" id="repices_page_mobile">CÔNG THỨC</a></div>
+                    <div class="mid_header_item"><a href="#" id="order_page_mobile">ĐẶT HÀNG</a></div>
+                    <div class="mid_header_item"><a href="#" id="news_page_mobile">TIN TỨC</a></div>
+                    <div class="mid_header_item"><a href="#" id="faqs_page_mobile">FAQS</a></div>
                     <div id="language_mobile">
-                        <div id="english" class="unchoose_language"><a href="index_EN.html">EN</a></div>
-                        <div id="vietnamese" class="choose_language"><a href="index_VN.html">VN</a></div>
+                        <div id="english_mobile" class="unchoose_language" onclick="change_language_english()">EN</div>
+                        <div id="vietnamese_mobile" class="choose_language" onclick="change_language_vietnamese()">VN</div>
                     </div>
                 </div>
             </div>
@@ -82,32 +87,32 @@
         <a class="next" onclick="plusSlides(1)">
             <div class="right_to_right">❯❯</div>
         </a>
-        <div class="title_banner">KHÁM PHÁ TEYVAT</div>
-        <div class="title_banner">40+ CÔNG THỨC MỚI</div>
-        <div class="title_banner">TRẢI NGHIỆM BỮA ĂN SẠCH</div>
-        <div class="description_banner">5000+ TIN TỨC MỚI MỖI NGÀY</div>
-        <div class="description_banner">TRỌN BỘ CÔNG THỨC NẤU ĂN LỤC ĐỊA TEYVAT</div>
-        <div class="description_banner">BỮA ĂN TƯƠI NGON GIÀU DINH DƯỠNG</div>
+        <div id="title_banner_1"class="title_banner">KHÁM PHÁ TEYVAT</div>
+        <div id="title_banner_2"class="title_banner">40+ CÔNG THỨC MỚI</div>
+        <div id="title_banner_3"class="title_banner">TRẢI NGHIỆM BỮA ĂN SẠCH</div>
+        <div id="description_banner_1"class="description_banner">5000+ TIN TỨC MỚI MỖI NGÀY</div>
+        <div id="description_banner_2"class="description_banner">TRỌN BỘ CÔNG THỨC NẤU ĂN LỤC ĐỊA TEYVAT</div>
+        <div id="description_banner_3"class="description_banner">BỮA ĂN TƯƠI NGON GIÀU DINH DƯỠNG</div>
         <div class="Page_button_container">
             <div class="Page_button">
-                <a href="#">Xem Thêm</a>
+                <a id="more_button_1" href="#">Xem Thêm</a>
             </div>
         </div>
         <div class="Page_button_container">
             <div class="Page_button">
-                <a href="#">Xem Ngay</a>
+                <a id="more_button_2" href="#">Xem Ngay</a>
             </div>
         </div>
         <div class="Page_button_container">
             <div class="Page_button">
-                <a href="#">Đặt Ngay</a>
+                <a id="more_button_3" href="#">Đặt Ngay</a>
             </div>
         </div>
     </div>
 <!------------------------------------------------------------Content-------------------------------------------------------->
 <div id="content">
     <img src="rsc/image/Background.webp" alt="" style="width: 100%">
-    <img src="rsc/image/arrow.webp" alt="" id="arrow">
+    <img src="rsc/image/arrow.webp" id="arrow" alt=""> 
 <!--------------------------------------------------About_us----------------------------------------------------->
     <div id="About_Us_container">
         <img id ="About_us_img" src="rsc/image/Background_img_1.webp" alt="">
@@ -137,14 +142,14 @@
                 <a href="#" id="Hot_repices">
                     <img src="rsc/image/Khung.webp" alt="" width="100%" id="khung">
                     <img src="rsc/image/repices/Tien_Nhay_Tuong.webp" alt="" width="70%" id="food">
-                    <div class="name_repices">Tiên Nhảy Tường</div>
+                    <div id="name_repices_1"class="name_repices">Tiên Nhảy Tường</div>
                 </a>
             </div>
             <div class="Hot_Repices_item">
                 <a href="#" id="Hot_repices">
                     <img src="rsc/image/Khung_2.webp" alt="" width="100%" id="khung">
                     <img src="rsc/image/repices/Phuc_Loc_Tran_Day.webp" alt="" width="70%" id="food">
-                    <div class="name_repices">Phúc Lộc Tràn Đầy</div>
+                    <div id="name_repices_2"class="name_repices">Phúc Lộc Tràn Đầy</div>
                 </a>
             </div>
         </div>
@@ -153,14 +158,14 @@
                 <a href="#" id="Hot_repices">
                     <img src="rsc/image/Khung.webp" alt="" width="100%" id="khung">
                     <img src="rsc/image/repices/Chân - Thập Cẩm Phong Thần.webp" alt="" width="70%" id="food">
-                    <div class="name_repices">Thập Cẩm Phong Thần</div>
+                    <div id="name_repices_3"class="name_repices">Thập Cẩm Phong Thần</div>
                 </a>
             </div>
             <div class="Hot_Repices_item">
                 <a href="#" id="Hot_repices">
                     <img src="rsc/image/Khung_2.webp" alt="" width="100%" id="khung">
                     <img src="rsc/image/repices/Dai_Hanh_Quan_Uwebp.webp" alt="" width="70%" id="food">
-                    <div class="name_repices">Đại Hành Quân U</div>
+                    <div id="name_repices_4"class="name_repices">Đại Hành Quân U</div>
                 </a>
             </div>
         </div>
@@ -168,7 +173,7 @@
 <!---------------------------------------------------Hot_Food--------------------------------------------------->
     <img src="rsc/image/arrow.webp" alt="" id="arrow3">
      <div id="Hot_Food_container">
-        <div id="Hot_Repices_Title">THỰC PHẨM TIÊU BIỂU</div>
+        <div id="Hot_Repices_Title"><div id="Hot_Food_tittle">THỰC PHẨM TIÊU BIỂU</div></div>
         <div id="center_line_Food"></div>
         <img src="rsc/image/Background_img_1.webp" alt="" style="position: absolute;top: 60%;width: 90%;">
         <div id="food_slideshow_container">
@@ -184,26 +189,24 @@
 <!----------------------------------------------Protect_enviroment-------------------------------------------->
      <img src="rsc/image/arrow.webp" alt="" id="arrow5">
      <div id="Hot_Food_container_2">
-        <div id="Hot_Repices_Title">CHUNG TAY BẢO VỆ MÔI TRƯỜNG</div>
+        <div id="Hot_Repices_Title"><div id="Protect_enviroment_title">CHUNG TAY BẢO VỆ MÔI TRƯỜNG</div></div>
         <div id="center_line_Food"></div>
         <img src="rsc/image/Background_img_1.webp" alt="" style="position: absolute;top: 60%;width: 90%;">
         <div id="food_slideshow_container">
             <div id="food_slideshow">
-                    <img class="enviroment_image" src="https://fitfood.vn/img/346x288/uploads/dsc04248-15668117116574.JPG" alt="">
-                    <img class="enviroment_image" src="https://fitfood.vn/img/346x288/uploads/dsc04268-15668122623444.JPG" alt="">
-                    <img class="enviroment_image" src="https://fitfood.vn/img/346x288/uploads/dsc04263-15668117777881.JPG" alt="">
+                    <img class="enviroment_image" src="https://images.indianexpress.com/2018/06/world-environment-day-759.jpg" alt="">
+                    <img class="enviroment_image" src="https://static.hieuluat.vn/uploaded/Images/Original/2023/01/18/bao-ve-moi-truong-la-gi_1801083959.jpg" alt="">
                     <img class="enviroment_image" src="https://baobithanhluan.com/wp-content/uploads/2019/05/quy-trinh-san-xuat-tui-tu-huy-sinh-hoc-01.jpg" alt="">
                     <img class="enviroment_image" src="https://cdn.tgdd.vn/Files/2019/06/04/1170981/nylon-sinh-hoc-tu-huy-la-gi-2.jpg">;
                     <img class="enviroment_image" src="https://contentstatic.techgig.com/photo/69661114.cms" alt="">
-                    <img class="enviroment_image" src="https://images.indianexpress.com/2018/06/world-environment-day-759.jpg" alt="">
-                    
+                    <img class="enviroment_image" src="https://nhuasaigon.com.vn/wp-content/uploads/2022/02/bao-ve-moi-truong.jpg" alt="">
             </div>
         </div>
      </div>
 <!-----------------------------------------------linking-------------------------------------------------------->
      <img src="rsc/image/arrow.webp" alt="" id="arrow4">
      <div id="linking_partner_container">
-        <div id="linking_customer_Title">ĐỐI TÁC</div>
+        <div id="linking_customer_Title"><div id="linking_partner">ĐỐI TÁC</div></div>
         <div id="linking_container">
             <a href="https://www.starkombucha.com/"><img id="startkombucha"src="https://fitfood.vn/img/300x0/images/logo-star-kombucha-16014620887392.png" alt=""></a>
             <a href="https://mmvietnam.com/"><img id="mm"src="https://fitfood.vn/img/300x0/images/megamarket-15625154298117.png" alt=""></a>
@@ -217,7 +220,7 @@
             <a href="https://www.hoyoverse.com/en-us"><img id= "GI" src="https://imgeucdn.gamespress.com/cdn/files/Games%20Press/2022/08/101307-4d497fd7/HoYoverse_Colour_Ring_Wordmark_White.png?w=730&mode=max&otf=y&quality=80&format=png&bgcolor=transparent&ex=2023-05-01+03%3A00%3A00&sky=6143c183d98d1a54c6e5e6938040e4485a61dcefde043a538ad1b6a9ba9faa27" alt=""></a>
             <a href="https://hsr.hoyoverse.com/vi-vn/home"><img id= "GI" src="https://upload.wikimedia.org/wikipedia/vi/9/95/Honkai_Star_Rail_logo.png" alt=""></a>
         </div>
-        <div id="linking_customer_Title">KHÁCH HÀNG</div>
+        <div id="linking_customer_Title"><div id="linking_customer">KHÁCH HÀNG</div></div>
         <div id="linking_container">
             <a href="https://tiki.vn/"><img id="hoyoverse"src="https://fitfood.vn/img/300x0/images/logo-tiki-png-16039561972419.png" alt=""></a>
             <a href="http://www.co-opmart.com.vn/"><img id="HSR"src="https://fitfood.vn/img/300x0/images/coop-15694086865358.png" alt=""></a>
@@ -241,20 +244,20 @@
             <div id="Page_name_1">Teyvat</div>
             <div id="Page_name_2">FOOD</div>
         </div>
-        <div class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">CÔNG TY TNHH TEYVATFOOD</font></div>
-        <div class="footer_des"><font style="font-weight: bold;">Địa chỉ</font> 33 Đường X, KDC Bình Hưng A, Ấp 2, Huyện Bình Chánh A, TP.X</div>
-        <div class="footer_des"><font style="font-weight: bold;">Điện thoại</font> (+84) 932 788 120 [hotline]</div>
-        <div class="footer_des"><font style="font-weight: bold;">Email</font> info@TeyvatFood.vn. For business inquiries: business@TeyvatFood.vn</div>
-        <div class="footer_des"><font style="font-weight: bold;">MST</font> 0313272749 do Sở kế hoạch và đầu tư TPHCM cấp ngày dd/mm/yyyy</div>
-        <div class="footer_des" style="margin-top: 2vw;color: gray;">© Copyright 2023 TeyvatFood. All rights reserved.</div>
+        <div id="footer_des_1" class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">CÔNG TY TNHH TEYVATFOOD</font></div>
+        <div id="footer_des_2" class="footer_des"><font style="font-weight: bold;">Địa chỉ</font> 33 Đường X, KDC Bình Hưng A, Ấp 2, Huyện Bình Chánh A, TP.X</div>
+        <div id="footer_des_3" class="footer_des"><font style="font-weight: bold;">Điện thoại</font> (+84) 932 788 120 [hotline]</div>
+        <div id="footer_des_4" class="footer_des"><font style="font-weight: bold;">Email</font> info@TeyvatFood.vn. For business inquiries: business@TeyvatFood.vn</div>
+        <div id="footer_des_5" class="footer_des"><font style="font-weight: bold;">MST</font> 0313272749 do Sở kế hoạch và đầu tư TPHCM cấp ngày dd/mm/yyyy</div>
+        <div id="footer_des_6" class="footer_des" style="margin-top: 2vw;color: gray;">© Copyright 2023 TeyvatFood. All rights reserved.</div>
     </div>
     <div id="Right_footer">
         <div id="Right_footer_1">
-            <div class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">ĐIỀU KHOẢN CHUNG</font></div>
-            <div class="footer_des"><a href="#">Chính Sách Quy Định Chung</a></div>
-            <div class="footer_des"><a href="#">Quy Định Hình Thức Thanh Toán</a></div>
-            <div class="footer_des"><a href="#">Chính Sách Vận Chuyển Giao Hàng</a></div>
-            <div class="footer_des"><a href="#">Chính Sách Bảo Mật Thông Tin</a></div>
+            <div id="footer_des_7" class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">ĐIỀU KHOẢN CHUNG</font></div>
+            <div id="footer_des_8" class="footer_des"><a href="#">Chính Sách Quy Định Chung</a></div>
+            <div id="footer_des_9" class="footer_des"><a href="#">Quy Định Hình Thức Thanh Toán</a></div>
+            <div id="footer_des_10" class="footer_des"><a href="#">Chính Sách Vận Chuyển Giao Hàng</a></div>
+            <div id="footer_des_11" class="footer_des"><a href="#">Chính Sách Bảo Mật Thông Tin</a></div>
         </div>
         <div id="Right_footer_1">
             <div class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">FOLLOW US</font></div>
@@ -270,8 +273,10 @@
         </div>
     </div>
     <img src="rsc/image/Paimon.png" alt="" style="position: absolute;right: 9.5vw;top:-1.5vw;width: 20vw;">
+    <a href="#" id="back_to_top"><i class="fa fa-arrow-up" id="back_to_top_icon" aria-hidden="true"></i></a> 
 </div>
 </div>
-    <script src="script/Slideshow_DropMenu.js"></script>
+<script src="script/Slideshow_DropMenu.js"></script>
+<script src="script/Change_language_Home_Page.js"></script>
 </body>
 </html>

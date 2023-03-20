@@ -77,4 +77,6 @@ function banner_Slideshow_click(n) {
 function dropdown_menu() {
   menu = document.getElementById("dropdown-content");
   menu.classList.toggle("show");
+  document.getElementById("icon_menu").classList.toggle("fa-bars");
+  document.getElementById("icon_menu").classList.toggle("fa-times");
 }

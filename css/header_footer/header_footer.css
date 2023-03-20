@@ -140,11 +140,11 @@ body{
         color: gray;
         transition: 0.5s;
     }
-    .choose_language > a{
+    .choose_language {
         font-weight: bold;
         color: white !important;
     }
-    .unchoose_language:hover > a{
+    .unchoose_language:hover {
         color: white !important;
         transition: 0.5s;
     } 
@@ -227,7 +227,7 @@ body{
         background-color: rgb(220, 220, 220);
         overflow: hidden;
     }
-    #language_mobile > #vietnamese{
+    #language_mobile > #vietnamese_mobile{
         width: 45%;
         padding: 2%;
         padding-left: 8%;
@@ -235,7 +235,7 @@ body{
         text-align: center;
         font-size: 1.5vw;
     }
-    #language_mobile > #english{
+    #language_mobile > #english_mobile{
         width: 45%;
         padding: 2%;
         padding-left: 8%;
@@ -359,4 +359,32 @@ body{
 }
 #linking_icon > a:hover{
     color: white;
+}
+#back_to_top{
+    position: absolute;
+    z-index: 10;
+    color: gray;
+    font-size: 2vw;
+    text-align: center;
+    padding: 0.5vw;
+    background-color: black;
+    border: 0.11vw solid gray;
+    border-radius: 1vw;
+    right: 4vw;
+    bottom: 2vw;
+}
+#back_to_top > #back_to_top_icon{
+    animation-name: up_and_up;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+#back_to_top:hover{
+    color: rgb(172, 222, 223);
+    border: 0.11vw solid rgb(172, 222, 223);
+}
+@keyframes up_and_up{
+    to{
+        transform: translateY(-0.1vw);
+    }
 }
