@@ -290,6 +290,10 @@ body{
         }
 }
 /*-----------------------------------------------------footer--------------------------------------------------*/
+@font-face {
+    font-family: About_des_font;
+    src: url(../../rsc/font/MisterGiacco-Medium.ttf) format("truetype");
+}
 #footer{
     display: flex;
     position: relative;
