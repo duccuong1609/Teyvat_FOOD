@@ -20,7 +20,7 @@ function banner_Heal_Slideshow_auto() {
     }
     slides[slideIndex-1].style.display = 'flex';
     dots[slideIndex-1].className += " active";
-    setTimeout(banner_Heal_Slideshow_auto, 30000);//thời gian tự động chuyển là 10s   
+    setTimeout(banner_Heal_Slideshow_auto, 60000);//thời gian tự động chuyển là 10s   
 }
 /*----------------------slide_show_click------------------------------*/
 banner_Heal_Slideshow_click(slideIndex);
@@ -65,7 +65,7 @@ function banner_ATK_Slideshow_auto() {
     }
     slides[slideIndex2-1].style.display = 'flex';
     dots[slideIndex2-1].className += " active";
-    setTimeout(banner_ATK_Slideshow_auto, 30000);//thời gian tự động chuyển là 10s   
+    setTimeout(banner_ATK_Slideshow_auto, 60000);//thời gian tự động chuyển là 10s   
 }
 /*----------------------slide_show_click------------------------------*/
 banner_ATK_Slideshow_click(slideIndex2);
@@ -110,7 +110,7 @@ function banner_DEF_Slideshow_auto() {
     }
     slides[slideIndex3-1].style.display = 'flex';
     dots[slideIndex3-1].className += " active";
-    setTimeout(banner_DEF_Slideshow_auto, 30000);//thời gian tự động chuyển là 10s   
+    setTimeout(banner_DEF_Slideshow_auto, 60000);//thời gian tự động chuyển là 10s   
 }
 /*----------------------slide_show_click------------------------------*/
 banner_DEF_Slideshow_click(slideIndex3);
@@ -155,7 +155,7 @@ function banner_VIT_Slideshow_auto() {
     }
     slides[slideIndex4-1].style.display = 'flex';
     dots[slideIndex4-1].className += " active";
-    setTimeout(banner_DEF_Slideshow_auto, 30000);//thời gian tự động chuyển là 10s   
+    setTimeout(banner_DEF_Slideshow_auto, 60000);//thời gian tự động chuyển là 10s   
 }
 /*----------------------slide_show_click------------------------------*/
 banner_VIT_Slideshow_click(slideIndex4);
@@ -200,7 +200,7 @@ function banner_REV_Slideshow_auto() {
     }
     slides[slideIndex5-1].style.display = 'flex';
     dots[slideIndex5-1].className += " active";
-    setTimeout(banner_DEF_Slideshow_auto, 30000);//thời gian tự động chuyển là 10s   
+    setTimeout(banner_DEF_Slideshow_auto, 60000);//thời gian tự động chuyển là 10s   
 }
 /*----------------------slide_show_click------------------------------*/
 banner_REV_Slideshow_click(slideIndex5);
