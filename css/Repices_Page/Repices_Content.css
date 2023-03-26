@@ -1,4 +1,5 @@
 *
+
 #Repices_Content{
     position: relative;
     display: flex;
@@ -11,12 +12,14 @@
     padding-top: 3%;
     padding-left: 5%;
     padding-right: 5%;
+    margin-top: 40vw;
 }
 #Repices_Food{
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
+    z-index: 3;
 }
 #Repices_Food_Title{
     font-family:Noto;
@@ -26,12 +29,9 @@
     display: flex;
     align-items: center;
     align-self: center;
-    background-image: linear-gradient(to top,rgb(108,165,173),rgb(172, 222, 223));
+    text-shadow: 2px 2px rgb(172, 222, 223);
     background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -o-background-clip: text;
-    color: transparent;
+    color: black;
     font-size: 4vw;
     margin-bottom: 3vw;
     transition: 1s;
@@ -595,4 +595,101 @@
     padding: 10px;
     border-radius: 50%;
     z-index: 10;
+}
+/* ------------------------------banner---------------------------- */
+#Repices_Banner{
+    width: 100%;
+    background-image: url(../../rsc/image/Background2.webp);
+    background-size: 100% auto;
+    aspect-ratio: 1/0.7;
+    position: absolute;
+    filter: grayscale(0.1);
+    z-index: 2;
+}
+#Repices_Banner_Title{
+    display: inline-block;
+    position: absolute;
+    top: 10vw;
+    left: 5vw;
+    border-radius: 50%;
+    padding: 3%;
+    z-index: 10;
+}
+#Repices_Banner_Title_item{
+    font-size: 3vw;
+    font-family: Noto;
+    text-align: center;
+    background-image: linear-gradient(to top left,rgb(255, 101, 104),rgb(48, 142, 182),rgb(255, 101, 104));
+    background-clip: text;
+    filter: contrast(150%);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    color: transparent;
+}
+@keyframes down_and_down{
+    to{
+        top: 53%;
+    }
+}
+.down_and_down{
+    position: absolute;
+    width: 6%;
+    left: 48%;
+    top: 51%;
+    animation-name: down_and_down;
+    -webkit-animation-name: down_and_down;
+    -moz-animation-name: down_and_down;
+    -o-animation-name: down_and_down;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+}
+#Repices_Banner_Icon_item{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+}
+#Repices_Banner_Icon_item >a{
+    font-size: 3.5vw;
+    font-family: Noto;
+    text-align: center;
+    background-image: linear-gradient(to top left,rgb(255, 101, 104),rgb(48, 142, 182),rgb(255, 101, 104));
+    background-clip: text;
+    filter: contrast(150%);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    color: transparent;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+}
+#Repices_Banner_Icon_item >a:hover{
+    -webkit-animation-name:fa-beat;
+    animation-name:fa-beat;
+    -webkit-animation-delay:var(--fa-animation-delay,0s);
+    animation-delay:var(--fa-animation-delay,0s);
+    -webkit-animation-direction:var(--fa-animation-direction,normal);
+    animation-direction:var(--fa-animation-direction,normal);
+    -webkit-animation-duration:var(--fa-animation-duration,1s);
+    animation-duration:var(--fa-animation-duration,1s);
+    -webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);
+    animation-iteration-count:var(--fa-animation-iteration-count,infinite);
+    -webkit-animation-timing-function:var(--fa-animation-timing,ease-in-out);
+    animation-timing-function:var(--fa-animation-timing,ease-in-out)
 }
