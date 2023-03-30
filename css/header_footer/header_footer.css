@@ -24,7 +24,7 @@ body{
     }
         /*--------------------------------------------logo------------------------------------------------*/
         #logo{
-            width: 52px;
+            width: 3vw;
             height: same-as-width;
             min-width: 40px;
             margin-right: 10px;
@@ -129,6 +129,7 @@ body{
         margin-left: 5%;
         padding-left: 5%;
         border-left: 1px solid white;
+        cursor: pointer;
     }
     #english > a{
         text-decoration: none;
@@ -226,6 +227,7 @@ body{
         align-self: center;
         background-color: rgb(220, 220, 220);
         overflow: hidden;
+        cursor: pointer;
     }
     #language_mobile > #vietnamese_mobile{
         width: 45%;
@@ -278,6 +280,85 @@ body{
     #three_line_menu{
         display: none;
         overflow: hidden;
+    }
+}
+/*-----------------------------------------------screen < 1100px----------------------------------------*/
+@media only screen and (min-width : 651px) and (max-width: 1100px)  {
+    #footer {
+        flex-direction: column;
+        height: max-content !important;
+    }
+    #Right_footer{
+        margin-right: 0%;
+        margin-left: 10%;
+    }
+    #Right_footer_1{
+        margin-top: 0% !important;
+    }
+    #Left_footer > #Page_name >#Page_name_1,#Left_footer > #Page_name >#Page_name_2{
+        font-size: 5.5vw !important;
+    }
+    .footer_des{
+        font-size: 1.5vw !important; 
+    }
+    .footer_des>font{
+        font-size: 1.9vw !important;
+    }
+    #linking_icon > a > i{
+        font-size: 3.5vw  !important;
+    }
+    #back_to_top{
+        border: 0.2vw solid gray !important;
+        bottom: 4vw !important;
+    }
+    #back_to_top_icon{
+        font-size: 3.8vw !important;
+    }
+    #paimon{
+        width: 35vw !important;
+    }
+}
+/*-----------------------------------------------screen < 650px----------------------------------------*/
+@media only screen and (max-width: 650px) {
+    #footer {
+        flex-direction: column;
+        height: max-content !important;
+    }
+    #Right_footer{
+        margin-right: 0% !important;
+        margin-left: 5% !important;
+        width: 60% !important;
+        justify-content: space-between;
+    }
+    #Left_footer{
+        margin-right: 0%;
+        margin-left: 5% !important;
+        width: 60%;
+    }
+    #Right_footer_1{
+        margin-top: 0% !important;
+    }
+    #Left_footer > #Page_name >#Page_name_1,#Left_footer > #Page_name >#Page_name_2{
+        font-size: 6vw !important;
+    }
+    .footer_des{
+        font-size: 1.9vw !important; 
+    }
+    .footer_des>font{
+        font-size: 2.2vw !important;
+    }
+    #linking_icon > a > i{
+        font-size: 4vw  !important;
+    }
+    #back_to_top{
+        border: 0.2vw solid gray !important;
+        bottom: 4vw !important;
+    }
+    #back_to_top_icon{
+        font-size: 5vw !important;
+    }
+    #paimon{
+        width: 40vw !important;
     }
 }
 /*---------------------------------------------screen <583px---------------------------------------*/

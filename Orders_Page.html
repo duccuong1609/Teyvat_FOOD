@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeyvatFood-Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header_footer/header_footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/Order_Page/Order_Page.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-------------------------------------------------header--------------------------------------------------->
+    <div id="header">
+        <div id="left_header">
+            <div id="logo">
+                <a href="index_VN.html"><img src="rsc/image/logo.gif" alt="" id="logo_img"></a>
+            </div>
+            <div id="Page_name">
+                <div id="Page_name_1">Teyvat</div>
+                <div id="Page_name_2">FOOD</div>
+            </div>
+        </div>
+        <div id="mid_header">
+            <div class="mid_header_item"><a href="index_VN.html" id="home_page">TRANG CHỦ</a></div>
+            <div class="mid_header_item"><a href="Repices_Page.html" id="repices_page">CÔNG THỨC</a></div>
+            <div class="mid_header_item_choose"><a href="Orders_Page.html" id="order_page">ĐẶT HÀNG</a></div>
+            <div class="mid_header_item"><a href="#" id="news_page">TIN TỨC</a></div>
+            <div class="mid_header_item"><a href="#" id="faqs_page">FAQS</a></div>
+        </div>
+        <div id="right_header">
+            <div id="login_register">
+                <div id="register"><a href="#" id="register_text">Đăng Ký</a></div>
+                <div id="login"><a href="#" id="login_text">Đăng Nhập</a></div>
+            </div>
+            <i class="fa fa-shopping-cart" aria-hidden="true" style="color: white;font-size: 35px;"></i>
+            <div id="language">
+                <div id="english" class="unchoose_language" onclick="change_language_english()">EN</div>
+                <div id="/" class="choose_language">/</div>
+                <div id="vietnamese" class="choose_language" onclick="change_language_vietnamese()">VN</div>
+            </div>
+            <div id="three_line_menu" onclick="dropdown_menu()">
+                <i id="icon_menu" class="fa fa-bars" aria-hidden="true" style="color: white;font-size: 32px;"></i>
+                <div id="dropdown-content">
+                    <div id="login_register_mobile">
+                        <div id="register"><a href="#" id="register_text_mobile">Đăng Ký</a></div>
+                        <div id="login"><a href="#" id="login_text_mobile">Đăng Nhập</a></div>
+                    </div>
+                    <div class="mid_header_item"><a href="index_VN.html" id="home_page_mobile">TRANG CHỦ</a></div>
+                    <div class="mid_header_item"><a href="Repices_Page.html" id="repices_page_mobile">CÔNG THỨC</a></div>
+                    <div class="mid_header_item_choose"><a href="Orders_Page.html" id="order_page_mobile">ĐẶT HÀNG</a></div>
+                    <div class="mid_header_item"><a href="#" id="news_page_mobile">TIN TỨC</a></div>
+                    <div class="mid_header_item"><a href="#" id="faqs_page_mobile">FAQS</a></div>
+                    <div id="language_mobile">
+                        <div id="english_mobile" class="unchoose_language" onclick="change_language_english()">EN</div>
+                        <div id="vietnamese_mobile" class="choose_language" onclick="change_language_vietnamese()">VN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------Content------------------------------------------------------>
+    <div id="Order_Content">
+    <!---------------------------------------------------hot_food_Swiper----------------------------------------->
+        <div class="Food_Title">
+            CHARACTER'S DISHES
+        </div>
+        <div id="slideshow_wrapper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div id="Food_Container">
+                            <a href="#" class="Food_Item">
+                                <img src="rsc/image/foods/Order/Dizziness-Be-Gone no Jutsu.jfif" alt="">
+                                <div class="character_icon fa-flip">
+                                    <img src="rsc/image/character/sayu.png" alt="">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="Food_Item_Name" style="text-align: center;">
+                                    CƠM NẮM GẤU MÈO
+                                </div>
+                                <div class="Food_Item_type">
+                                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Cơm</font></div>
+                                    <div class="Food_Item_type_right">Sayu's Dish</div>
+                                </div>
+                                <div class="Food_Item_des">
+                                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">2 phần cơm nắm gấu mèo</font></div>
+                                </div>
+                                <div class="Food_Item_rating_price">
+                                    <div class="Food_Item_rating">
+                                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                                        <div class="rating">
+                                            &nbsp;&nbsp;4.8 <font>(1532)</font> 
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        30,000đ
+                                    </div>
+                                </div>
+                                <div class="Food_Item_Buynow">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="Food_Item">
+                                <img src="rsc/image/foods/Order/No tomorrow.jfif" alt="">
+                                <div class="character_icon fa-flip">
+                                    <img src="rsc/image/character/qiqi.jpg" alt="" style="border-color: blue;">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="Food_Item_Name" style="text-align: center;">
+                                    NO FUTURE DISH
+                                </div>
+                                <div class="Food_Item_type">
+                                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Mì</font></div>
+                                    <div class="Food_Item_type_right">Qiqi's Dish</div>
+                                </div>
+                                <div class="Food_Item_des">
+                                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">1 phần mì "No Future" cỡ vừa</font></div>
+                                </div>
+                                <div class="Food_Item_rating_price">
+                                    <div class="Food_Item_rating">
+                                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                                        <div class="rating">
+                                            &nbsp;&nbsp;4.9 <font>(1234)</font> 
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        40,000đ
+                                    </div>
+                                </div>
+                                <div class="Food_Item_Buynow">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="Food_Item">
+                                <img src="rsc/image/foods/Order/Shimi Chazuke.jfif" alt="">
+                                <div class="character_icon fa-flip">
+                                    <img src="rsc/image/character/wanderer.png" alt="" style="border-color: rgb(92, 255, 236);">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="Food_Item_Name" style="text-align: center;">
+                                    SHIMI CHAZUKE
+                                </div>
+                                <div class="Food_Item_type">
+                                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Cơm</font></div>
+                                    <div class="Food_Item_type_right">Wanderer's Dish</div>
+                                </div>
+                                <div class="Food_Item_des">
+                                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">1 phần cơm "Shimi Chazuke" cùng thức ăn đi kèm</font></div>
+                                </div>
+                                <div class="Food_Item_rating_price">
+                                    <div class="Food_Item_rating">
+                                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                                        <div class="rating">
+                                            &nbsp;&nbsp;4.83 <font>(3233)</font> 
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        35,000đ
+                                    </div>
+                                </div>
+                                <div class="Food_Item_Buynow">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="Food_Item">
+                                <img src="rsc/image/foods/Order/Show Me the Mora.jfif" alt="">
+                                <div class="character_icon fa-flip">
+                                    <img src="rsc/image/character/dori.jfif" alt="" style="border-color: blueviolet;">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="Food_Item_Name" style="text-align: center;">
+                                    MORA ! ĐẾN ĐÂY NÀO 
+                                </div>
+                                <div class="Food_Item_type">
+                                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Combo</font></div>
+                                    <div class="Food_Item_type_right">Dori's Dish</div>
+                                </div>
+                                <div class="Food_Item_des">
+                                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">1 combo ( 1 phần Gà áp chảo,1 phần pudding nho, 1 phần bánh khoai )</font></div>
+                                </div>
+                                <div class="Food_Item_rating_price">
+                                    <div class="Food_Item_rating">
+                                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                                        <div class="rating">
+                                            &nbsp;&nbsp;4.62 <font>(1533)</font> 
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        100,000đ
+                                    </div>
+                                </div>
+                                <div class="Food_Item_Buynow">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="Food_Container">
+                            <a href="#" class="Food_Item">
+                                <img src="rsc/image/foods/Order/Dizziness-Be-Gone no Jutsu.jfif" alt="">
+                                <div class="character_icon fa-flip">
+                                    <img src="rsc/image/character/sayu.png" alt="">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="Food_Item_Name" style="text-align: center;">
+                                    CƠM NẮM GẤU MÈO
+                                </div>
+                                <div class="Food_Item_type">
+                                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Cơm</font></div>
+                                    <div class="Food_Item_type_right">Sayu's Dish</div>
+                                </div>
+                                <div class="Food_Item_des">
+                                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">2 phần cơm nắm gấu mèo</font></div>
+                                </div>
+                                <div class="Food_Item_rating_price">
+                                    <div class="Food_Item_rating">
+                                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                                        <div class="rating">
+                                            &nbsp;&nbsp;4.8 <font>(1532)</font> 
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        30,000đ
+                                    </div>
+                                </div>
+                                <div class="Food_Item_Buynow">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="Food_Item">
+                                <img src="rsc/image/foods/Order/No tomorrow.jfif" alt="">
+                                <div class="character_icon fa-flip">
+                                    <img src="rsc/image/character/qiqi.jpg" alt="" style="border-color: blue;">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="Food_Item_Name" style="text-align: center;">
+                                    NO FUTURE DISH
+                                </div>
+                                <div class="Food_Item_type">
+                                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Mì</font></div>
+                                    <div class="Food_Item_type_right">Qiqi's Dish</div>
+                                </div>
+                                <div class="Food_Item_des">
+                                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">1 phần mì "No Future" cỡ vừa</font></div>
+                                </div>
+                                <div class="Food_Item_rating_price">
+                                    <div class="Food_Item_rating">
+                                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                                        <div class="rating">
+                                            &nbsp;&nbsp;4.9 <font>(1234)</font> 
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        40,000đ
+                                    </div>
+                                </div>
+                                <div class="Food_Item_Buynow">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="Food_Item">
+                                <img src="rsc/image/foods/Order/Shimi Chazuke.jfif" alt="">
+                                <div class="character_icon fa-flip">
+                                    <img src="rsc/image/character/wanderer.png" alt="" style="border-color: rgb(92, 255, 236);">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="Food_Item_Name" style="text-align: center;">
+                                    SHIMI CHAZUKE
+                                </div>
+                                <div class="Food_Item_type">
+                                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Cơm</font></div>
+                                    <div class="Food_Item_type_right">Wanderer's Dish</div>
+                                </div>
+                                <div class="Food_Item_des">
+                                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">1 phần cơm "Shimi Chazuke" cùng thức ăn đi kèm</font></div>
+                                </div>
+                                <div class="Food_Item_rating_price">
+                                    <div class="Food_Item_rating">
+                                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                                        <div class="rating">
+                                            &nbsp;&nbsp;4.83 <font>(3233)</font> 
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        35,000đ
+                                    </div>
+                                </div>
+                                <div class="Food_Item_Buynow">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="Food_Item">
+                                <img src="rsc/image/foods/Order/Show Me the Mora.jfif" alt="">
+                                <div class="character_icon fa-flip">
+                                    <img src="rsc/image/character/dori.jfif" alt="" style="border-color: blueviolet;">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="Food_Item_Name" style="text-align: center;">
+                                    MORA ! ĐẾN ĐÂY NÀO 
+                                </div>
+                                <div class="Food_Item_type">
+                                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Combo</font></div>
+                                    <div class="Food_Item_type_right">Dori's Dish</div>
+                                </div>
+                                <div class="Food_Item_des">
+                                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">1 combo ( 1 phần Gà áp chảo,1 phần pudding nho, 1 phần bánh khoai )</font></div>
+                                </div>
+                                <div class="Food_Item_rating_price">
+                                    <div class="Food_Item_rating">
+                                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                                        <div class="rating">
+                                            &nbsp;&nbsp;4.62 <font>(1533)</font> 
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        100,000đ
+                                    </div>
+                                </div>
+                                <div class="Food_Item_Buynow">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="Food_Container">
+                            <a href="#" class="Food_Item">
+                                <img src="rsc/image/foods/Order/Dizziness-Be-Gone no Jutsu.jfif" alt="">
+                                <div class="character_icon fa-flip">
+                                    <img src="rsc/image/character/sayu.png" alt="">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="Food_Item_Name" style="text-align: center;">
+                                    CƠM NẮM GẤU MÈO
+                                </div>
+                                <div class="Food_Item_type">
+                                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Cơm</font></div>
+                                    <div class="Food_Item_type_right">Sayu's Dish</div>
+                                </div>
+                                <div class="Food_Item_des">
+                                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">2 phần cơm nắm gấu mèo</font></div>
+                                </div>
+                                <div class="Food_Item_rating_price">
+                                    <div class="Food_Item_rating">
+                                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                                        <div class="rating">
+                                            &nbsp;&nbsp;4.8 <font>(1532)</font> 
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        30,000đ
+                                    </div>
+                                </div>
+                                <div class="Food_Item_Buynow">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="Food_Item">
+                                <img src="rsc/image/foods/Order/No tomorrow.jfif" alt="">
+                                <div class="character_icon fa-flip">
+                                    <img src="rsc/image/character/qiqi.jpg" alt="" style="border-color: blue;">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="Food_Item_Name" style="text-align: center;">
+                                    NO FUTURE DISH
+                                </div>
+                                <div class="Food_Item_type">
+                                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Mì</font></div>
+                                    <div class="Food_Item_type_right">Qiqi's Dish</div>
+                                </div>
+                                <div class="Food_Item_des">
+                                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">1 phần mì "No Future" cỡ vừa</font></div>
+                                </div>
+                                <div class="Food_Item_rating_price">
+                                    <div class="Food_Item_rating">
+                                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                                        <div class="rating">
+                                            &nbsp;&nbsp;4.9 <font>(1234)</font> 
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        40,000đ
+                                    </div>
+                                </div>
+                                <div class="Food_Item_Buynow">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="Food_Item">
+                                <img src="rsc/image/foods/Order/Shimi Chazuke.jfif" alt="">
+                                <div class="character_icon fa-flip">
+                                    <img src="rsc/image/character/wanderer.png" alt="" style="border-color: rgb(92, 255, 236);">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="Food_Item_Name" style="text-align: center;">
+                                    SHIMI CHAZUKE
+                                </div>
+                                <div class="Food_Item_type">
+                                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Cơm</font></div>
+                                    <div class="Food_Item_type_right">Wanderer's Dish</div>
+                                </div>
+                                <div class="Food_Item_des">
+                                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">1 phần cơm "Shimi Chazuke" cùng thức ăn đi kèm</font></div>
+                                </div>
+                                <div class="Food_Item_rating_price">
+                                    <div class="Food_Item_rating">
+                                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                                        <div class="rating">
+                                            &nbsp;&nbsp;4.83 <font>(3233)</font> 
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        35,000đ
+                                    </div>
+                                </div>
+                                <div class="Food_Item_Buynow">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="Food_Item">
+                                <img src="rsc/image/foods/Order/Show Me the Mora.jfif" alt="">
+                                <div class="character_icon fa-flip">
+                                    <img src="rsc/image/character/dori.jfif" alt="" style="border-color: blueviolet;">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="Food_Item_Name" style="text-align: center;">
+                                    MORA ! ĐẾN ĐÂY NÀO 
+                                </div>
+                                <div class="Food_Item_type">
+                                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Combo</font></div>
+                                    <div class="Food_Item_type_right">Dori's Dish</div>
+                                </div>
+                                <div class="Food_Item_des">
+                                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">1 combo ( 1 phần Gà áp chảo,1 phần pudding nho, 1 phần bánh khoai )</font></div>
+                                </div>
+                                <div class="Food_Item_rating_price">
+                                    <div class="Food_Item_rating">
+                                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                                        <div class="rating">
+                                            &nbsp;&nbsp;4.62 <font>(1533)</font> 
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        100,000đ
+                                    </div>
+                                </div>
+                                <div class="Food_Item_Buynow">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next" style="opacity: 0.5;width: 3vw;">
+                    <img src="rsc/image/arrow.webp" alt="" style="transform: rotate(-90deg);width: 3vw;">
+                </div>
+                <div class="swiper-button-prev" style="opacity: 0.5;width: 3vw;">
+                    <img src="rsc/image/arrow.webp" alt="" style="transform: rotate(90deg);width: 3vw;">
+                </div>
+                <!--Add pagination -->
+                </div>
+                <div class="swiper-pagination" style="opacity: 0.5;">
+                </div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                spaceBetween: 1,
+                centeredSlides: true,
+                autoplay: {
+                delay: 25000,
+                disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+        </script>
+    <!-------------------------------------------------------------salty food---------------------------------------------->
+        <div id="Food_Container">
+            <a href="#" class="Food_Item">
+                <img src="rsc/image/foods/Order/Dizziness-Be-Gone no Jutsu.jfif" alt="">
+                <div class="character_icon fa-flip">
+                    <img src="rsc/image/character/sayu.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="Food_Item_Name" style="text-align: center;">
+                    CƠM NẮM GẤU MÈO
+                </div>
+                <div class="Food_Item_type">
+                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Cơm</font></div>
+                    <div class="Food_Item_type_right">Sayu's Dish</div>
+                </div>
+                <div class="Food_Item_des">
+                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">2 phần cơm nắm gấu mèo</font></div>
+                </div>
+                <div class="Food_Item_rating_price">
+                    <div class="Food_Item_rating">
+                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                        <div class="rating">
+                            &nbsp;&nbsp;4.8 <font>(1532)</font> 
+                        </div>
+                    </div>
+                    <div class="price">
+                        30,000đ
+                    </div>
+                </div>
+                <div class="Food_Item_Buynow">
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+            </a>
+            <a href="#" class="Food_Item">
+                <img src="rsc/image/foods/Order/No tomorrow.jfif" alt="">
+                <div class="character_icon fa-flip">
+                    <img src="rsc/image/character/qiqi.jpg" alt="" style="border-color: blue;">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="Food_Item_Name" style="text-align: center;">
+                    NO FUTURE DISH
+                </div>
+                <div class="Food_Item_type">
+                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Mì</font></div>
+                    <div class="Food_Item_type_right">Qiqi's Dish</div>
+                </div>
+                <div class="Food_Item_des">
+                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">1 phần mì "No Future" cỡ vừa</font></div>
+                </div>
+                <div class="Food_Item_rating_price">
+                    <div class="Food_Item_rating">
+                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                        <div class="rating">
+                            &nbsp;&nbsp;4.9 <font>(1234)</font> 
+                        </div>
+                    </div>
+                    <div class="price">
+                        40,000đ
+                    </div>
+                </div>
+                <div class="Food_Item_Buynow">
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+            </a>
+            <a href="#" class="Food_Item">
+                <img src="rsc/image/foods/Order/Shimi Chazuke.jfif" alt="">
+                <div class="character_icon fa-flip">
+                    <img src="rsc/image/character/wanderer.png" alt="" style="border-color: rgb(92, 255, 236);">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="Food_Item_Name" style="text-align: center;">
+                    SHIMI CHAZUKE
+                </div>
+                <div class="Food_Item_type">
+                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Cơm</font></div>
+                    <div class="Food_Item_type_right">Wanderer's Dish</div>
+                </div>
+                <div class="Food_Item_des">
+                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">1 phần cơm "Shimi Chazuke" cùng thức ăn đi kèm</font></div>
+                </div>
+                <div class="Food_Item_rating_price">
+                    <div class="Food_Item_rating">
+                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                        <div class="rating">
+                            &nbsp;&nbsp;4.83 <font>(3233)</font> 
+                        </div>
+                    </div>
+                    <div class="price">
+                        35,000đ
+                    </div>
+                </div>
+                <div class="Food_Item_Buynow">
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+            </a>
+            <a href="#" class="Food_Item">
+                <img src="rsc/image/foods/Order/Show Me the Mora.jfif" alt="">
+                <div class="character_icon fa-flip">
+                    <img src="rsc/image/character/dori.jfif" alt="" style="border-color: blueviolet;">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="Food_Item_Name" style="text-align: center;">
+                    MORA ! ĐẾN ĐÂY NÀO 
+                </div>
+                <div class="Food_Item_type">
+                    <div style="font-size: 0.9vw;color: black;">Phân Loại : <font style="color:gray">Combo</font></div>
+                    <div class="Food_Item_type_right">Dori's Dish</div>
+                </div>
+                <div class="Food_Item_des">
+                    <div style="font-size: 0.9vw;color: black;">Mô tả : <font style="color:gray">1 combo ( 1 phần Gà áp chảo,1 phần pudding nho, 1 phần bánh khoai )</font></div>
+                </div>
+                <div class="Food_Item_rating_price">
+                    <div class="Food_Item_rating">
+                        <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                        <div class="rating">
+                            &nbsp;&nbsp;4.62 <font>(1533)</font> 
+                        </div>
+                    </div>
+                    <div class="price">
+                        100,000đ
+                    </div>
+                </div>
+                <div class="Food_Item_Buynow">
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!------------------------------------------------------------footer--------------------------------------------------------->
+    <a href="#"><i id="contact" class="fa-solid fa-headset fa-shake"></i></a> 
+    <div id="footer">
+            <div id="Left_footer">
+                <div id="Page_name">
+                    <div id="Page_name_1">Teyvat</div>
+                    <div id="Page_name_2">FOOD</div>
+                </div>
+                <div id="footer_des_1" class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">CÔNG TY TNHH TEYVATFOOD</font></div>
+                <div id="footer_des_2" class="footer_des"><font style="font-weight: bold;">Địa chỉ</font> 33 Đường X, KDC Bình Hưng A, Ấp 2, Huyện Bình Chánh A, TP.X</div>
+                <div id="footer_des_3" class="footer_des"><font style="font-weight: bold;">Điện thoại</font> (+84) 932 788 120 [hotline]</div>
+                <div id="footer_des_4" class="footer_des"><font style="font-weight: bold;">Email</font> info@TeyvatFood.vn. For business inquiries: business@TeyvatFood.vn</div>
+                <div id="footer_des_5" class="footer_des"><font style="font-weight: bold;">MST</font> 0313272749 do Sở kế hoạch và đầu tư TPHCM cấp ngày dd/mm/yyyy</div>
+                <div id="footer_des_6" class="footer_des" style="margin-top: 2vw;color: gray;">© Copyright 2023 TeyvatFood. All rights reserved.</div>
+            </div>
+            <div id="Right_footer">
+                <div id="Right_footer_1">
+                    <div id="footer_des_7" class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">ĐIỀU KHOẢN CHUNG</font></div>
+                    <div id="footer_des_8" class="footer_des"><a href="#">Chính Sách Quy Định Chung</a></div>
+                    <div id="footer_des_9" class="footer_des"><a href="#">Quy Định Hình Thức Thanh Toán</a></div>
+                    <div id="footer_des_10" class="footer_des"><a href="#">Chính Sách Vận Chuyển Giao Hàng</a></div>
+                    <div id="footer_des_11" class="footer_des"><a href="#">Chính Sách Bảo Mật Thông Tin</a></div>
+                </div>
+                <div id="Right_footer_1">
+                    <div class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">FOLLOW US</font></div>
+                    <div id="linking_icon">
+                        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        
+                    </div>
+                    <div id="linking_icon">
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <img id="paimon" src="rsc/image/Paimon.png" alt="" style="position: absolute;right: 9.5vw;top:-1.5vw;width: 20vw;">
+            <a href="#" id="back_to_top"><i class="fa fa-arrow-up" id="back_to_top_icon" aria-hidden="true"></i></a> 
+        </div>
+    </div>
+    <script src="script/Change_language_Home_Page.js"></script>
+    <script src="script/Slideshow_DropMenu.js"></script>
+</body>
+</html>
