@@ -361,8 +361,8 @@ body{
         width: 40vw !important;
     }
 }
-/*---------------------------------------------screen <583px---------------------------------------*/
-@media only screen and (max-width: 583px) {
+/*---------------------------------------------login_register---------------------------------------*/
+@media only screen and (max-width: 1020px) {
     #login_register{
             width: 0px;
             height: same-as-width;

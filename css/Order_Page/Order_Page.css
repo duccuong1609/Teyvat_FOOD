@@ -7,10 +7,11 @@
     background-image: url(../../rsc/image/Background.webp);
     background-size: 100vw auto;
     background-repeat: repeat;
-    aspect-ratio: 1/3.7;
+    aspect-ratio: 1/3.63;
     padding-top: 3%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
     font-family: noto;
 }
 @font-face {
@@ -21,6 +22,25 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+}
+#Salty_Food_Container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.Salty_Food_Container_2item{
+    display: flex;
+    width: 49.55%;
+    justify-content: space-between;
+}
+.Salty_Food{
+    width: 100%;
+}
+.sweety_food{
+    width: 100%;
+}
+.drink{
+    width: 100%;
 }
 /* ------------------------------------------------------contact---------------------------------------- */
 #contact{
@@ -37,18 +57,71 @@
     border-radius: 50%;
     z-index: 10;
 }
-/*--------------------------------content-----------------------------------------*/
+/*--------------------------------------------------------content-----------------------------------------*/
 .Food_Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 4vw;
-    margin-bottom: 3vw;    
+    margin-bottom: 3.2%; 
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to left,rgb(248, 38, 41),rgb(248, 38, 41),rgb(255, 101, 104),rgb(30, 188, 255),rgb(5, 73, 104),rgb(30, 188, 255),rgb(255, 101, 104),rgb(248, 38, 41),rgb(248, 38, 41));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    color: transparent;
+    transition: 1s;
 }
-/*-----------------------------------------------hot_food_swiper--------------------------------------*/
+.Salty_Food_Title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    margin-top: 2.3%;
+    margin-bottom: 3.2%; 
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to left,rgb(248, 38, 41),rgb(248, 38, 41),rgb(255, 101, 104),rgb(30, 188, 255),rgb(5, 73, 104),rgb(30, 188, 255),rgb(255, 101, 104),rgb(248, 38, 41),rgb(248, 38, 41));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    color: transparent;
+    transition: 1s;
+}
+.Food_Title > a >i{
+    background-image: linear-gradient(to left top,rgb(255, 101, 104),rgb(255, 101, 104),rgb(30, 188, 255),rgb(30, 188, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    color: transparent; 
+}
+.Food_Title > a{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.Salty_Food_Title > a >i{
+    background-image: linear-gradient(to left top,rgb(255, 101, 104),rgb(255, 101, 104),rgb(30, 188, 255),rgb(30, 188, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    color: transparent; 
+}
+.Salty_Food_Title > a{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+/*------------------------------hot_food_swiper-------------------------*/
 .swiper-container {
 width: 100%;
-height: 100%;
+height: max-content;
 }
 .swiper-slide {
-/* Center slide text vertically */
+
 display: -webkit-box;
 display: -ms-flexbox;
 display: -webkit-flex;
@@ -64,20 +137,53 @@ align-items: center;
 }
 .swiper-wrapper{
     width: 100%;
+    height: max-content;
 }
 #slideshow_wrapper{
     width: 100%;
-    height: fit-content;
+    height: max-content;
     position: relative;
     display: flex;
     overflow: hidden;
-    margin-bottom: 10vw;
+    margin-bottom: 2.5vw;
 }
+/*-------------------swiper button + pagination----------------------------  */
 .swiper-button-next::after{
     display: none;
 }
 .swiper-button-prev::after{
     display: none;
+}
+.swiper-pagination{
+    position: relative !important;
+    margin-top: 0.2vw;
+}
+.swiper-button-prev{
+    left: var(--swiper-navigation-sides-offset,0.02vw);
+    height: fit-content;
+}
+.swiper-button-next{
+    right: var(--swiper-navigation-sides-offset,0.02vw);
+    height: fit-content;
+}
+.swiper-button-prev:hover{
+    opacity: 1 !important;
+}
+.swiper-button-next:hover{
+    opacity: 1 !important;
+}
+/*-------------------------option slider dots----------------------------  */
+.swiper-pagination-bullet{
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,1vw));
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,1vw));
+    background: var(--swiper-pagination-bullet-inactive-color,linear-gradient(to top,rgb(70, 218, 238),rgb(4, 94, 94)));
+    transition: 1s;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,0.5vw);
+}
+:root {
+    --swiper-theme-color: #000000;
 }
 /* -----------------------------------Food_instance-------------------------------------*/
 .Food_Item{
@@ -92,10 +198,38 @@ align-items: center;
     border-radius: 1vw;
     overflow: hidden;
 }
+.Salty_Food_Item{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 48.5%;
+    position: relative;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    border: 0.2vw solid black;
+    border-radius: 1vw;
+    overflow: hidden;
+}
 .Food_Item:hover{
     border: 0.2vw solid red;
 }
+.Salty_Food_Item:hover{
+    border: 0.2vw solid red;
+    -webkit-animation-name:fa-bounce-my;
+    animation-name:fa-bounce-my;
+    -webkit-animation-delay:var(--fa-animation-delay,0s);
+    animation-delay:var(--fa-animation-delay,0s);
+    -webkit-animation-direction:var(--fa-animation-direction,normal);
+    animation-direction:var(--fa-animation-direction,normal);
+    -webkit-animation-duration:var(--fa-animation-duration,1s);
+    animation-duration:var(--fa-animation-duration,1s);
+    -webkit-animation-iteration-count:var(--fa-animation-iteration-count,1);
+    animation-iteration-count:var(--fa-animation-iteration-count,1);
+}
 .Food_Item:hover > .Food_Item_Buynow{
+    display: flex;
+}
+.Salty_Food_Item:hover > .Food_Item_Buynow{
     display: flex;
 }
 .Food_Item_Buynow{
@@ -153,7 +287,7 @@ align-items: center;
 .Food_Item_des{
     margin-left: 1.8vw;
     margin-right: 1.5vw;
-    height: 1.7vw;
+    height: 3vw;
     text-align: left;
     justify-content: flex-start;
     margin-bottom: 0.8vw;
@@ -162,8 +296,8 @@ align-items: center;
     font-size: 0.8vw;
     padding: 0.1vw;
     padding-bottom: 0.3vw;
-    padding-left: 0.6vw;
-    padding-right: 0.6vw;
+    padding-left: 0.9vw;
+    padding-right: 0.9vw;
     border: 1px solid black;
     box-shadow: 0.1vw 0.1vw gray;
     border-radius: 5px;
@@ -204,13 +338,14 @@ align-items: center;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     margin-bottom: 0.8vw;
+    align-items: center;
 }
 .Food_Item_rating{
     display: flex;
     align-items: center;
 }
 .price{
-    font-size: 1.3vw;
+    font-size: 1.8vw;
     color: black;
 }
 .rating{
@@ -222,7 +357,17 @@ align-items: center;
     font-size: 0.9vw;
     color: gray;
 }
+/*------------------------------keyframes----------------------------*/
+@keyframes fa-bounce-my{
+    0%{-webkit-transform:scale(0.98) translateY(0);
+        transform:scale(0.98) translateY(0)}
+    50%{-webkit-transform:scale(var(--fa-bounce-start-scale-x,0.95),var(--fa-bounce-start-scale-y,.95)) translateY(0);
+        transform:scale(var(--fa-bounce-start-scale-x,0.95),var(--fa-bounce-start-scale-y,.95)) translateY(0)}
+}
 @keyframes glow{
+    0%{
+        color: rgb(133, 242, 242);
+    }
     20%{
         color: rgb(253, 255, 132);
     }
@@ -239,4 +384,276 @@ align-items: center;
         color: rgb(253, 255, 132);
     }
 }
-/*--------------------------------------------------------------------------------------------*/
+@keyframes right_to_right {
+    from{
+        transform: translateX(13%);
+    }
+    to{
+        transform: translateX(20%);
+    }
+}
+@-webkit-keyframes right_to_right {
+    from{
+        transform: translateX(13%);
+    }
+    to{
+        transform: translateX(20%);
+    }
+}
+@-moz-keyframes right_to_right {
+    from{
+        transform: translateX(13%);
+    }
+    to{
+        transform: translateX(20%);
+    }
+}
+@-o-keyframes right_to_right {
+    from{
+        transform: translateX(13%);
+    }
+    to{
+        transform: translateX(20%);
+    }
+}
+
+@keyframes left_to_left {
+    from{
+        transform: translateX(18%);
+    }
+    to{
+        transform: translateX(11%);
+    }
+}
+@-webkit-keyframes left_to_left {
+    from{
+        transform: translateX(18%);
+    }
+    to{
+        transform: translateX(11%);
+    }
+}
+@-moz-keyframes left_to_left {
+    from{
+        transform: translateX(18%);
+    }
+    to{
+        transform: translateX(11%);
+    }
+}
+@-o-keyframes left_to_left {
+    from{
+        transform: translateX(18%);
+    }
+    to{
+        transform: translateX(11%);
+    }
+}
+/*---------------------------------------responsive---------------------------------------------*/
+/*-------------------------slider 3 item----------------------------------- */
+@media only screen and (min-width:851px) and (max-width: 1140px){
+    .Food_Item{
+        flex: 0 0 31%;
+        margin-left: 1vw;
+        margin-right: 0.9vw;
+    }
+    .Food_Title{
+        font-size: 5vw;
+    }
+    .Salty_Food_Title{
+        font-size: 5vw;
+    }
+    .fa-circle-check{
+        font-size: 4vw;
+    }
+    .swiper-button-prev{
+        left: var(--swiper-navigation-sides-offset,1vw) !important;
+        height: fit-content;
+    }
+    .swiper-button-next{
+        right: var(--swiper-navigation-sides-offset,0.9vw) !important;
+        height: fit-content;
+    }
+    .swiper-button-next>img,.swiper-button-prev >img{
+        width: 4.2vw !important;
+        height: 4.2vw !important;
+    }
+    .character_icon > img{
+        width: 4vw;
+        height: 4vw;
+    }
+    .character_icon >.fa-heart{
+        top: 4.8vw;
+        font-size: 2.5vw;
+    }
+    .Salty_Food_Item >.character_icon > img{
+        width: 5vw;
+        height: 5vw;
+    }
+    .Salty_Food_Item > .character_icon >.fa-heart{
+        top: 6vw;
+        font-size: 3.5vw;
+        left: 0.8vw;
+    }
+    .Food_Item_Name{
+        font-size: 2vw;
+    }
+    .Food_Item_type > div{
+        font-size: 1.3vw !important;
+    }
+    .Food_Item_des > div{
+        font-size: 1.3vw !important;
+    }
+    .Food_Item_des{
+        height: 6vw !important;
+        margin-top: 1.5vw;
+    }
+    .Food_Item_rating > .rating{
+        font-size: 2vw !important;
+    }
+    .fa-star{
+        font-size: 2vw !important;
+    }
+    .Food_Item_rating > .rating > font{
+        font-size: 1.5vw !important;
+    }
+    .price{
+        font-size: 2.5vw;
+    }
+}
+/*------------------------------slider 2 item-------------------------------  */
+@media only screen and (max-width:851px){
+    .Food_Title{
+        font-size: 6vw;
+    }
+    .Salty_Food_Title{
+        font-size: 6vw;
+    }
+    .Food_Item{
+        flex: 1 0 48%;
+        margin-right: 1.66%;
+    }
+    .fa-circle-check{
+        font-size: 5vw;
+    }
+    #Food_Container{
+        justify-content: space-between;
+    }
+    .swiper-button-prev{
+        left: var(--swiper-navigation-sides-offset,0.5vw) !important;
+        height: fit-content;
+    }
+    .swiper-button-next{
+        right: var(--swiper-navigation-sides-offset,1.8vw) !important;
+        height: fit-content;
+    }
+    .swiper-button-next>img,.swiper-button-prev >img{
+        width: 5vw !important;
+        height: 5vw !important;
+    }
+    .character_icon > img{
+        width: 6vw;
+        height: 6vw;
+    }
+    .character_icon >.fa-heart{
+        top: 7vw;
+        left: 1vw !important;
+        font-size: 4vw;
+    }
+    .Food_Item_Name{
+        font-size: 3vw !important;
+    }
+    .Food_Item_type > div{
+        font-size: 2vw !important;
+    }
+    .Food_Item_des > div{
+        font-size: 2vw !important;
+        height: 100%;
+        text-overflow: ellipsis;
+    }
+    .Food_Item_des{
+        height: 7vw !important;
+        margin-top: 1.5vw;
+        
+    }
+    .Food_Item_rating > .rating{
+        font-size: 3vw !important;
+    }
+    .fa-star{
+        font-size: 3vw !important;
+    }
+    .Food_Item_rating > .rating > font{
+        font-size: 2vw !important;
+    }
+    .price{
+        font-size: 3.5vw;
+    }
+}
+@media only screen and (max-width:800px) {
+    .Food_Item{
+        flex: 1 0 48%;
+        margin-right: 1.87%;
+    }
+}
+@media only screen and (max-width:870px){
+    .swiper-pagination-bullet{
+        width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,1.5vw));
+        height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,1.5vw));}
+}
+@media only screen and (max-width:520px) {
+    .Food_Item{
+        flex: 1 0 48%;
+        margin-right: 1.8%;
+    }
+}
+@media only screen and (max-width:300px) {
+    .Food_Item{
+        flex: 1 0 48%;
+        margin-right: 1.6%;
+    }
+}
+/*------------------------------Salty FOOD mobile-------------------------*/
+@media only screen and (max-width:1140px) {
+    #Salty_Food_Container{
+        display: block;
+        width: 98%;
+        margin-left: 1%;
+        justify-self: center;
+    }
+    .Salty_Food{
+        margin-bottom: 2vw;
+    }
+    .sweety_food{
+        margin-bottom: 2vw;
+    }
+    .Salty_Food_Container_2item{
+        width: 100%;
+        margin-top: 1.7%;
+    }
+    .Salty_Food_Item{
+        width: 48.5%;
+    }
+    .Salty_Food_Item{
+        border: 0.3vw solid black;
+    }
+    .Salty_Food_Item:hover{
+        border: 0.3vw solid red;
+    }
+    #Order_Content{
+        background-size: 100vw max-content;
+        padding-bottom: 10%;
+    }
+}
+@media only screen and (max-width:1140px) and (min-width:851px){
+    #Salty_Food_Container{
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+        justify-self: center;
+    }
+}
+@media only screen and (min-width:1141px) {
+    #Salty_Food_Container{
+        margin-bottom: 0.9vw;
+    }
+}
