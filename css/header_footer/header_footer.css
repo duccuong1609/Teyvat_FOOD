@@ -249,7 +249,7 @@ body{
         background-color: red;
     }
 /*--------------------------------------responsive-header-------------------------------------------*/
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1100px) {
     #mid_header{
         width: 0px;
         height: 0px;
@@ -276,7 +276,7 @@ body{
     }
 }
 /*-----------------------------------------------screen >= 1021px----------------------------------------*/
-@media only screen and (min-width: 1021px) {
+@media only screen and (min-width: 1101px) {
     #three_line_menu{
         display: none;
         overflow: hidden;
