@@ -7,7 +7,7 @@
     background-image: url(../../rsc/image/Background.webp);
     background-size: 100vw auto;
     background-repeat: repeat;
-    aspect-ratio: 1/3.63;
+    height: max-content;
     padding-top: 3%;
     padding-left: 2%;
     padding-right: 2%;

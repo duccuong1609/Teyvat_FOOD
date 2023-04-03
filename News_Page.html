@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeyvatFood-News</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header_footer/header_footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/News_Page/News_Page.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-------------------------------------------------header--------------------------------------------------->
+    <div id="header">
+        <div id="left_header">
+            <div id="logo">
+                <a href="index_VN.html"><img src="rsc/image/logo.gif" alt="" id="logo_img"></a>
+            </div>
+            <div id="Page_name">
+                <div id="Page_name_1">Teyvat</div>
+                <div id="Page_name_2">FOOD</div>
+            </div>
+        </div>
+        <div id="mid_header">
+            <div class="mid_header_item"><a href="index_VN.html" id="home_page">TRANG CHỦ</a></div>
+            <div class="mid_header_item"><a href="Repices_Page.html" id="repices_page">CÔNG THỨC</a></div>
+            <div class="mid_header_item"><a href="Orders_Page.html" id="order_page">ĐẶT HÀNG</a></div>
+            <div class="mid_header_item_choose"><a href="News_Page.html" id="news_page">TIN TỨC</a></div>
+            <div class="mid_header_item"><a href="#" id="faqs_page">FAQS</a></div>
+        </div>
+        <div id="right_header">
+            <div id="login_register">
+                <div id="register"><a href="#" id="register_text">Đăng Ký</a></div>
+                <div id="login"><a href="#" id="login_text">Đăng Nhập</a></div>
+            </div>
+            <i class="fa fa-shopping-cart" aria-hidden="true" style="color: white;font-size: 35px;"></i>
+            <div id="language">
+                <div id="english" class="unchoose_language" onclick="change_language_english()">EN</div>
+                <div id="/" class="choose_language"> / </div>
+                <div id="vietnamese" class="choose_language" onclick="change_language_vietnamese()">VN</div>
+            </div>
+            <div id="three_line_menu" onclick="dropdown_menu()">
+                <i id="icon_menu" class="fa fa-bars" aria-hidden="true" style="color: white;font-size: 32px;"></i>
+                <div id="dropdown-content">
+                    <div id="login_register_mobile">
+                        <div id="register"><a href="#" id="register_text_mobile">Đăng Ký</a></div>
+                        <div id="login"><a href="#" id="login_text_mobile">Đăng Nhập</a></div>
+                    </div>
+                    <div class="mid_header_item"><a href="index_VN.html" id="home_page_mobile">TRANG CHỦ</a></div>
+                    <div class="mid_header_item"><a href="Repices_Page.html" id="repices_page_mobile">CÔNG THỨC</a></div>
+                    <div class="mid_header_item"><a href="Orders_Page.html" id="order_page_mobile">ĐẶT HÀNG</a></div>
+                    <div class="mid_header_item_choose"><a href="News_Page.html" id="news_page_mobile">TIN TỨC</a></div>
+                    <div class="mid_header_item"><a href="#" id="faqs_page_mobile">FAQS</a></div>
+                    <div id="language_mobile">
+                        <div id="english_mobile" class="unchoose_language" onclick="change_language_english()">EN</div>
+                        <div id="vietnamese_mobile" class="choose_language" onclick="change_language_vietnamese()">VN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------Content-------------------------------------------------------->
+    <div id="Content">
+        <div id="New_Title">
+           <div>TIN TỨC</div>  
+           <i class="fa-regular fa-newspaper"></i>
+        </div>
+        <div class="News_Container">
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/zalo.png" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">TEYVAT FOOD Đã có mặt trên ZALO</a>
+                        </div>
+                        <div class="day">
+                            14/3/2023
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Nhằm đáp ứng nhu cầu phục vụ khách hàng, TeyvatFood chính thức ra mắt kênh TeyvatFood
+                        Official trên mạng xã hội Zalo, ngoài các trang mạng khác như Facebook, Hotline hay Email.
+                        Khách hàng có thể liên hệ với Teyvatfood thông qua nền tảng mới này.
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/chuongtinhkhachhangthanthiet.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">Chương trình khách hàng thân thiết của TEYVATFOOD</a>
+                        </div>
+                        <div class="day">
+                            2/1/2023
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Bắt đầu từ 01/01/2022, Teyvatfood chính thức áp dụng chính sách Chương trình Khách Hàng 
+                        Thân Thiết (Loyalty Program) cho tất cả khách hàng sử dụng dịch vụ tại TeyvatFood.
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/Nutri.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">TEYVATFOOD Hợp Tác Cùng H&H Nutrition Ra Mắt "Tư Vấn Dinh Dưỡng Chuyên Sâu"</a>
+                        </div>
+                        <div class="day">
+                            24/12/2022
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Cơ thể mỗi người khỏe mạnh là sự cân bằng. Trong quá trình sống và sinh hoạt vô tình hay cố ý
+                        chúng ta đã làm mất sự cân bằng đó, sự mất cân bằng kéo dài sẽ gây ra các rối loạn và dẫn đến
+                        bệnh tật. Cung cấp dinh dưỡng hợp lý và kịp thời sẽ thúc đẩy cơ thể chúng ta lấy lại sự cân bằng
+                        nhanh hơn điều này sẽ giúp hạn chế phải sử dụng các loại thuốc điều trị. Nhưng để lựa chọn các
+                        sản phẩm dinh dưỡng chính thống, khoa học không phải là điều dễ dàng mà phải cần đến những
+                        chuyên gia dinh dưỡng tư vấn và lựa chọn nhãn hiệu uy tín nhất.
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/Star combucha.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">TEYVAT FOOD Hợp tác cùng STAR COMBUCHA</a>
+                        </div>
+                        <div class="day">
+                            14/12/2022
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        TEYVAT FOOD hợp tác với Star Kombucha ra mắt combo "Ăn sạch sống khỏe"
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/5sailam.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">5 Sai Lầm Phổ Biến Khiến Bạn Không Thể Giảm Cân Khi Ăn Chế Độ Eat Clean</a>
+                        </div>
+                        <div class="day">
+                            4/12/2022
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Một số người bắt đầu ăn theo chế độ Eat Clean nói riêng và giảm cân nói chung thường cắt 
+                        giảm hoàn toàn lượng đường, tinh bột. Thay vào đó, họ thay thế những bữa ăn bằng rau xanh. 
+                        Điều này liệu có đúng và thực sự tốt cho cơ thể?
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/cheatday.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">Cheat Day Là Gì Và Có Phù Hợp Với Chế Độ Eat Clean Không?</a>
+                        </div>
+                        <div class="day">
+                            8/11/2022
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Một chế độ ăn kiêng khắc nghiệt có thể gây ảnh hưởng xấu đến tinh thần, khiến bạn cảm thấy
+                        căng thẳng, mệt mỏi và rất thèm ăn. Chính vì thế, đôi lúc, trong chế độ ăn kiêng, bạn cần có
+                        một ngày ăn "gian lận" (cheat day), có thể là cuối tuần. Tuy nhiên, bạn nên biết cách để sử
+                        dụng cheat day để tránh việc làm ảnh hưởng đến chế độ giảm cân của bạn.
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/eat.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">Làm Thế Nào Để Kiểm Soát Cảm Giác Thèm Ăn?</a>
+                        </div>
+                        <div class="day">
+                            8/10/2022
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Để có thể đạt được cân nặng như ý, các nàng phải trải qua vô vàn những thử thách khó khăn. 
+                        Trong đó, cảm giác thèm ăn chính là “đối thủ” nặng ký nhất.
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/clean.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">Eat Clean Có Thực Sự Hiệu Quả Trong Việc Giảm Mỡ?</a>
+                        </div>
+                        <div class="day">
+                            8/10/2022
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Hiện tại, phương pháp eat clean đang được áp dụng đa dạng và bắt đầu xuất hiện nhiều hình
+                        thái tiêu cực, khiến cho phương pháp ăn tốt cho sức khỏe trở nên vô nghĩa, đôi khi là gây hại
+                        cho sức khỏe của chính họ. Vậy vì sao?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="News_Container" style="display: none;">
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/collab.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">TEYVATFOOD "Chạy Cùng Ròm", Chính Thức Hợp Tác Với Anh Tú Wilson</a>
+                        </div>
+                        <div class="day">
+                            14/9/2022
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Trong năm 2022, Teyvatfood hân hạnh đồng hành cùng diễn viên Anh Tú Wilson (vai Phúc trong phim Ròm).
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/summer.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">Mùa Hè Là Thời Điểm Vàng Dành Cho Việc Giảm Cân</a>
+                        </div>
+                        <div class="day">
+                            25/06/2020
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Với những người khó chế ngự cơn thèm ăn hay 'ngại' thể dục thể thao dẫn tới khó giảm cân, mùa hè chính là thời điểm thuận lợi để biến ước mơ sở hữu vóc dáng thon thả sớm trở thành hiện thực.
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/calo.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">Bảng Tính Calo Của Viện Dinh Dưỡng Năm 2020</a>
+                        </div>
+                        <div class="day">
+                            26/05/2020
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Bảng tính calo từ Viện dinh dưỡng Việt Nam là bảng tính chính xác về chỉ số calo của từng loại thực phẩm mà chúng ta thường ăn hằng ngày. Với bảng tính này, bạn có thể cân đối bữa ăn của mình tốt hơn.
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/covid.jfif" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">TEYVATFOOD Đồng Hành Cùng Bác Sĩ Tuyến Đầu Trong Công Tác Chống Dịch Covid-19</a>
+                        </div>
+                        <div class="day">
+                            03/05/2020
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Để tiếp sức cho các bác sĩ tuyến đầu tại bệnh viện Nhiệt Đới TP.HCM, TeyvatFood cùng các nhà hảo tâm đã cung cấp hơn 3,500 suất ăn với mong muốn có thể cùng cộng đồng vượt qua dịch bệnh
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/clean2.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">Tất Tần Tật Những Câu Hỏi Về Chế Độ Ăn Eat Clean</a>
+                        </div>
+                        <div class="day">
+                            12/02/2020
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Những năm gần đây, chế độ ăn eat clean không còn là khái niệm lạ lẫm đối với mọi người, nhất là những người có thói quen sống lành mạnh. Tuy nhiên, không phải ai cũng hiểu rõ về eat clean. Cùng TeyvatFood tìm hiểu từ A đến Z chế độ ăn này nhé!
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/5biquyet.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">5 Bí Quyết Kiểm Soát Cân Nặng Ngày Tết</a>
+                        </div>
+                        <div class="day">
+                            20/01/2020
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Để tránh phải ăn kiêng do tăng cân ngay khi những ngày Tết vừa qua đi, bạn hãy tạo cho mình thói quen ăn uống lành mạnh ngay trong những ngày Tết này.
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/techcombank.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">TEYVATFOOD Đồng Hành Cùng Techcombank HCM City International Marathon 2019</a>
+                        </div>
+                        <div class="day">
+                            13/12/2019
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        TeyvatFood hân hạnh đồng hành cùng Techcombank Ho Chi Minh City International Marathon 2019 được diễn ra tại Empire City, Khu 2B, Thủ Thiêm từ 6/12/2019 đến 8/12/2019.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="News_Container" style="display: none;">
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/gocbep.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">Câu Chuyện Tình Yêu TEYVATFOOD Từ Nơi Góc Bếp Nhỏ Ấm Cúng</a>
+                        </div>
+                        <div class="day">
+                            10/12/2019
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Thói quen tiêu thụ thực phẩm bẩn, không rõ nguồn gốc,...cùng với chế độ ăn uống không cân đối là nguyên nhân hàng đầu tác động xấu đến sức khỏe của chúng ta. Thấu hiểu được những bộn bề, lo toan, trăn trở trong cuộc sống hàng ngày gần như chiếm hết quỹ thời gian của bạn. TeyvatFood với sứ mệnh trở thành người bạn đồng hành bảo vệ sức khỏe của bạn bằng những bữa ăn healthy food mỗi ngày.
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/3dieu.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">3 Điều Lưu Ý Khi Chuẩn Bị Thực Đơn Giảm Cân</a>
+                        </div>
+                        <div class="day">
+                            08/12/2019
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Chuẩn bị thực đơn giảm cân kỹ lưỡng giúp bạn nhận biết được sự khác biệt trong các chế độ ăn và từ đó cải thiện chất lượng thực đơn giảm cân để đạt được mục tiêu của mình.
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/7nguyentac.jpg" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">7 NGUYÊN TẮC KHI LỰA CHỌN THỰC ĐƠN CHO NGƯỜI TẬP GYM</a>
+                        </div>
+                        <div class="day">
+                            28/11/2019
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Đối với người tập gym, chế độ ăn uống là một trong những điều cần được chú trọng nhất. Sau đây sẽ là 7 nguyên tắc khi lựa chọn thực đơn cho người tập gym.
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/ankhoe.gif" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">ĂN SẠCH SỐNG KHỎE VỚI TEYVATFOOD</a>
+                        </div>
+                        <div class="day">
+                            20/10/2019
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Bạn có thắc mắc về quy trình sản xuất của TeyvatFood? Cùng xem quá trình sản xuất các phần ăn giao đến cho bạn mỗi ngày trong căn bếp đạt chuẩn VSATTP đầy chuyên nghiệp của TeyvatFood nào
+                    </div>
+                </div>
+            </div>
+            <div class="News_Item">
+                <div class="News_image">
+                    <a href="#"><img class="image" src="rsc/image/news/dongiangif.gif" alt=""></a>
+                </div>
+                <div id="News_item_Title_des">
+                    <div class="News_item_Title">
+                        <div class="title">
+                            <a href="#">TRẢI NGHIỆM THỰC ĐƠN "EAT CLEAN" ĐA DẠNG VÀ HẤP DẪN TỪ TEYVATFOOD</a>
+                        </div>
+                        <div class="day">
+                            18/10/2019
+                        </div> 
+                    </div>
+                    <div class="News_item_des">
+                        Ngày nay, vấn đề bảo đảm sức khỏe và an toàn vệ sinh thực phẩm được toàn xã hội quan tâm hàng ngày. Chính điều này khiến tâm lý của nhiều người lo sợ về chất lượng và vệ sinh của thực phẩm mà họ đang tiêu thụ. Do đó, thực phẩm organic, các chế độ ăn healthy, eat clean dần trở thành xu hướng mới giúp người dân yên tâm hơn.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="News_Item" id="Page">
+            <div class="Page_num">
+                <div class="Page_num_item arrow">
+                    <a onclick="plusSlides(-1)" href="#">❮</a></div>
+                <div class="Page_num_item number choose">
+                    <a onclick="currentSlide(1)" href="#">1</a>
+                </div>
+                <div class="Page_num_item number">
+                    <a onclick="currentSlide(2)" href="#">2</a>
+                </div>
+                <div class="Page_num_item number">
+                    <a onclick="currentSlide(3)" href="#">3</a>
+                </div>
+                <div class="Page_num_item arrow">
+                   <a onclick="plusSlides(1)" href="#">❯</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("News_Container");
+          let dots = document.getElementsByClassName("number");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" choose", "");
+          }
+          slides[slideIndex-1].style.display = "flex";  
+          dots[slideIndex-1].className += " choose";
+        }
+        </script>
+    <!------------------------------------------------------------footer--------------------------------------------------------->
+    <div id="footer">
+            <div id="Left_footer">
+                <div id="Page_name">
+                    <div id="Page_name_1">Teyvat</div>
+                    <div id="Page_name_2">FOOD</div>
+                </div>
+                <div id="footer_des_1" class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">CÔNG TY TNHH TEYVATFOOD</font></div>
+                <div id="footer_des_2" class="footer_des"><font style="font-weight: bold;">Địa chỉ</font> 33 Đường X, KDC Bình Hưng A, Ấp 2, Huyện Bình Chánh A, TP.X</div>
+                <div id="footer_des_3" class="footer_des"><font style="font-weight: bold;">Điện thoại</font> (+84) 932 788 120 [hotline]</div>
+                <div id="footer_des_4" class="footer_des"><font style="font-weight: bold;">Email</font> info@TeyvatFood.vn. For business inquiries: business@TeyvatFood.vn</div>
+                <div id="footer_des_5" class="footer_des"><font style="font-weight: bold;">MST</font> 0313272749 do Sở kế hoạch và đầu tư TPHCM cấp ngày dd/mm/yyyy</div>
+                <div id="footer_des_6" class="footer_des" style="margin-top: 2vw;color: gray;">© Copyright 2023 TeyvatFood. All rights reserved.</div>
+            </div>
+            <div id="Right_footer">
+                <div id="Right_footer_1">
+                    <div id="footer_des_7" class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">ĐIỀU KHOẢN CHUNG</font></div>
+                    <div id="footer_des_8" class="footer_des"><a href="#">Chính Sách Quy Định Chung</a></div>
+                    <div id="footer_des_9" class="footer_des"><a href="#">Quy Định Hình Thức Thanh Toán</a></div>
+                    <div id="footer_des_10" class="footer_des"><a href="#">Chính Sách Vận Chuyển Giao Hàng</a></div>
+                    <div id="footer_des_11" class="footer_des"><a href="#">Chính Sách Bảo Mật Thông Tin</a></div>
+                </div>
+                <div id="Right_footer_1">
+                    <div class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">FOLLOW US</font></div>
+                    <div id="linking_icon">
+                        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+
+                    </div>
+                    <div id="linking_icon">
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <img id="paimon" src="rsc/image/Paimon.png" alt="" style="position: absolute;right: 9.5vw;top:-1.5vw;width: 20vw;">
+            <a href="#" id="back_to_top"><i class="fa fa-arrow-up" id="back_to_top_icon" aria-hidden="true"></i></a> 
+        </div>
+    </div>
+    <script src="script/Change_language_Home_Page.js"></script>
+    <script>
+        function dropdown_menu() {
+        menu = document.getElementById("dropdown-content");
+        menu.classList.toggle("show");
+        document.getElementById("icon_menu").classList.toggle("fa-bars");
+        document.getElementById("icon_menu").classList.toggle("fa-times");
+        }
+    </script>
+</body>
+</html>

@@ -347,6 +347,22 @@ transform: translateX(-230%);
     top: -30%;
     border-radius: 0px;
 }
+.name_repices{
+    font-size: 2.5vw;
+}
+.title_banner{
+    font-size: 6vw;
+}
+.description_banner{
+    font-size: 2vw;
+}
+.Page_button{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.Page_button_container{
+    font-size: 1.5vw;
+}
 @keyframes down_and_down3{
 to{
     top: 54.5%;
