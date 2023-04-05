@@ -128,11 +128,15 @@
     margin-left: 0.2%;
     margin-right: 0.2%;
     border-radius: 10%;
+    box-shadow: 2px 2px gray;
 }
 .Page_num_item >a{
     text-decoration: none;
     color: black;
     font-size: 1.2vw;
+}
+#Page:hover{
+    transform: none;
 }
 /*------------------------Responsive--------------------------------*/
 @media only screen and (max-width:950px) and (min-width:651px){
@@ -186,6 +190,7 @@
         font-size: 2vw;
     }
     .Page_num_item{
+        box-shadow: 1.5px 1.5px gray;
         padding-left: 2%;
         padding-right: 2%;
         margin-left: 0.4%;
@@ -235,6 +240,7 @@
         font-size: 3vw;
     }
     .Page_num_item{
+        box-shadow: 1.2px 1.2px gray;
         padding-left: 2%;
         padding-right: 2%;
         margin-left: 0.4%;
@@ -284,6 +290,7 @@
         font-size: 4vw;
     }
     .Page_num_item{
+        box-shadow: 1px 1px gray;
         padding-left: 2%;
         padding-right: 2%;
         margin-left: 0.6%;

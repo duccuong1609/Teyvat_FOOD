@@ -151,7 +151,7 @@
 #arrow4{
     position: absolute;
     width: 6%;
-    left: 48%;
+    left: 47%;
     top: 75.5%;
     animation-name: down_and_down4;
     -webkit-animation-name: down_and_down4;
@@ -178,7 +178,7 @@
     position: absolute;
     width: 6%;
     left: 48%;
-    top: 54%;
+    top: 54.5%;
     animation-name: down_and_down5;
     -webkit-animation-name: down_and_down5;
     -moz-animation-name: down_and_down5;
@@ -222,7 +222,7 @@ to{
 }
 @keyframes down_and_down5{
     to{
-        top: 54.5%;
+        top: 55%;
     }
     }
 @media only screen and (max-width: 1020px){

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEYVAT FOOD-FAQS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./rsc/image/fav_icon.png">
+    <link rel="stylesheet" href="./css/header_footer/header_footer.css">
+    <link rel="stylesheet" href="./css/FAQS_Page/FAQS_Page.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-------------------------------------------------header--------------------------------------------------->
+    <div id="header">
+        <div id="left_header">
+            <div id="logo">
+                <a href="index_VN.html"><img src="rsc/image/logo.gif" alt="" id="logo_img"></a>
+            </div>
+            <div id="Page_name">
+                <div id="Page_name_1">Teyvat</div>
+                <div id="Page_name_2">FOOD</div>
+            </div>
+        </div>
+        <div id="mid_header">
+            <div class="mid_header_item"><a href="index_VN.html" id="home_page">TRANG CHỦ</a></div>
+            <div class="mid_header_item"><a href="Repices_Page.html" id="repices_page">CÔNG THỨC</a></div>
+            <div class="mid_header_item"><a href="Orders_Page.html" id="order_page">ĐẶT HÀNG</a></div>
+            <div class="mid_header_item"><a href="News_Page.html" id="news_page">TIN TỨC</a></div>
+            <div class="mid_header_item_choose"><a href="FAQS_Page.html" id="faqs_page">FAQS</a></div>
+        </div>
+        <div id="right_header">
+            <div id="login_register">
+                <div id="register"><a href="#" id="register_text">Đăng Ký</a></div>
+                <div id="login"><a href="#" id="login_text">Đăng Nhập</a></div>
+            </div>
+            <i class="fa fa-shopping-cart" aria-hidden="true" style="color: white;font-size: 35px;"></i>
+            <div id="language">
+                <div id="english" class="unchoose_language" onclick="change_language_english()">EN</div>
+                <div id="/" class="choose_language">/</div>
+                <div id="vietnamese" class="choose_language" onclick="change_language_vietnamese()">VN</div>
+            </div>
+            <div id="three_line_menu" onclick="dropdown_menu()">
+                <i id="icon_menu" class="fa fa-bars" aria-hidden="true" style="color: white;font-size: 32px;"></i>
+                <div id="dropdown-content">
+                    <div id="login_register_mobile">
+                        <div id="register"><a href="#" id="register_text_mobile">Đăng Ký</a></div>
+                        <div id="login"><a href="#" id="login_text_mobile">Đăng Nhập</a></div>
+                    </div>
+                    <div class="mid_header_item"><a href="index_VN.html" id="home_page_mobile">TRANG CHỦ</a></div>
+                    <div class="mid_header_item"><a href="Repices_Page.html" id="repices_page_mobile">CÔNG THỨC</a></div>
+                    <div class="mid_header_item"><a href="Orders_Page.html" id="order_page_mobile">ĐẶT HÀNG</a></div>
+                    <div class="mid_header_item"><a href="News_Page.html" id="news_page_mobile">TIN TỨC</a></div>
+                    <div class="mid_header_item_choose"><a href="FAQS_Page.html" id="faqs_page_mobile">FAQS</a></div>
+                    <div id="language_mobile">
+                        <div id="english_mobile" class="unchoose_language" onclick="change_language_english()">EN</div>
+                        <div id="vietnamese_mobile" class="choose_language" onclick="change_language_vietnamese()">VN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------content----------------------------------------------------------->
+    <div id="FAQS_Content">
+        <div id="FAQS_Title">
+            <div>FAQS </div>  
+            <i class="fa-solid fa-file-circle-question"></i>
+         </div>
+        <div id="FAQS_des">Bạn muốn trải nghiệm <font color="black">TEYVAT </font><font color="green">FOOD</font> nhưng không biết bắt đầu từ đâu? Hãy tham khảo những câu hỏi thường gặp bên dưới nhé !</div>
+         <details class="FAQ_details" open>
+            <summary>
+            <div class="Title">Mô Hình Của TEYVAT FOOD Là Gì ?</div>
+            <div class="append"></div>
+            </summary>
+            &nbsp;TEYVAT FOOD chuyên cung cấp các bữa ăn sạch hàng tuần được chuẩn bị sẵn theo phong cách Á Âu, giúp bạn theo đuổi một phong cách sống khỏe và cân bằng dinh dưỡng.<br><br>
+            &nbsp;Tùy theo nhu cầu của bạn là giảm cân hay tăng cơ, bạn có thể chọn gói sản phẩm phù hợp tại trang Đặt Hàng. TEYVAT FOOD sẽ đảm nhận việc nấu nướng và giao hàng mỗi ngày (thứ 2 đến thứ 6) cho bạn từ 2 đến 3 phần ăn. Các bữa ăn đều được tính toán calories cẩn thận và sử dụng các nguyên liệu tươi ngon tốt cho sức khỏe.<br><br>
+            &nbsp;Với Menu hơn 100 món của mình, TEYVAT FOOD luôn đảm bảo các phần ăn luôn giàu đạm, nhiều rau củ và ít tinh bột. Đồng thời TEYVAT FOOD cam kết nói KHÔNG với việc sử dụng Bột Ngọt. Tất cả các bữa ăn đều được làm lạnh nhằm đảm bảo an toàn thực phẩm trong quá trình vận chuyển. Bạn vui lòng bảo quản trong tủ lạnh và hâm nóng bằng lò vi sóng trước khi ăn.
+         </details>
+         <details class="FAQ_details">
+            <summary>
+            <div class="Title">Cách Đặt Hàng Như Thế Nào ?</div>
+            <div class="append"></div>
+            </summary>
+            &nbsp;Bạn chọn gói ăn bạn mong muốn tại TEYVAT FOOD.vn/order, đừng quên thêm vào giỏ hàng các sản phẩm dùng kèm nha. Sau khi cho hết các sản phẩm vào giỏ hàng, bạn chỉ cần điền đầy đủ thông tin giao hàng trên website, chọn thời gian giao hàng và hình thức thanh toán COD hoặc chuyển khoản.<br><br>
+            &nbsp;Sau khi hoàn tất, một email xác nhận sẽ được tự động gửi vào email bạn đăng ký. Bạn vui lòng kiểm tra thư mục SPAM nếu bạn không nhận được email, Bạn lưu ý là TEYVAT FOOD không gọi điện xác nhận nha. <br><br>
+            &nbsp;Đặc biệt từ nay bạn đã có thể tự chọn món yêu thích của mình trong gói ăn. Chỉ cần nhấn vào nút Chỉnh Sửa sau khi thêm gói ăn vào giỏ hàng và làm theo hướng dẫn để tự chọn món.<br><br>
+            &nbsp;Nếu gặp bất cứ khó khăn nào trong quá trình đặt hàng, hãy gọi ngay số Hotline của TEYVAT FOOD. 0932 788 120 - 0938 074 120. hoặc inbox Fanpage : m.me/TEYVAT FOODvietnam
+         </details>
+         <details class="FAQ_details">
+            <summary>
+            <div class="Title">Các Lưu Ý Khi Sử Dụng TEYVAT FOOD</div>
+            <div class="append"></div>
+            </summary>
+            &nbsp;Các phần ăn (từ 2 - 3 bữa/ngày) sẽ được giao đến cho bạn vào buổi sáng các ngày trong tuần (từ 8h - 12h tùy khu vực) hoặc vào buổi tối hôm trước đối với các yêu cầu giao sớm (yêu cầu giao trước 8h sáng sẽ được giao từ 8pm - 10pm tối hôm trước)<br><br>
+            &nbsp;Để đạt chuẩn VSATTP, các phần ăn của TEYVAT FOOD đều được cấp đông siêu tốc bằng công nghệ Blast Chiller và đóng gói ngay sau khi chế biến nhằm đảm bảo chất lượng và dinh dưỡng trong thực phẩm ở mức cao nhất, đồng thời tránh ôi thiu trong quá trình vận chuyển.<br><br>
+            &nbsp;Ngay sau khi nhận phần ăn, bạn vui lòng để ngay vào ngăn mát tủ lạnh và hâm lại bằng lò vi sóng trong 02 phút trước khi dùng để đảm bảo chất lượng thức ăn tốt nhất.<br><br>
+            &nbsp;Hộp nhựa đen của TEYVAT FOOD là nhựa PP, hàng xuất khẩu Singapore nên an toàn sử dụng trong lò vi sóng ạ. Tuy nhiên, đối với hủ sốt màu trắng, bạn vui lòng bỏ nắp ra vì nắp nhựa trong không dùng được trong lò vi sóng.<br><br>
+            &nbsp;Đối với các món Salad, bạn có thể lấy khay giấy ra hâm riêng. Sau khi hâm có thể dùng chung với salad lạnh giòn sẽ giúp tăng thêm trải nghiệm của bạn<br><br>
+            &nbsp;Đối với các khách không có tủ lạnh hoặc không hâm nóng bằng Lò Vi Sóng / hấp cách thủy, TEYVAT FOOD không đảm bảo được chất lượng thức ăn tốt nhất.
+         </details>
+         <details class="FAQ_details">
+            <summary>
+            <div class="Title">Phần Ăn TEYVAT FOOD Có Gì Đặc Biệt ?</div>
+            <div class="append"></div>
+            </summary>
+            &nbsp;Tỷ lệ tinh bột phức (complex carb), chất béo (fat) và đạm (protein) trong các phần ăn của TEYVAT FOOD được thiết kế để đảm bảo chế độ cân bằng dinh dưỡng tốt nhất. Hầu hết các phần ăn trưa của TEYVAT FOOD được bổ sung tinh bột phức (complex carb) để đảm bảo hoạt động não bộ và duy trì năng suất công việc trong thời gian dài.<br><br>
+            &nbsp;Các phần ăn được hạn chế để không có hoặc ít xương, hay phải sử dụng đến tay để ăn, tạo điều kiện thuận tiện và vệ sinh nhất cho khách hàng.<br><br>
+            &nbsp;Ngay sau khi nhận phần ăn, bạn vui lòng để ngay vào ngăn mát tủ lạnh và hâm lại bằng lò vi sóng trong 02 phút trước khi dùng để đảm bảo chất lượng thức ăn tốt nhất.<br><br>
+            &nbsp;Thực đơn TEYVAT FOOD không bao gồm các loại canh do việc nêm gia vị trong canh sẽ giảm hiệu quả trong quá trình giảm cân và theo đuổi 1 lối sống khỏe. Khách hàng nên bổ sung thật nhiều nước lọc (ít nhất 2 lít mỗi ngày) để thanh lọc cơ thể<br><br>
+            &nbsp;Một số phần ăn sẽ đi kèm với hủ sốt, tùy theo nhu cầu của từng khách có thể tự nêm nếm cho hợp khẩu vị.
+         </details>
+         <details class="FAQ_details">
+            <summary>
+            <div class="Title">Muốn Đặt GÓI THÁNG Thì Như Thế Nào ?</div>
+            <div class="append"></div>
+            </summary>
+            &nbsp;- Ưu đãi giá tháng chỉ áp dụng cho khách cam kết ăn liên tục trong 01 tháng (4 tuần). Nếu khách hủy gói giữa chừng, TEYVAT FOOD sẽ tính các phần ăn đã sử dụng theo giá bình thường và hoàn tiền lại cho khách phần giá trị chưa dùng. <br><br>
+            &nbsp;- Quý khách có thể bảo lưu gói ăn trong thời gian tối đa là 02 tuần. TEYVAT FOOD sẽ không nhận bảo lưu trong thời gian lâu hơn. Nếu khách ngưng thời gian dài hơn thì TEYVAT FOOD sẽ tính các phần ăn đã sử dụng theo giá bình thường và hoàn tiền lại cho khách phần giá trị chưa dùng.<br><br>
+            &nbsp;- TEYVAT FOOD sẽ hỗ trợ quý khách nghỉ ngày ăn trong trường hợp bận đột xuất. Tuy nhiên tổng số ngày ngưng trong 1 tháng KHÔNG QUÁ 03 ngày.
+         </details>
+         <details class="FAQ_details">
+            <summary>
+            <div class="Title">Thức Ăn TEYVAT FOOD Nhạt Quá Phải Làm Sao?</div>
+            <div class="append"></div>
+            </summary>
+            &nbsp;Do TEYVAT FOOD hạn chế sử dụng đường và các loại gia vị trong chế biến, nên khẩu vị có thể hơi nhạt đối với đa số khách hàng. Tuy nhiên, bạn có thể nêm nếm bằng cách tinh chỉnh định lượng của hủ sốt để phù hợp với khẩu vị của bạn<br><br>
+            &nbsp;Chất ngọt của TEYVAT FOOD đa phần đến từ rau củ hoặc đường nâu có trong các hủ sốt dùng kèm. TEYVAT FOOD cũng luôn khuyến khích khách không nên ăn quá mặn hoặc ngọt ảnh hưởng đến khả năng tích nước hoặc viêm nhiễm của cơ thể. <br><br>
+            &nbsp;Khi thay đổi gia vị một cách đột ngột thì bạn có thể cảm thấy thức ăn nhạt rất khó ăn. Rất nhiều khách hàng của TEYVAT FOOD đều có trải nghiệm tương tự. Tuy nhiên, sau khi dùng khoảng 3 -  5 ngày, cơ thể bạn sẽ làm quen và có thể cảm thấy được sự thay đổi như cơ thể khỏe khoắn nhẹ nhàng hơn, da mặt ít nhờn và đỡ mụn hơn
+         </details>
+         <details class="FAQ_details">
+            <summary>
+            <div class="Title">Ăn Bao Lâu Và Ăn Gói Nào Để Giảm Cân ?</div>
+            <div class="append"></div>
+            </summary>
+            &nbsp;Tùy theo thể trạng và cơ địa của từng người (nhiều hoặc ít mỡ thừa) mà bạn sẽ cảm nhận được hiệu quả giảm cân và giảm mỡ bụng.<br><br>
+            &nbsp;Hiệu quả bước đầu sẽ nhận thấy rõ nhất ở vòng eo trong 1- 2 tuần đầu. Giảm từ 1-2cm vòng bụng. Bắt đầu từ tuần thứ 3, bạn sẽ cảm thấy ngán và ko muốn ăn, đây là thời điểm giảm cân phát huy hiệu quả nhất. Nếu bạn tuân thủ nghiêm ngặt và theo đuổi chế độ ăn của TEYVAT FOOD trong những tuần kế tiếp, hiệu quả giảm cân có thể lên đến 3kg - 5kg trong 1 tháng. Việc giảm mỡ sẽ đạt hiệu quả tối đa khi kết hợp với việc tập luyện thể dục và gym.<br><br>
+            &nbsp;Trong quá trình sử dụng các gói ăn của TEYVAT FOOD, vì lượng calories nạp vào giảm so với chế độ ăn bình thường nên các khách nên uống nhiều nước lọc hoặc bổ sung các bữa xế bằng trái cây ít ngọt giàu vitamin (bưởi, chuối, táo, kiwi, dâu, bơ) hoặc khô gà, hạnh nhân (ăn tối đa 10 hạt/ngày). TEYVAT FOOD có bán các sản phẩm dùng kèm ăn vặt lành mạnh. Bạn có thể liên hệ trực tiếp Fanpage hoặc website để tham khảo.<br><br>
+            &nbsp;Quan trọng là bạn phải theo đuổi nghiêm túc để đạt được hiệu quả cao nhất, tránh trà sữa hoặc các thực phẩm quá nhiều tinh bột (cơm trắng, bún phở). TEYVAT FOOD khuyến khích khách hàng khi đã đạt được cân nặng mong muốn có thể quay lại chế độ ăn bình thường. Chỉ cần hạn chế lượng đường và tinh bột trong các khẩu phần ăn.
+         </details>
+         <details class="FAQ_details">
+            <summary>
+            <div class="Title">TEYVAT FOOD Thải Ra Nhựa Nhiều Quá ?</div>
+            <div class="append"></div>
+            </summary>
+            &nbsp;Nhận biết được việc sử dụng nhựa trong các sản phẩm của mình gây tác động tiêu cực đến môi trường, TEYVAT FOOD có một số chính sách nhằm giúp giảm bớt lượng rác thải của chính sản phẩm mình gây ra:<br><br>
+            &nbsp;1/ Hộp nhựa đen được sử dụng trong tất cả các phần ăn của TEYVAT FOOD. Vì vậy, TEYVAT FOOD có chính sách Rửa Sạch Hộp và gửi lại cho TEYVAT FOOD để nhận được Hoàn Tiền. Cứ mỗi 10 hộp gửi trả lại cho shipper, bạn sẽ nhận lại ngay 10,000 vnd. Bạn vui lòng hoàn trả hộp theo bội số của 10 để nhân viên tiện hoàn tiền lại cho bạn. Các hộp này sẽ được gửi lại cho nhà sản xuất để tái chế. <br><br>
+            &nbsp;2/ Chính sách của TEYVAT FOOD là chỉ cung cấp một bộ Muỗng Nĩa mỗi ngày, TEYVAT FOOD thành thật xin lỗi vì sự bất tiện này, nhưng bạn vui lòng giúp TEYVAT FOOD rửa sạch muỗng nĩa và sử dụng lại. TEYVAT FOOD cám ơn bạn rất nhiều!<br><br>
+            &nbsp;3/ Túi nylon đựng các phần ăn là Túi Tự Hủy thân thiện với môi trường. Túi sẽ tự hủy sau 3 tháng ngoài môi trường tự nhiên nên bên mình hy vọng sẽ có thể giảm thiểu được một phần nào tác hại tiêu cực đến môi trường xung quanh.
+         </details>
+         <details class="FAQ_details">
+            <summary>
+            <div class="Title">TEYVAT FOOD Có Phải Là Lowcarb?</div>
+            <div class="append"></div>
+            </summary>
+            &nbsp;Đây là câu hỏi phổ biến nhất mà TEYVAT FOOD nhận được. TEYVAT FOOD không cung cấp các phần ăn theo chế độ DAS hoặc lowcarb.<br><br>
+            &nbsp;Có đến 90% các khách quan niệm lowcarb là zero carb mà ko biết rằng chế độ ăn giảm cân hiệu quả vẫn cần một lượng carb nhất định. Tức là nếu cắt bỏ hoàn toàn các thực phẩm có chứa tinh bột hoặc đường, thay vào đó lại nạp vào các chất béo và đạm với hàm lượng cao, lâu dài sẽ gây mất cân bằng nội tiết tố và có thể dẫn đến nhiều tác hại cho sức khỏe do lượng Cholesterol và Acid uric trong máu tăng.<br><br>
+            &nbsp;Các khẩu phần ăn của TEYVAT FOOD được dung hòa giữa ẩm thực Đông Tây, áp dụng dựa trên nguyên tắc Healthy Eating Plate của Đại học Harvard, sử dụng các nguyên liệu tốt giúp cân bằng dinh dưỡng và duy trì một lối sống khỏe.<br><br>
+            &nbsp;- Các loại ngũ cốc nguyên hạt (calories thấp, no lâu, nhiều vitamin như bánh mì nguyên hạt, cơm gạo lức, bún mì gạo lức, mì rau củ, pasta)<br><br>
+            &nbsp;- Nhiều rau củ và salad mà ko sử dụng transfat (dầu ăn, bơ magarine).<br><br>
+            &nbsp;Phong cách nấu nướng của TEYVAT FOOD thường sẽ là nướng, hấp hoặc hầm và hạn chế chiên dầu mỡ để đảm bảo hàm lượng dinh dưỡng được giữ lại cao trong khi hạn chế được lượng transfat đến mức thấp nhất.<br><br>
+            &nbsp;Hạn chế sử dụng đường cát trắng trong quá trình chế biến. TEYVAT FOOD sẽ sử dụng đường nâu hoặc mật ong nguyên chất trong các phần sốt chấm hoặc sốt ướp thịt
+         </details>
+         <details class="FAQ_details">
+            <summary>
+            <div class="Title">Tại Sao Lại Giao Phần Ăn Cấp Đông ?</div>
+            <div class="append"></div>
+            </summary>
+            &nbsp;TEYVAT FOOD sử dụng quy trình cấp đông làm lạnh nhanh (Blast Chiller) ngay sau khi nấu chín. Giúp hạ nhiệt độ thực phẩm tại lõi tứ 120 độ C xuống 5 độ C trong vòng 60 phút, giúp hạn chế sự phát triển của vi khuẩn, đồng thời giữ lại được hàm lượng vitamin cao nhất, đảm bảo được chất lượng thức ăn luôn tươi ngon.<br><br>
+            &nbsp;Quy trình tiêu chuẩn này đã được kiểm nghiệm bởi Cục Quản lý Vệ Sinh An Toàn Thực Phẩm và được áp dụng rộng rãi ở các nước phát triển cũng như các suất ăn hàng không hoặc khách sạn 5 sao cao cấp.<br><br>
+            &nbsp;TEYVAT FOOD cam kết không bao giờ sử dụng các phần ăn đông lạnh để giao đến cho khách hàng. Các phần ăn của TEYVAT FOOD luôn được chuẩn bị mới mỗi ngày và được giữ mát trong suốt quá trình vận chuyển. Nếu thực phẩm giao nóng trong thời tiết TPHCM trong thời gian dài rất dễ bị hư hỏng và thúc đẩy các vi khuẩn gây hại phát triển.<br><br>
+            &nbsp;Bạn vui lòng bỏ các phần ăn vào tủ lạnh ngay khi nhận để đảm bảo chất lượng tốt nhất. 
+         </details>
+    </div>
+    <!------------------------------------------------------------footer--------------------------------------------------------->
+    <div id="footer">
+        <div id="Left_footer">
+            <div id="Page_name">
+                <div id="Page_name_1">Teyvat</div>
+                <div id="Page_name_2">FOOD</div>
+            </div>
+            <div id="footer_des_1" class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">CÔNG TY TNHH TEYVAT FOOD</font></div>
+            <div id="footer_des_2" class="footer_des"><font style="font-weight: bold;">Địa chỉ</font> 33 Đường X, KDC Bình Hưng A, Ấp 2, Huyện Bình Chánh A, TP.X</div>
+            <div id="footer_des_3" class="footer_des"><font style="font-weight: bold;">Điện thoại</font> (+84) 932 788 120 [hotline]</div>
+            <div id="footer_des_4" class="footer_des"><font style="font-weight: bold;">Email</font> info@TEYVAT FOOD.vn. For business inquiries: business@TEYVAT FOOD.vn</div>
+            <div id="footer_des_5" class="footer_des"><font style="font-weight: bold;">MST</font> 0313272749 do Sở kế hoạch và đầu tư TPHCM cấp ngày dd/mm/yyyy</div>
+            <div id="footer_des_6" class="footer_des" style="margin-top: 2vw;color: gray;">© Copyright 2023 TEYVAT FOOD. All rights reserved.</div>
+        </div>
+        <div id="Right_footer">
+            <div id="Right_footer_1">
+                <div id="footer_des_7" class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">ĐIỀU KHOẢN CHUNG</font></div>
+                <div id="footer_des_8" class="footer_des"><a href="#">Chính Sách Quy Định Chung</a></div>
+                <div id="footer_des_9" class="footer_des"><a href="#">Quy Định Hình Thức Thanh Toán</a></div>
+                <div id="footer_des_10" class="footer_des"><a href="#">Chính Sách Vận Chuyển Giao Hàng</a></div>
+                <div id="footer_des_11" class="footer_des"><a href="#">Chính Sách Bảo Mật Thông Tin</a></div>
+            </div>
+            <div id="Right_footer_1">
+                <div class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">FOLLOW US</font></div>
+                <div id="linking_icon">
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    
+                </div>
+                <div id="linking_icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <img id="paimon" src="rsc/image/Paimon.png" alt="" style="position: absolute;right: 9.5vw;top:-1.5vw;width: 20vw;">
+        <a href="#" id="back_to_top"><i class="fa fa-arrow-up" id="back_to_top_icon" aria-hidden="true"></i></a> 
+    </div>
+    </div>
+    <script>
+        function dropdown_menu() {
+        menu = document.getElementById("dropdown-content");
+        menu.classList.toggle("show");
+        document.getElementById("icon_menu").classList.toggle("fa-bars");
+        document.getElementById("icon_menu").classList.toggle("fa-times");
+        }
+    </script>
+</body>
+</html>
