@@ -3,14 +3,25 @@
 #content{
     position: relative;
     display: flex;
-    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../rsc/image/Background.webp);
+    background-size: 100vw auto;
+    background-repeat: repeat;
+    height: max-content;
+    overflow: hidden;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 5%;
+    font-family: noto;
 }
 #Hot_Repices_container{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    position: absolute;
-    top: 25%;
+    position: relative;
+    margin-bottom: 5%;
 }
 #Hot_repices_container_2item{
     display: flex;
@@ -20,9 +31,11 @@
 .Hot_Repices_item{
     display: flex;
     width: 43%;
+    transition: 1s;
 }
 .Hot_Repices_item:hover{
-    transform: translateX(0.1vw) translateY(0.1vw);
+    transform: scale(1.05);
+    transition: 1s;
 }
 #Hot_repices{
     display: flex;
@@ -33,12 +46,12 @@
     top: 14%;
     left: 14%;
 }
-#Hot_Repices_Title{
-    top: -65%;
-    position: absolute;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.Hot_Repices_Title{
+    font-family: Noto;
     text-align: center;
     font-weight: bold;
+    width: fit-content;
+    height: fit-content;
     background-image: linear-gradient(to top,rgb(108,165,173),rgb(172, 222, 223));
     background-clip: text;
     -webkit-background-clip: text;
@@ -46,6 +59,8 @@
     -o-background-clip: text;
     color: transparent;
     font-size: 5vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 #center_line_repices{
     position: absolute;
@@ -61,241 +76,85 @@
     width: 90%;
     border: 1px solid transparent;
     border-radius: 25px;
-    padding: 2%;
+    padding: 3%;
+    background-size: 300%;
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Noto;
     color: white;
-    /* font-weight: bold; */
-    font-size: 1.6vw;
-    text-shadow: 0.1vw 0.1vw black;
+    text-shadow:
+      0 0 2px black,
+      0 0 4px black,
+      0 0 8px rgb(0, 0, 0);
+    font-size: 1.1vw;
 }
-/* ---------------------------------------------arrow_down--------------------------------------- */
-#arrow{
-    position: absolute;
-    width: 6%;
-    left: 48%;
-    top: 1%;
-    animation-name: down_and_down;
-    -webkit-animation-name: down_and_down;
-    -moz-animation-name: down_and_down;
-    -o-animation-name: down_and_down;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-timing-function: ease-in-out;
-    -o-animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-    -webkit-animation-direction: alternate;
-    -moz-animation-direction: alternate;
-    -o-animation-direction: alternate;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-}
-#arrow2{
-    position: absolute;
-    width: 6%;
-    left: 48%;
-    top: 17.5%;
-    animation-name: down_and_down2;
-    -webkit-animation-name: down_and_down2;
-    -moz-animation-name: down_and_down2;
-    -o-animation-name: down_and_down2;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-timing-function: ease-in-out;
-    -o-animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-    -webkit-animation-direction: alternate;
-    -moz-animation-direction: alternate;
-    -o-animation-direction: alternate;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-}
-#arrow3{
-    position: absolute;
-    width: 6%;
-    left: 48%;
-    top: 34.5%;
-    animation-name: down_and_down3;
-    -webkit-animation-name: down_and_down3;
-    -moz-animation-name: down_and_down3;
-    -o-animation-name: down_and_down3;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-timing-function: ease-in-out;
-    -o-animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-    -webkit-animation-direction: alternate;
-    -moz-animation-direction: alternate;
-    -o-animation-direction: alternate;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-}
-#arrow4{
-    position: absolute;
-    width: 6%;
-    left: 47%;
-    top: 75.5%;
-    animation-name: down_and_down4;
-    -webkit-animation-name: down_and_down4;
-    -moz-animation-name: down_and_down4;
-    -o-animation-name: down_and_down4;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-timing-function: ease-in-out;
-    -o-animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-    -webkit-animation-direction: alternate;
-    -moz-animation-direction: alternate;
-    -o-animation-direction: alternate;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
+@media only screen and (min-width:1021px){
+    #partner{
+        display: flex !important;
     }
-#arrow5{
-    position: absolute;
-    width: 6%;
-    left: 48%;
-    top: 54.5%;
-    animation-name: down_and_down5;
-    -webkit-animation-name: down_and_down5;
-    -moz-animation-name: down_and_down5;
-    -o-animation-name: down_and_down5;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-timing-function: ease-in-out;
-    -o-animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-    -webkit-animation-direction: alternate;
-    -moz-animation-direction: alternate;
-    -o-animation-direction: alternate;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    }    
-@keyframes down_and_down{
-to{
-    top: 1.5%;
-}
-}
-@keyframes down_and_down2{
-to{
-    top: 18%;
-}
-}
-@keyframes down_and_down3{
-to{
-    top: 35%;
-}
-}
-@keyframes down_and_down4{
-    to{
-        top: 76%;
+    #linking_partner{
+        display: flex !important;
     }
 }
-@keyframes down_and_down5{
-    to{
-        top: 55%;
-    }
-    }
 @media only screen and (max-width: 1020px){
     #Hot_Repices_container{
         flex-direction: column;
         align-items: center;
+        margin-bottom: 8%;
+    }
+    .Hot_Repices_Title{
+        font-size: 6vw;
     }
     #Hot_repices_container_2item{
         width: 80%;
         justify-content: space-between;
-        margin-bottom: 11%;
+
     }
-    #Hot_Repices_Title{
+    .line1{
+        margin-bottom: 12%;
+    }
+    .Hot_Repices_Title{
         top: -15%;
     }
     #center_line_repices{
         top: -4vw;
     }
+    #customer{
+        display: none;
+    }
+    #linking_customer{
+        display: none;
+    }
+    #content{
+        padding-bottom: 0%;
+    }
+    #customer_partner{
+        display: flex;
+    }
+    .hidden_linking_container{
+        margin-bottom: 0px !important;
+    }
 }
-
-/*-------------------------------------------Hot_Food--------------------------------------------------*/
-#Hot_Food_container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100px;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    top: 39%;
+/* --------------------fonface---------------- */
+@font-face {
+    font-family: noto;
+    src: url(../../rsc/font/NotoSerif-Bold.ttf);
 }
-#center_line_Food{
-position: absolute;
-background-color: rgb(172, 222, 223);
-width: 60%;
-height: 0.3vw;
-top: 60%;
+/* keyframes */
+@keyframes bright{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
-#slide_show_background{
-    position: absolute;
-    top: 60%;
-    width: 88vw;
-    height: 43vw;
-}
-#food_slideshow_container{
-width: 70vw;
-position: absolute;
-overflow: hidden;
-border: 0.5vw solid #ffffff;
-border-radius: 8px;
-/* top: 120%; */
-height: 36vw;
-box-shadow: -1px -1px 30px 5px gray;
-}
-
-#food_slideshow{
-width: 100%;
-height: 100%;
-display: flex;
-animation: slide 10s infinite;
-animation-direction: alternate;
-/* animation: slide 10s infinite; */
-}
-#food_slideshow >img{
-width: 100%;
-border: 1px solid transparent;
-padding-left: 0.5vw;
-}
-#food_slide_show_item{
-width: 100% !important;
-height: 100%;
-display: flex;
-overflow: hidden;
+@keyframes background_position {
+    0%, 100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 300%;
+    }
 }
 @keyframes slide{
 0%{
@@ -335,7 +194,7 @@ transform: translateX(-230%);
 @media only screen and (max-width: 1020px){
 #Hot_Food_container{
     top: 58%;}
-#arrow3{top: 54%;}
+
 #food_slideshow_container{
     width: 68.8vw;
     align-items: flex-start;
@@ -348,7 +207,7 @@ transform: translateX(-230%);
     border-radius: 0px;
 }
 .name_repices{
-    font-size: 2.5vw;
+    font-size: 1.8vw;
 }
 .title_banner{
     font-size: 6vw;
@@ -367,7 +226,8 @@ transform: translateX(-230%);
 to{
     top: 54.5%;
 }
-}}
+}
+}
 @media only screen and (max-width: 500px){
     #food_slideshow_container{
         top: 77%;
@@ -417,39 +277,17 @@ to{
         top: 120%;
     }
 }
-/*------------------------------------------PROTECT_ENVIROMENT----------------------------------------*/
-    #Hot_Food_container_2{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100px;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    top: 60%;
+@media only screen and (max-width: 1140px) and (min-width: 851px){
+    #Salty_Food_Container {
+        margin-left: 0% !important;
     }
-    #food_slideshow > .enviroment_image{
-        width: 45vw;
-        padding-left: 0.5vw;
-        padding-top: 0vw;
-        top: -30%;
-        border-radius: 0px;
-    }
-    @media only screen and (max-width: 1020px){
-        #Hot_Food_container_2{
-            display: none;
-        }
-        #arrow5{
-            display: none;
-        }
-    }
+}
 /*-----------------------------------------------linking--------------------------------------------------------*/
-    #linking_partner_container{
+    .linking_partner_container{
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: absolute;
-        top: 78%;
+
         width: 100%;
     }
     #linking_container{
@@ -457,7 +295,11 @@ to{
         width: 100%;
         height: 5vw;
         justify-content: center;
-        margin-top: 5%;
+        margin-bottom: 5%;
+        animation: bright 2s alternate 1;
+    }
+    #partner,#customer{
+        animation: bright 2s alternate 1;
     }
     #linking_container > a > img{
         height: 100%;
@@ -478,4 +320,42 @@ to{
         color: transparent;
         font-size: 5vw;
         margin-top: 5%;
+    }
+    .linking_partner_item{
+        filter: grayscale(1);
+        transition: filter 2s;
+    }
+    .linking_partner_item:hover{
+        filter: grayscale(0);
+        transition: filter 1s;
+    }
+    .customer_partner{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #customer_partner{
+        display: none;
+    }
+    .dot_customer_partner{
+        width: 3%;
+        font-size: 7vw;
+        margin-top: 3%;
+        background-image: linear-gradient(to top,rgb(70, 218, 238),rgb(4, 94, 94),rgb(70, 218, 238));
+        background-clip: text;
+        opacity: 0.2;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -o-background-clip: text;
+        color: transparent;
+        cursor: pointer;
+    }
+    .choose{
+        opacity: 1 !important;
+    }
+    @media only screen and (max-width:1020px){
+        #customer_partner{
+            display: flex;
+        }
     }

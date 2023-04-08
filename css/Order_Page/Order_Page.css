@@ -4,14 +4,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../../rsc/image/Background.webp);
+    background-image: url(../../rsc/image/bbq-party-seamless-pattern-bbq-party-food-repeat-background-summer-picnic-wallpaper-with-barbecue-grill-roasted-sausages-tomatoes-vegetable-grilled-fish-cartoon-picnic-food-illustration-vector.jpg);
     background-size: 100vw auto;
     background-repeat: repeat;
     height: max-content;
     padding-top: 3%;
     padding-left: 2%;
     padding-right: 2%;
-    padding-bottom: 3%;
+    padding-bottom: 14%;
     font-family: noto;
 }
 @font-face {
@@ -60,57 +60,78 @@
 /*--------------------------------------------------------content-----------------------------------------*/
 .Food_Title{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-size: 4vw;
     margin-bottom: 3.2%; 
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(to left,rgb(248, 38, 41),rgb(248, 38, 41),rgb(255, 101, 104),rgb(30, 188, 255),rgb(5, 73, 104),rgb(30, 188, 255),rgb(255, 101, 104),rgb(248, 38, 41),rgb(248, 38, 41));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -o-background-clip: text;
-    color: transparent;
+    color: rgb(0, 0, 0);
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #5271ff,
+      0 0 82px #5271ff,
+      0 0 92px #5271ff,
+      0 0 102px #5271ff,
+      0 0 151px #5271ff;
     transition: 1s;
 }
 .Salty_Food_Title{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 4vw;
     margin-top: 2.3%;
     margin-bottom: 3.2%; 
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(to left,rgb(248, 38, 41),rgb(248, 38, 41),rgb(255, 101, 104),rgb(30, 188, 255),rgb(5, 73, 104),rgb(30, 188, 255),rgb(255, 101, 104),rgb(248, 38, 41),rgb(248, 38, 41));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -o-background-clip: text;
-    color: transparent;
+    color: rgb(0, 0, 0);
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #5271ff,
+      0 0 82px #5271ff,
+      0 0 92px #5271ff,
+      0 0 102px #5271ff,
+      0 0 151px #5271ff;
     transition: 1s;
 }
-.Food_Title > a >i{
-    background-image: linear-gradient(to left top,rgb(255, 101, 104),rgb(255, 101, 104),rgb(30, 188, 255),rgb(30, 188, 255));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -o-background-clip: text;
-    color: transparent; 
+.Food_icon_linking{
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+    align-items: center;
+}
+.Food_icon_linking a i{
+    color: rgb(224, 224, 224);
+    font-size: 2vw;
+    animation: flicker 5s infinite alternate;
+    transition: 1s;
+    opacity: 0.8;
+}
+.Food_icon_linking a i:hover{
+    opacity: 1;
+    color: black;
+    transition: 1s;
+    -webkit-animation-name:fa-bounce-my;
+    animation-name:fa-bounce-my;
+    -webkit-animation-delay:var(--fa-animation-delay,0s);
+    animation-delay:var(--fa-animation-delay,0s);
+    -webkit-animation-direction:var(--fa-animation-direction,normal);
+    animation-direction:var(--fa-animation-direction,normal);
+    -webkit-animation-duration:var(--fa-animation-duration,2s);
+    animation-duration:var(--fa-animation-duration,2s);
+    -webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);
+    animation-iteration-count:var(--fa-animation-iteration-count,infinite);
 }
 .Food_Title > a{
     margin-left: 1%;
     margin-right: 1%;
 }
-.Salty_Food_Title > a >i{
-    background-image: linear-gradient(to left top,rgb(255, 101, 104),rgb(255, 101, 104),rgb(30, 188, 255),rgb(30, 188, 255));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -o-background-clip: text;
-    color: transparent; 
-}
+
 .Salty_Food_Title > a{
     margin-left: 1%;
     margin-right: 1%;
@@ -211,20 +232,44 @@ align-items: center;
     overflow: hidden;
 }
 .Food_Item:hover{
-    border: 0.2vw solid red;
+    border: 0.2vw solid transparent;
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(50deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+              #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+    animation-name: border;
+    animation-direction:normal;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    transition: 3s;
+}
+.Food_Item:hover >.product_img >img{
+    transform: scale(1.2);
+    transition: 2s;
+}
+.product_img >img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.product_img{
+    width: 100%;
+    aspect-ratio: 1/0.668;
+    overflow: hidden;
 }
 .Salty_Food_Item:hover{
-    border: 0.2vw solid red;
-    -webkit-animation-name:fa-bounce-my;
-    animation-name:fa-bounce-my;
-    -webkit-animation-delay:var(--fa-animation-delay,0s);
-    animation-delay:var(--fa-animation-delay,0s);
-    -webkit-animation-direction:var(--fa-animation-direction,normal);
-    animation-direction:var(--fa-animation-direction,normal);
-    -webkit-animation-duration:var(--fa-animation-duration,1s);
-    animation-duration:var(--fa-animation-duration,1s);
-    -webkit-animation-iteration-count:var(--fa-animation-iteration-count,1);
-    animation-iteration-count:var(--fa-animation-iteration-count,1);
+    border: 0.2vw solid transparent;
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(50deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+              #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+    animation-name: border;
+    animation-direction:normal;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    transition: 3s;
+}
+.Salty_Food_Item:hover >.product_img >img{
+    transform: scale(1.2);
+    transition: 1s;
 }
 .Food_Item:hover > .Food_Item_Buynow{
     display: flex;
@@ -244,7 +289,14 @@ align-items: center;
 }
 .fa-circle-check{
     font-size: 3vw;
-    color: red;
+    background-image:linear-gradient(45deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+              #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    color: transparent;
+    animation: rotate 1s normal 1;
 }
 .character_icon >img{
     width: 2.8vw;
@@ -383,6 +435,180 @@ align-items: center;
     color: gray;
 }
 /*------------------------------keyframes----------------------------*/
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(45deg);
+    }
+    20%{
+        transform: rotate(90deg);
+    }
+    30%{
+        transform: rotate(135deg);
+    }
+    40%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(225deg);
+    }
+    60%{
+        transform: rotate(270deg);
+    }
+    70%{
+        transform: rotate(305deg);
+    }
+    80%{
+        transform: rotate(350deg);
+    }
+    90%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(365deg);
+    }
+}
+@keyframes border {
+    0%{
+        background: linear-gradient(white, white) padding-box,
+              linear-gradient(32.7deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+              #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: 1s;
+    }
+    5%{
+        background: linear-gradient(white, white) padding-box,
+              linear-gradient(49.05deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+              #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: 1s;
+    }
+    10%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(65.5deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    15%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(81.85deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    20%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(98.2deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: 1s;
+    }
+    25%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(114.55deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: 1s;
+    }
+    30%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(131deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    35%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(147.35deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    40%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(164deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    50%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(196deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    55%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(212.35deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    60%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(229deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    65%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(245.35deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    70%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(262deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    75%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(278.35deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    80%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(295deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    85%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(311.35deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    90%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(327deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    95%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(343.35deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+    100%{
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(360deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000,
+        #ff0055,#ff0000,#a200ff,#a200ff,#001aff,#0099ff,#00ff00,#ffff00) border-box;
+        transition: border 1s;
+    }
+}
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 4px #5271ff,
+        0 0 11px #5271ff,
+        0 0 19px #5271ff,
+        0 0 40px #5271ff,
+        0 0 80px #5271ff,
+        0 0 90px #5271ff,
+        0 0 100px #5271ff,
+        0 0 150px #5271ff;
+    }
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
 @keyframes fa-bounce-my{
     0%{-webkit-transform:scale(0.98) translateY(0);
         transform:scale(0.98) translateY(0)}
@@ -501,6 +727,16 @@ align-items: center;
         flex: 0 0 31%;
         margin-left: 1vw;
         margin-right: 0.9vw;
+        border-radius: 1.2vw;
+    }
+    .Salty_Food_Item{
+        border-radius: 1.2vw;
+    }
+    .Food_icon_linking a i{
+        font-size: 2.7vw;
+    }
+    .Food_icon_linking{
+        width: 15%;
     }
     .Food_Title{
         font-size: 5vw;
@@ -576,12 +812,27 @@ align-items: center;
     .Food_Title{
         font-size: 6vw;
     }
+    .Food_icon_linking a i{
+        font-size: 3vw;
+    }
+    .Food_icon_linking{
+        width: 12%;
+    }
     .Salty_Food_Title{
         font-size: 6vw;
     }
     .Food_Item{
         flex: 1 0 48%;
         margin-right: 1.66%;
+        border-radius: 1.5vw;
+    }
+    .Salty_Food_Item{
+        border-radius: 1.5vw;
+        border: 0.4vw solid black;
+    }
+    .Salty_Food_Item:hover{
+        border-radius: 1.5vw;
+        border: 0.4vw solid transparent;
     }
     .fa-circle-check{
         font-size: 5vw;
@@ -598,8 +849,8 @@ align-items: center;
         height: fit-content;
     }
     .swiper-button-next>img,.swiper-button-prev >img{
-        width: 5vw !important;
-        height: 5vw !important;
+        width: 6vw !important;
+        height: 6vw !important;
     }
     .character_icon > img{
         width: 6vw;
@@ -692,7 +943,7 @@ align-items: center;
         border: 0.3vw solid black;
     }
     .Salty_Food_Item:hover{
-        border: 0.3vw solid red;
+        border: 0.3vw solid transparent;
     }
     #Order_Content{
         background-size: 100vw max-content;
@@ -706,9 +957,23 @@ align-items: center;
         margin-left: 10%;
         justify-self: center;
     }
+    .Salty_Food_Item{
+        border: 0.4vw solid black;
+    }
+    .Salty_Food_Item:hover{
+        border: 0.4vw solid transparent;
+    }
 }
 @media only screen and (min-width:1141px) {
     #Salty_Food_Container{
         margin-bottom: 0.9vw;
+    }
+}
+@media only screen and (max-width:500px) {
+    .Salty_Food_Item{
+        border: 0.4vw solid black;
+    }
+    .Salty_Food_Item:hover{
+        border: 0.4vw solid transparent;
     }
 }

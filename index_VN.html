@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/header_footer/header_footer.css">
     <link rel="stylesheet" href="./css/Home_Page/banner_home_page.css">
     <link rel="stylesheet" href="./css/Home_Page/Content_Home_Page.css">
-
+    <link rel="stylesheet" href="./css/Order_Page/Order_Page.css">
     <style>
         html {
             scroll-behavior: smooth;
@@ -112,35 +112,32 @@
             </div>
         </div>
     </div>
-<!------------------------------------------------------------Content-------------------------------------------------------->
+<!------------------------------------------------------------content-------------------------------------------------------->
 <div id="content">
-    <img src="rsc/image/Background.webp" alt="" style="width: 100%">
-    <img src="rsc/image/arrow.webp" id="arrow" alt=""> 
-<!--------------------------------------------------About_us----------------------------------------------------->
+    <!--------------------------------------------------About_us----------------------------------------------------->
     <div id="About_Us_container">
-        <img id ="About_us_img" src="rsc/image/Background_img_1.webp" alt="">
-        <img id = "About_us_img" src="rsc/image/Background_img_2.webp" alt="" style="position: absolute;width: 84%;height: 75%;bottom: 7%;left: 7.2%;">
-        <div id="About_us">
-            <h1>ABOUT US</h1>
-            <div id="About_us_des">
-                   &nbsp;Trên con đường phiêu lưu của nhà lữ hành thực phẩm đã trở thành một người bạn<br>
-                   không thể thiếu, <b>TEYVAT</b> <font style="color: rgb(44, 117, 44);font-weight: bold;">FOOD</font>  ở đây giúp nhà lữ hành có được những thông tin<br>
-                   hữu ích nhất về các loại thực phẩm <i>(Công thức nấu ăn, BUFF của thực phẩm ...).</i><br>
-                   <br>&nbsp;Bên cạnh đó <b>TEYVAT</b> <font style="color: rgb(44, 117, 44);font-weight: bold;">FOOD</font> không chỉ hỗ trợ bạn về mặt tinh thần mà còn cả về<br>
-                   mặt thể chất. Chúng tôi cung cấp những bữa ăn tươi ngon bổ dưỡng được lấy cảm<br>
-                   hứng từ nguyên gốc trong <b>Genshin Impact</b> nhằm cho bạn những trải nghiệm tốt nhất.
-
+        <img src="rsc/image/character/diluc_bar.png" alt="" id="About_us_paimon">
+        <img src="rsc/image/character/diluc_cook.png" alt="" id="About_us_paimon" style="margin-right: 50%;">
+        <img src="rsc/image/character/diluc_cook_2.png" alt="" id="About_us_paimon" style="margin-left: 50%;">
+        <div id="About_2">
+            <div id="About_us">
+                <h1>ABOUT US</h1>
+                <div id="About_us_des">
+                    &nbsp;Trên con đường phiêu lưu của nhà lữ hành thực phẩm đã trở thành một người bạn
+                    không thể thiếu, <b>TEYVAT</b> <font style="color: rgb(44, 117, 44);font-weight: bold;">FOOD</font>  ở đây giúp nhà lữ hành có được những thông tin
+                    hữu ích nhất về các loại thực phẩm <i>(Công thức nấu ăn, BUFF của thực phẩm ...).<br></i>
+                    <br>&nbsp;Bên cạnh đó <b>TEYVAT</b> <font style="color: rgb(44, 117, 44);font-weight: bold;">FOOD</font> không chỉ hỗ trợ bạn về mặt tinh thần mà còn cả về
+                    mặt thể chất. Chúng tôi cung cấp những bữa ăn tươi ngon bổ dưỡng được lấy cảm
+                    hứng từ nguyên gốc trong <b>Genshin Impact</b> nhằm cho bạn những trải nghiệm tốt nhất.
+                </div>
             </div>
-
-            <div id="center_line"></div>
         </div>
+        <img src="rsc/image/background_item.webp" alt="" id="background_item">
     </div>
-<!-----------------------------------------------HOT_repices---------------------------------------------------->
-    <img src="rsc/image/arrow.webp" alt="" id="arrow2">
+    <!-----------------------------------------------HOT_repices---------------------------------------------------->
+    <div class ="Hot_Repices_Title" id="Hot_Repices_Title">CÔNG THỨC TIÊU BIỂU</div>
      <div id="Hot_Repices_container">
-        <div id="Hot_Repices_Title">CÔNG THỨC TIÊU BIỂU</div>
-        <div id="center_line_repices"></div>
-        <div id="Hot_repices_container_2item">
+        <div id="Hot_repices_container_2item" class="line1">
             <div class="Hot_Repices_item">
                 <a href="#" id="Hot_repices">
                     <img src="rsc/image/Khung.webp" alt="" width="100%" id="khung">
@@ -173,73 +170,211 @@
             </div>
         </div>
      </div>
-<!---------------------------------------------------Hot_Food--------------------------------------------------->
-    <img src="rsc/image/arrow.webp" alt="" id="arrow3">
-     <div id="Hot_Food_container">
-        <div id="Hot_Repices_Title"><div id="Hot_Food_tittle">THỰC PHẨM TIÊU BIỂU</div></div>
-        <div id="center_line_Food"></div>
-        <img src="rsc/image/Background_img_1.webp" alt="" style="position: absolute;top: 60%;width: 90%;">
-        <div id="food_slideshow_container">
-            <div id="food_slideshow">
-                    <img src="rsc/image/foods/Chop Suey.webp" alt="">
-                    <img src="rsc/image/foods/Delicious Jueyun Chili Chicken.jpg" alt="">
-                    <img src="rsc/image/foods/Delicious Mora Meat.jpg" alt="">
-                    <img src="rsc/image/foods/Fishermans Toast.jpg" alt="">
-                    <img src="rsc/image/foods/Chicken-Mushroom Skewer.webp">;
+     <!---------------------------------------------------Hot_Food--------------------------------------------------->
+     <div class ="Hot_Repices_Title" id="Hot_Food_Title">THỰC PHẨM TIÊU BIỂU</div>
+     <div id="Salty_Food_Container">
+            <div class="Salty_Food_Container_2item">
+                <a href="#" class="Salty_Food_Item">
+                    <div class="product_img">
+                        <img src="rsc/image/foods/Order/Invigorating Kitty Meal.webp" alt="">
+                    </div>
+                    <div class="Food_Item_Name" id="Food_Item_Name_1" style="text-align: center;">
+                        CƠM MÈO NĂNG ĐỘNG
+                    </div>
+                    <div class="Food_Item_type">
+                        <div style="font-size: 0.9vw;color: black;" id="Food_Item_Type_1">Phân Loại : <font style="color:gray">Combo</font></div>
+                        <div class="Food_Item_type_right Hot">Hot</div>
+                    </div>
+                    <div class="Food_Item_des">
+                        <div style="font-size: 0.9vw;color: black;" id="Food_Item_des_1">Mô tả : <font style="color:gray">Chế biến giữ lại tối đa độ tươi ngon. Dù là một con mèo khó tính cũng sẽ chịu không nổi mùi thơm này...</font></div>
+                    </div>
+                    <div class="Food_Item_rating_price">
+                        <div class="Food_Item_rating" style="flex-direction: column;">
+                            <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                            <div class="rating">
+                                &nbsp;&nbsp;5 <font>(9533)</font> 
+                            </div>
+                        </div>
+                        <div class="price">
+                            <font>( 100,000đ )</font>
+                            99,999đ 
+                        </div>
+                    </div>
+                    <div class="Food_Item_Buynow">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                </a>
+                <a href="#" class="Salty_Food_Item">
+                    <div class="product_img">
+                        <img src="rsc/image/foods/Order/Ramen.jfif" alt="">
+                    </div>
+                    <div class="Food_Item_Name" style="text-align: center;" id="Food_Item_Name_2">
+                        RAMEN XƯƠNG HẦM
+                    </div>
+                    <div class="Food_Item_type">
+                        <div style="font-size: 0.9vw;color: black;" id="Food_Item_Type_2">Phân Loại : <font style="color:gray">Combo</font></div>
+                        <div class="Food_Item_type_right Hot">Hot</div>
+                    </div>
+                    <div class="Food_Item_des">
+                        <div style="font-size: 0.9vw;color: black;" id="Food_Item_des_2">Mô tả : <font style="color:gray">Mì nóng hổi. Sợi mì dai dai mềm mềm hấp thụ tinh túy của nước súp, món ăn kèm phong phú giúp khẩu vị đa dạng...</font></div>
+                    </div>
+                    <div class="Food_Item_rating_price">
+                        <div class="Food_Item_rating" style="flex-direction: column;">
+                            <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                            <div class="rating">
+                                &nbsp;&nbsp;4.99 <font>(4533)</font> 
+                            </div>
+                        </div>
+                        <div class="price">
+                            <font>( 51,000đ )</font>
+                            50,999đ 
+                        </div>
+                    </div>
+                    <div class="Food_Item_Buynow">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="Salty_Food_Container_2item">
+                <a href="#" class="Salty_Food_Item">
+                    <div class="product_img">
+                        <img src="rsc/image/foods/Order/Pile.jfif" alt="">
+                    </div>
+                    <div class="character_icon fa-flip">
+                        <img src="rsc/image/character/diluc.webp" alt="" style="border-color: rgb(255, 0, 0);">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="Food_Item_Name" style="text-align: center;" id="Food_Item_Name_3">
+                        TRUYỆN KỂ MONDSTADT
+                    </div>
+                    <div class="Food_Item_type">
+                        <div style="font-size: 0.9vw;color: black;" id="Food_Item_Type_3">Phân Loại : <font style="color:gray">Hamberger</font></div>
+                        <div class="Food_Item_type_right Hot">Hot</div>
+                    </div>
+                    <div class="Food_Item_des">
+                        <div style="font-size: 0.9vw;color: black;"  id="Food_Item_des_3">Mô tả : <font style="color:gray">Đầu tiên phải no mắt trước rồi mới để miếng thịt sườn tan chảy trong miệng...</font></div>
+                    </div>
+                    <div class="Food_Item_rating_price">
+                        <div class="Food_Item_rating" style="flex-direction: column;">
+                            <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                            <div class="rating">
+                                &nbsp;&nbsp;4.91 <font>(3533)</font> 
+                            </div>
+                        </div>
+                        <div class="price">
+                            <font>( 31,000đ )</font>
+                            30,999đ 
+                        </div>
+                    </div>
+                    <div class="Food_Item_Buynow">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                </a>
+                <a href="#" class="Salty_Food_Item">
+                    <div class="product_img">
+                        <img src="rsc/image/foods/Order/Mì Udon Fukuuchi.jfif" alt="">
+                    </div>
+                    <div class="character_icon fa-flip">
+                        <img src="rsc/image/character/yae.jpg" alt="" style="border-color: rgba(255, 40, 194, 0.688);">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="Food_Item_Name" style="text-align: center;" id="Food_Item_Name_4">
+                       MÌ UDON FUUKUCHI
+                    </div>
+                    <div class="Food_Item_type">
+                        <div style="font-size: 0.9vw;color: black;" id="Food_Item_Type_4">Phân Loại : <font style="color:gray">Mì</font></div>
+                        <div class="Food_Item_type_right Hot">Hot</div>
+                    </div>
+                    <div class="Food_Item_des">
+                        <div style="font-size: 0.9vw;color: black;" id="Food_Item_des_4">Mô tả : <font style="color:gray">Đậu phụ là món đặc biệt do "tiểu thư hồ ly" làm, tương truyền nếu bạn thành tâm, sẽ được "tiên hồ" phù hộ...</font></div>
+                    </div>
+                    <div class="Food_Item_rating_price">
+                        <div class="Food_Item_rating" style="flex-direction: column;">
+                            <i class="fa-solid fa-star" style="color: gold;text-shadow: 0.1vw 0.1vw black;font-size: 1.2vw;"></i>
+                            <div class="rating">
+                                &nbsp;&nbsp;5 <font>(3933)</font> 
+                            </div>
+                        </div>
+                        <div class="price">
+                            <font>( 61,000đ )</font>
+                            60,999đ 
+                        </div>
+                    </div>
+                    <div class="Food_Item_Buynow">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                </a>
             </div>
         </div>
-     </div>
-<!----------------------------------------------Protect_enviroment-------------------------------------------->
-     <img src="rsc/image/arrow.webp" alt="" id="arrow5">
-     <div id="Hot_Food_container_2">
-        <div id="Hot_Repices_Title"><div id="Protect_enviroment_title">CHUNG TAY BẢO VỆ MÔI TRƯỜNG</div></div>
-        <div id="center_line_Food"></div>
-        <img src="rsc/image/Background_img_1.webp" alt="" id="slide_show_background">
-        <div id="food_slideshow_container">
-            <div id="food_slideshow">
-                    <img class="enviroment_image" src="rsc/image/Protect_enviroment/1.jpg" alt="">
-                    <img class="enviroment_image" src="rsc/image/Protect_enviroment/2.jpg" alt="">
-                    <img class="enviroment_image" src="rsc/image/Protect_enviroment/3.jpg" alt="">
-                    <img class="enviroment_image" src="rsc/image/Protect_enviroment/4.jpg">;
-                    <img class="enviroment_image" src="rsc/image/Protect_enviroment/5.cms" alt="">
-                    <img class="enviroment_image" src="rsc/image/Protect_enviroment/6.jpg" alt="">
-            </div>
-        </div>
-     </div>
-<!-----------------------------------------------linking-------------------------------------------------------->
-     <img src="rsc/image/arrow.webp" alt="" id="arrow4">
-     <div id="linking_partner_container">
-        <div id="linking_customer_Title"><div id="linking_partner">ĐỐI TÁC</div></div>
+     <!----------------------------linking------------------------------>
+     <div class ="Hot_Repices_Title" id="partner">ĐỐI TÁC</div>
+     <div class="linking_partner_container" id="linking_partner">
         <div id="linking_container">
-            <a href="https://www.starkombucha.com/"><img id="startkombucha" src="rsc/image/logo_link/star_kombucha.png" alt=""></a>
-            <a href="https://mmvietnam.com/"><img id="mm" src="rsc/image/logo_link/mega_market.png" alt=""></a>
-            <a href="https://payoo.vn/"><img id="payoo" src="rsc/image/logo_link/payoo.png" alt=""></a>
-            <a href="https://www.nakayama-foods.vn/"><img id="nakayama" src="rsc/image/logo_link/nakayama.png" alt=""></a>
-            <a href="https://www.japfavietnam.com/"><img id= "japfa" src="rsc/image/logo_link/japfa.png" alt=""></a>
+            <a class="linking_partner_item" href="https://www.starkombucha.com/"><img id="startkombucha" src="rsc/image/logo_link/star_kombucha.png" alt="" style="height: 150%;aspect-ratio: 1/1;position: relative;top: -20%;"></a>
+            <a class="linking_partner_item" href="https://mmvietnam.com/"><img id="mm" src="rsc/image/logo_link/mega_market.png" alt=""></a>
+            <a class="linking_partner_item" href="https://payoo.vn/"><img id="payoo" src="rsc/image/logo_link/payoo.png" alt="" style="height: 80%;position: relative;top: 15%;"></a>
+            <a class="linking_partner_item" href="https://www.nakayama-foods.vn/"><img id="nakayama" src="rsc/image/logo_link/nakayama.png" alt="" style="height: 110%;"></a>
+            <a class="linking_partner_item" href="https://www.japfavietnam.com/"><img id= "japfa" src="rsc/image/logo_link/japfa.png" alt="" style="height: 120%;position: relative;top: -13%;"></a>
         </div>
-        <div id="linking_container" style="margin-bottom: 4%;">
-            <a href="https://www.hoyolab.com/home"><img id="hoyolab" src="rsc/image/logo_link/hoyolab.png" alt=""></a>
-            <a href="https://genshin.hoyoverse.com/vi/"><img id= "GI" src="rsc/image/logo_link/Genshin_Impact.png" alt=""></a>
-            <a href="https://www.hoyoverse.com/en-us"><img id= "GI" src="rsc/image/logo_link/HoYoverse.png" alt=""></a>
-            <a href="https://hsr.hoyoverse.com/vi-vn/home"><img id= "GI" src="rsc/image/logo_link/Honkai_Star_Rail_logo.png" alt=""></a>
+        <div id="linking_container" style="margin-bottom: 0%;">
+            <a class="linking_partner_item" href="https://www.hoyolab.com/home"><img id="hoyolab" src="rsc/image/logo_link/hoyolab.png" alt=""></a>
+            <a class="linking_partner_item" href="https://genshin.hoyoverse.com/vi/"><img id= "GI" src="rsc/image/logo_link/Genshin_Impact.png" alt=""></a>
+            <a class="linking_partner_item" href="https://www.hoyoverse.com/en-us"><img id= "GI" src="rsc/image/logo_link/HoYoverse.png" alt=""></a>
+            <a class="linking_partner_item" href="https://hsr.hoyoverse.com/vi-vn/home"><img id= "GI" src="rsc/image/logo_link/Honkai_Star_Rail_logo.png" alt="" style="height: 160%;width: 140%;position: relative;top: -30%;right: 30%;"></a>
         </div>
-        <div id="linking_customer_Title"><div id="linking_customer">KHÁCH HÀNG</div></div>
-        <div id="linking_container">
-            <a href="https://tiki.vn/"><img id="hoyoverse" src="rsc/image/logo_link/logo-tik.png" alt=""></a>
-            <a href="http://www.co-opmart.com.vn/"><img id="HSR" src="rsc/image/logo_link/coopmart.png" alt=""></a>
-            <a href="https://www.cbrevietnam.com/"><img id="HI3" src="rsc/image/logo_link/cbre.png" alt=""></a>
-            <a href="https://www.capitaland.com/vn/vi.html"><img id="hoyolab" src="rsc/image/logo_link/captain_land.png" alt=""></a>
-            <a href="https://www.facebook.com/groups/calikids.com.vn/?locale=vi_VN"><img id= "GI" src="rsc/image/logo_link/calikids-logo.png" alt=""></a>
-        </div>
-        <div id="linking_container">
-            <a href="https://vn.hisamitsu/salonpas.html"><img id="hoyoverse" src="rsc/image/logo_link/salonpas.png" alt=""></a>
-            <a href="https://www.facebook.com/SGHeat/?locale=vi_VN"><img id="HSR" src="rsc/image/logo_link/saigon-heat.png" alt=""></a>
-            <a href="https://www.sanofi.com.vn/"><img id="HI3" src="rsc/image/logo_link/sanofi.png" alt=""></a>
-            <a href="https://cali.vn/"><img id="hoyolab" src="rsc/image/logo_link/california_fitness.png" alt=""></a>
-            <a href="https://www.facebook.com/yogaplusvn/?locale=vi_VN"><img id= "GI" src="rsc/image/logo_link/yoga_plus.png" alt=""></a>
-        </div>
-     </div>
     </div>
+    <div class ="Hot_Repices_Title" id="customer">KHÁCH HÀNG</div>
+     <div class="linking_partner_container" id="linking_customer">
+        <div id="linking_container">
+            <a class="linking_partner_item" href="https://tiki.vn/"><img id="hoyoverse" src="rsc/image/logo_link/logo-tik.png" alt=""></a>
+            <a class="linking_partner_item" href="http://www.co-opmart.com.vn/"><img id="HSR" src="rsc/image/logo_link/coopmart.png" alt=""></a>
+            <a class="linking_partner_item" href="https://www.cbrevietnam.com/"><img id="HI3" src="rsc/image/logo_link/cbre.png" alt="" style="height: 80%;position: relative;top: 15%;"></a>
+            <a class="linking_partner_item" href="https://www.capitaland.com/vn/vi.html"><img id="hoyolab" src="rsc/image/logo_link/captain_land.png" alt=""></a>
+            <a class="linking_partner_item" href="https://www.facebook.com/groups/calikids.com.vn/?locale=vi_VN"><img id= "GI" src="rsc/image/logo_link/calikids-logo.png" alt=""></a>
+        </div>
+        <div id="linking_container" class="hidden_linking_container">
+            <a class="linking_partner_item" href="https://vn.hisamitsu/salonpas.html"><img id="hoyoverse" src="rsc/image/logo_link/salonpas.png" alt="" style="height: 75%;position: relative;top: 20%;"></a>
+            <a class="linking_partner_item" href="https://www.facebook.com/SGHeat/?locale=vi_VN"><img id="HSR" src="rsc/image/logo_link/saigon-heat.png" alt=""></a>
+            <a class="linking_partner_item" href="https://www.sanofi.com.vn/"><img id="HI3" src="rsc/image/logo_link/sanofi.png" alt="" style="height: 130%;position: relative;top: -10%;"></a>
+            <a class="linking_partner_item" href="https://cali.vn/"><img id="hoyolab" src="rsc/image/logo_link/california_fitness.png" alt="" style="height: 200%;position: relative;top: -40%;"></a>
+            <a class="linking_partner_item" href="https://www.facebook.com/yogaplusvn/?locale=vi_VN"><img id= "GI" src="rsc/image/logo_link/yoga_plus.png" alt="" style="height: 80%;position: relative;top: 15%;"></a>
+        </div>
+     </div>
+     <div class="customer_partner" id="customer_partner">
+        <div class="dot_customer_partner choose" id="dot1" onclick="click_partner(1)">&dot;</div>
+        <div class="dot_customer_partner" id="dot2" onclick="click_partner(2)">&dot;</div>
+     </div>
+</div>
+<script>
+    let kh = document.getElementById('customer');
+    let linkh = document.getElementById('linking_customer');
+    let partner = document.getElementById('partner');
+    let linkpartner = document.getElementById('linking_partner');
+    let dot1 = document.getElementById('dot1');
+    let dot2 = document.getElementById('dot2');
+    function click_partner(n)
+    {
+        if(n==2) {
+            partner.style.display ='none';
+            linkpartner.style.display ='none';
+            kh.classList.add('show');
+            linkh.classList.add('show');
+            partner.classList.remove('show');
+            linkpartner.classList.remove('show');
+            dot2.classList.add('choose');
+            dot1.classList.remove('choose');
+        }
+        if(n==1) {
+            partner.classList.add('show');
+            linkpartner.classList.add('show');
+            kh.classList.remove('show');
+            linkh.classList.remove('show');
+            dot1.classList.add('choose');
+            dot2.classList.remove('choose');
+        }
+        
+    }
+</script>
 <!------------------------------------------------------------footer--------------------------------------------------------->
 <div id="footer">
     <div id="Left_footer">
