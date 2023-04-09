@@ -23,14 +23,25 @@
     align-items: center;
     font-size: 4vw;
     text-align: center;
-    background-image: linear-gradient(to left top,rgb(248, 38, 41),rgb(255, 101, 104),rgb(30, 188, 255),rgb(5, 73, 104),rgb(30, 188, 255),rgb(255, 101, 104),rgb(248, 38, 41));
+    background-image: linear-gradient(to left top,rgb(248, 38, 41),rgb(255, 101, 104),rgb(30, 188, 255),rgb(30, 188, 255),rgb(255, 101, 104),rgb(248, 38, 41));
     background-clip: text;
+    background-size: 200%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -o-background-clip: text;
     color: transparent;
     transition: 1s;
     margin-bottom: 3%;
+    animation: faq_title 12s linear infinite;
+    filter: drop-shadow(2px 2px black);
+}
+@keyframes faq_title {
+    0%,100%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 200%;
+    }
 }
 #FAQS_des{
     color: gray;
