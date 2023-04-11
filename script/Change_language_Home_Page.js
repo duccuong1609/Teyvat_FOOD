@@ -24,6 +24,13 @@ function change_language_english()
     document.getElementById("login_text").innerHTML = "Login";
     document.getElementById("register_text_mobile").innerHTML = "Register";
     document.getElementById("login_text_mobile").innerHTML = "Login";
+    document.getElementById("cart").innerHTML = "SHOPPING CART";
+    document.getElementById("item_cart_title_1").innerHTML = "Invigorating Kitty Meal";
+    document.getElementById("item_cart_title_2").innerHTML = "Tonkotsu Ramen";
+    document.getElementById("item_cart_title_3").innerHTML = "Udon Fuukichi";
+    document.getElementById("total_cart").innerHTML = "Total : <font>&nbsp;211,997đ</font>";
+    document.getElementById("view_bag").innerHTML = "View Bag";
+    document.getElementById("purchase").innerHTML = "Payment";
     document.getElementById("title_banner_1").innerHTML="EXPLORER TEYVAT";
     document.getElementById("title_banner_2").innerHTML="40+ NEW REPICES";
     document.getElementById("title_banner_3").innerHTML="TASTY & NUTRITIOUS MEALS";
@@ -86,6 +93,13 @@ function change_language_vietnamese()
     document.getElementById("login_text_mobile").innerHTML = "Đăng Nhập";
     document.getElementById("register_text").innerHTML = "Đăng Ký";
     document.getElementById("login_text").innerHTML = "Đăng Nhập";
+    document.getElementById("cart").innerHTML = "GIỎ HÀNG";
+    document.getElementById("item_cart_title_1").innerHTML = "Cơm Mèo Năng Động";
+    document.getElementById("item_cart_title_2").innerHTML = "Ramen Xương Hầm";
+    document.getElementById("item_cart_title_3").innerHTML = "Mì Udon Fuukichi";
+    document.getElementById("total_cart").innerHTML = "Tổng tiền : <font>&nbsp;211,997đ</font>";
+    document.getElementById("view_bag").innerHTML = "Xem Giỏ Hàng";
+    document.getElementById("purchase").innerHTML = "Thanh Toán";
     document.getElementById("title_banner_1").innerHTML="KHÁM PHÁ TEYVAT";
     document.getElementById("title_banner_2").innerHTML="40+ CÔNG THỨC MỚI";
     document.getElementById("title_banner_3").innerHTML="TRẢI NGHIỆM BỮA ĂN SẠCH";
