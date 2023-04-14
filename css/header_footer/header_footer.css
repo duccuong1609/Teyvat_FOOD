@@ -116,9 +116,14 @@ body{
         margin-right: 5%;
     }
     #register > a,#login > a{
-        color: white;
+        color: gray;
         text-decoration: none;
         font-size: 13px;
+        transition: 0.3s;
+    }
+    #register:hover > a,#login:hover > a{
+        color: white;
+        transition: 0.3s;
     }
     /*-------------------------------------language-----------------------------------*/
     #language{
@@ -206,13 +211,18 @@ body{
         border-radius: 25px;
         background-color: red;
     }
+    #login_register_mobile > #register > a,#login_register_mobile > #login >a{
+        color: white;
+    }
     #login_register_mobile > #register:hover{
         opacity: 0.9;
         font-weight: bold;
+        color: white;
     }
     #login_register_mobile > #login:hover{
         opacity: 0.9;
         font-weight: bold;
+        color: white;
     }
     /*--------------------------------language_mobile-----------------------------------*/
     #language_mobile{
@@ -270,13 +280,14 @@ body{
     .shopping:hover >.shopping_menu_container{
         display: flex;
     }
-    .shopping_menu_container{
+    .shopping_menu_container {
         display: none;
         position: fixed;
         background-color: transparent;
         height: fit-content;
-        padding-top: 60px;
+        padding-top: 30px;
         padding-right: 1%;
+        top: 6.4%;
         right: 0px;
         width: 340px;
         animation: cart_shopping 1s linear 1;
@@ -525,8 +536,9 @@ body{
         font-size: 4vw  !important;
     }
     #back_to_top{
-        border: 0.2vw solid gray !important;
+        border: 0.3vw solid gray !important;
         bottom: 4vw !important;
+        border-radius: 2.5vw;
     }
     #back_to_top_icon{
         font-size: 5vw !important;

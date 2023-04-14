@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEYVATFOOD-LOGIN/REGISTER</title>
+    <!-----------------------------font_awesome--------------------------------->
+    <link rel="stylesheet" href="css/css_lib/fontawesome-6.3.0/css/all.css">
+    <link rel="stylesheet" href="css/css_lib/font-awesome-4.7.0/css/font-awesome.css">
+    <!-- css -->
+    <link rel="icon" type="image/x-icon" href="./rsc/image/fav_icon.png">
+    <link rel="stylesheet" href="css/header_footer/header_footer.css">
+    <link rel="stylesheet" href="css/Login_Register/Login_Register.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <div class="content">
+            <div class="container">
+                <div class="login_register_screen">
+                    <form action="/index_VN.html">
+                        <div class="login_register_container">
+                            <div class="login">
+                                <div class="title">ĐĂNG NHẬP</div>
+                                <div class="type_box_container">
+                                    <div class="type_box_icon">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                    <input class="user" type="text" required="" placeholder="Tên Đăng Nhập...">
+                                </div>
+                                <div class="type_box_container">
+                                    <div class="type_box_icon">
+                                        <i class="fa-solid fa-key"></i>
+                                    </div>
+                                    <input class="password" type="password" required="" placeholder="Mật Khẩu...">
+                                    <div class="type_box_icon visible" onclick="show_password(0)">
+                                        <i class="fa-regular fa-eye visible_icon"></i>
+                                    </div>
+                                </div>
+                                <div class="rememberforgot">
+                                    <div class="remember">
+                                        <input type="checkbox" class="checkbox" name="" id="">
+                                        <div class="remember_text">Lưu Đăng Nhập</div>
+                                    </div>
+                                    <a href="#" class="forgot">
+                                        Quên Mật Khẩu ?
+                                    </a>
+                                </div>
+                                <button class="login-btn">Đăng Nhập</button>
+                                <div class="switch">
+                                    <div class="switch_question">Chưa Có Tài Khoản ?</div>
+                                    <div class="switch_link" onclick="register()">&nbsp;Đăng Ký Ngay</div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="login_register_container">
+                            <div class="login">
+                                <div class="title">ĐĂNG KÝ</div>
+                                <div class="type_box_container2">
+                                    <div class="type_box_icon">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                    <input class="user" type="text" required="" placeholder="Tên Đăng Nhập...">
+                                </div>
+                                <div class="type_box_container2">
+                                    <div class="type_box_icon">
+                                        <i class="fa-solid fa-key"></i>
+                                    </div>
+                                    <input class="password" type="password" required="" placeholder="Mật Khẩu...">
+                                    <div class="type_box_icon visible" onclick="show_password(1)">
+                                        <i class="fa-regular fa-eye visible_icon"></i>
+                                    </div>
+                                </div>
+                                <div class="type_box_container2">
+                                    <div class="type_box_icon">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <input class="password" type="email" required="" placeholder="Email Của Bạn...">
+                                </div>
+                                <div class="rememberforgot">
+                                    <div class="remember">
+                                        <input type="checkbox" name="" class="checkbox" checked>
+                                        <div class="remember_text">Tôi Đồng Ý Với Các Điều Khoản</div>
+                                    </div>
+                                </div>
+                                <button class="login-btn">Đăng Ký</button>
+                                <div class="switch">
+                                    <div class="switch_question">Bạn Đã Có Tài Khoản ?</div>
+                                    <div class="switch_link" onclick="login()">&nbsp;Đăng Nhập Ngay</div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let login_register = document.getElementsByClassName("login_register_container");
+        function register(){
+            for(i=0;i<login_register.length;i++)
+            {
+                login_register[i].style.transform = "translateX(-450px)";
+            }
+        }
+        function login(){
+            for(i=0;i<login_register.length;i++)
+            {
+                login_register[i].style.transform = "translateX(0px)";
+            }
+        }
+        let password = document.getElementsByClassName("password");
+        let visible = document.getElementsByClassName("visible_icon");
+        function show_password(n){
+            if(password[n].type =="password"){
+                password[n].type ="text";
+            }
+            else{
+                password[n].type = "password";
+            }
+            visible[n].classList.toggle("fa-eye");
+            visible[n].classList.toggle("fa-eye-slash");
+        }
+    </script>
+    <!------------------------------------------------------------footer--------------------------------------------------------->
+    <div id="footer">
+        <div id="Left_footer">
+            <div id="Page_name">
+                <div id="Page_name_1">Teyvat</div>
+                <div id="Page_name_2">FOOD</div>
+            </div>
+            <div id="footer_des_1" class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">CÔNG TY TNHH TEYVATFOOD</font></div>
+            <div id="footer_des_2" class="footer_des"><font style="font-weight: bold;">Địa chỉ</font> 33 Đường X, KDC Bình Hưng A, Ấp 2, Huyện Bình Chánh A, TP.X</div>
+            <div id="footer_des_3" class="footer_des"><font style="font-weight: bold;">Điện thoại</font> (+84) 932 788 120 [hotline]</div>
+            <div id="footer_des_4" class="footer_des"><font style="font-weight: bold;">Email</font> info@TeyvatFood.vn. For business inquiries: business@TeyvatFood.vn</div>
+            <div id="footer_des_5" class="footer_des"><font style="font-weight: bold;">MST</font> 0313272749 do Sở kế hoạch và đầu tư TPHCM cấp ngày dd/mm/yyyy</div>
+            <div id="footer_des_6" class="footer_des" style="margin-top: 2vw;color: gray;">© Copyright 2023 TeyvatFood. All rights reserved.</div>
+        </div>
+        <div id="Right_footer">
+            <div id="Right_footer_1">
+                <div id="footer_des_7" class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">ĐIỀU KHOẢN CHUNG</font></div>
+                <div id="footer_des_8" class="footer_des"><a href="#">Chính Sách Quy Định Chung</a></div>
+                <div id="footer_des_9" class="footer_des"><a href="#">Quy Định Hình Thức Thanh Toán</a></div>
+                <div id="footer_des_10" class="footer_des"><a href="#">Chính Sách Vận Chuyển Giao Hàng</a></div>
+                <div id="footer_des_11" class="footer_des"><a href="#">Chính Sách Bảo Mật Thông Tin</a></div>
+            </div>
+            <div id="Right_footer_1">
+                <div class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">FOLLOW US</font></div>
+                <div id="linking_icon">
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    
+                </div>
+                <div id="linking_icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <img id="paimon" src="rsc/image/Paimon.png" alt="" style="position: absolute;right: 9.5vw;top:-1.5vw;width: 20vw;">
+        <a href="#" id="back_to_top"><i class="fa fa-arrow-up" id="back_to_top_icon" aria-hidden="true"></i></a> 
+    </div>
+    </div>
+</body>
+</html>
