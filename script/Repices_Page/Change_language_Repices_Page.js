@@ -1,6 +1,11 @@
+if(localStorage.getItem("language") =="en"){
+    change_language_english();
+}
+
 function change_language_english()
 {
     // header
+    localStorage.setItem("language","en");
     var en = document.getElementById("english");
     var vn = document.getElementById("vietnamese");
     en.classList.add("choose_language");
@@ -38,6 +43,10 @@ function change_language_english()
     document.getElementById("footer_des_3").innerHTML="<font style='font-weight: bold;'>Phone</font> (+84) 932 788 120 [hotline]";
     document.getElementById("footer_des_5").innerHTML="<font style='font-weight: bold;'>Tax Code</font> 0313272749 do Sở kế hoạch và đầu tư TPHCM cấp ngày dd/mm/yyyy";
     document.getElementById("footer_des_7").innerHTML="<font style='font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;'>TERMS AND CONDITIONS</font>";
+    document.getElementById("footer_des_8").innerHTML="<a href='#'>General Regulations Policy</a>";
+    document.getElementById("footer_des_9").innerHTML="<a href='#'>Regulations on Payment Methods</a>";
+    document.getElementById("footer_des_10").innerHTML="<a href='#'>Shipping Policy</a>";
+    document.getElementById("footer_des_11").innerHTML="<a href='#'>Information Privacy Policy</a>";
     // content
     document.getElementById("Repices_Banner_Title_item").innerHTML="Food/Drink Repices<br> & Potion Repices Version <br>3.5 Genshin Impact";
     document.getElementById("Repices_Food_Title").innerHTML="<i class='fa-solid fa-burger'></i>&ensp;FOOD/DRINK REPICES";
@@ -74,6 +83,7 @@ function change_language_english()
 }
 function change_language_vietnamese()
 {
+    localStorage.setItem("language","vn");
     var en = document.getElementById("english");
     var vn = document.getElementById("vietnamese");
     en.classList.remove("choose_language");
@@ -110,10 +120,14 @@ function change_language_vietnamese()
     document.getElementById("footer_des_3").innerHTML="<font style='font-weight: bold;'>Điện thoại</font> (+84) 932 788 120 [hotline]";
     document.getElementById("footer_des_5").innerHTML="<font style='font-weight: bold;'>MST</font> 0313272749 do Sở kế hoạch và đầu tư TPHCM cấp ngày dd/mm/yyyy";
     document.getElementById("footer_des_7").innerHTML="<font style='font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;'>ĐIỀU KHOẢN CHUNG</font>";
+    document.getElementById("footer_des_8").innerHTML="<a href='#'>Chính Sách Quy Định Chung</a>";
+    document.getElementById("footer_des_9").innerHTML="<a href='#'>Quy Định Hình Thức Thanh Toán</a>";
+    document.getElementById("footer_des_10").innerHTML="<a href='#'>Chính Sách Vận Chuyển Giao Hàng</a>";
+    document.getElementById("footer_des_11").innerHTML="<a href='#'>Chính Sách Bảo Mật Thông Tin</a>";
     // content
     document.getElementById("Repices_Banner_Title_item").innerHTML="Công Thức Thực Phẩm<br> & Dược Phẩm Phiên Bản <br>3.5 Genshin Impact";
-    document.getElementById("Repices_Food_Title").innerHTML="<i class='fa-solid fa-burger'></i>&ensp;FOOD/DRINK REPICES";
-    document.getElementById("healing_food_title").innerHTML="<a href='#Food_healing_buff'><img class='other_type_items' src='rsc/image/foods/Food_buff_type/Icon_Regeneration.webp' alt='' width='25vw'></a> &ensp;RECOVERY DISHES";
+    document.getElementById("Repices_Food_Title").innerHTML="<i class='fa-solid fa-burger'></i>&ensp;CÔNG THỨC THỰC PHẨM";
+    document.getElementById("healing_food_title").innerHTML="<a href='#Food_healing_buff'><img class='other_type_items' src='rsc/image/foods/Food_buff_type/Icon_Regeneration.webp' alt='' width='25vw'></a> &ensp;THỰC PHẨM HỒI PHỤC";
     document.getElementById("repices_name_1").innerHTML="APPLE CIDER";
     Quality = document.getElementsByClassName("Quality");
     for(i=0;i<Quality.length;i++){
