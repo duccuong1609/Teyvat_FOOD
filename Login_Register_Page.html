@@ -23,7 +23,7 @@
         <div class="content">
             <div class="container">
                 <div class="login_register_screen">
-                    <form action="/index_VN.html">
+                    <form action="#">
                         <div class="login_register_container">
                             <div class="login">
                                 <div class="title">ĐĂNG NHẬP</div>
@@ -51,7 +51,7 @@
                                         Quên Mật Khẩu ?
                                     </a>
                                 </div>
-                                <button class="login-btn">Đăng Nhập</button>
+                                <button onclick="login_account()" class="login-btn">Đăng Nhập</button>
                                 <div class="switch">
                                     <div class="switch_question">Chưa Có Tài Khoản ?</div>
                                     <div class="switch_link" onclick="register()">&nbsp;Đăng Ký Ngay</div>
@@ -59,7 +59,7 @@
                             </div>
                         </div>
                     </form>
-                    <form>
+                    <form action="#">
                         <div class="login_register_container">
                             <div class="login">
                                 <div class="title">ĐĂNG KÝ</div>
@@ -90,7 +90,7 @@
                                         <div class="remember_text">Tôi Đồng Ý Với Các Điều Khoản</div>
                                     </div>
                                 </div>
-                                <button class="login-btn">Đăng Ký</button>
+                                <button onclick="save()" class="login-btn">Đăng Ký</button>
                                 <div class="switch">
                                     <div class="switch_question">Bạn Đã Có Tài Khoản ?</div>
                                     <div class="switch_link" onclick="login()">&nbsp;Đăng Nhập Ngay</div>
@@ -168,5 +168,6 @@
         <a href="#" id="back_to_top"><i class="fa fa-arrow-up" id="back_to_top_icon" aria-hidden="true"></i></a> 
     </div>
     </div>
+    <script src="script/Login_Register.js"></script>
 </body>
 </html>

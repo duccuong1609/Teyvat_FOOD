@@ -26,10 +26,19 @@ function change_language_english()
     document.getElementById("repices_page_mobile").innerHTML = "REPICES";
     document.getElementById("order_page_mobile").innerHTML = "ORDER";
     document.getElementById("news_page_mobile").innerHTML = "NEWS";
-    document.getElementById("register_text").innerHTML = "Register";
-    document.getElementById("login_text").innerHTML = "Login";
-    document.getElementById("register_text_mobile").innerHTML = "Register";
-    document.getElementById("login_text_mobile").innerHTML = "Login";
+    if(localStorage.getItem("log-status") == "logged"){
+        document.getElementsByClassName("welcome")[0].innerHTML = "Welcome Back<br><font>" + localStorage.getItem("logged-user") + "</font>";
+        document.getElementsByClassName("welcome")[1].innerHTML = "Welcome Back<br><font>" + localStorage.getItem("logged-user") + "</font>";
+        let avt = document.getElementsByClassName("avatar_content_item");
+        avt[0].innerHTML = "<i class='fa-solid fa-user'></i>Account Information";
+        avt[1].innerHTML = "<i class='fa-solid fa-power-off'></i>Log Out";
+    }
+    else{
+        document.getElementById("register_text").innerHTML = "Register";
+        document.getElementById("login_text").innerHTML = "Login";
+        document.getElementById("register_text_mobile").innerHTML = "Register";
+        document.getElementById("login_text_mobile").innerHTML = "Login";
+    }
     document.getElementById("cart").innerHTML = "SHOPPING CART";
     document.getElementById("item_cart_title_1").innerHTML = "Invigorating Kitty Meal";
     document.getElementById("item_cart_title_2").innerHTML = "Tonkotsu Ramen";
@@ -84,10 +93,19 @@ function change_language_vietnamese()
     document.getElementById("repices_page_mobile").innerHTML = "CÔNG THỨC";
     document.getElementById("order_page_mobile").innerHTML = "ĐẶT HÀNG";
     document.getElementById("news_page_mobile").innerHTML = "TIN TỨC";
-    document.getElementById("register_text_mobile").innerHTML = "Đăng Ký";
-    document.getElementById("login_text_mobile").innerHTML = "Đăng Nhập";
-    document.getElementById("register_text").innerHTML = "Đăng Ký";
-    document.getElementById("login_text").innerHTML = "Đăng Nhập";
+    if(localStorage.getItem("log-status") == "logged"){
+        document.getElementsByClassName("welcome")[0].innerHTML = "Chào Mừng Trở Lại<br><font>" + localStorage.getItem("logged-user") + "</font>";
+        document.getElementsByClassName("welcome")[1].innerHTML = "Chào Mừng Trở Lại<br><font>" + localStorage.getItem("logged-user") + "</font>";
+        let avt = document.getElementsByClassName("avatar_content_item");
+        avt[0].innerHTML = "<i class='fa-solid fa-user'></i>Hồ Sơ Tài Khoản";
+        avt[1].innerHTML = "<i class='fa-solid fa-power-off'></i>Thoát Đăng Nhập";
+    }
+    else{
+        document.getElementById("register_text").innerHTML = "Đăng Ký";
+        document.getElementById("login_text").innerHTML = "Đăng Nhập";
+        document.getElementById("register_text_mobile").innerHTML = "Đăng Ký";
+        document.getElementById("login_text_mobile").innerHTML = "Đăng Nhập";
+    }
     document.getElementById("cart").innerHTML = "GIỎ HÀNG";
     document.getElementById("item_cart_title_1").innerHTML = "Cơm Mèo Năng Động";
     document.getElementById("item_cart_title_2").innerHTML = "Ramen Xương Hầm";
