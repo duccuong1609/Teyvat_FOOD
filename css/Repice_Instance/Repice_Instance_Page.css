@@ -11,7 +11,7 @@
     padding-top: 3%;
     padding-left: 2%;
     padding-right: 2%;
-    padding-bottom: 14%;
+    padding-bottom: 3%;
     font-family: noto;
 }
 @font-face {
@@ -44,6 +44,7 @@
     width: 100%;
     flex-direction: column;
     border-top: 5px solid #deb76c;
+    border-bottom: 5px solid #deb76c;
     border-radius: 5px;
 }
 .repice_container_1{
@@ -149,14 +150,14 @@
     font-size: 1.3vw;
     font-family: noto-re;
 }
-li,li>a{
+.hot_feed > .info_des>i>a, .hot_feed > .info_des, li,li>a{
     font-size: 1vw;
 }
-.info_des>a, li>a, .gallery_des>a, .version_link, .user-name>a{
+.info_des>a, li>a, .gallery_des>a, .version_link, .user-name>a,.info_des>i>a{
     text-decoration: none;
     color: goldenrod;
 }
-.info_des>a:hover, li>a:hover,.gallery_des>a:hover, .version_link:hover,.user-name>a:hover{
+.info_des>a:hover, li>a:hover,.gallery_des>a:hover, .version_link:hover,.user-name>a:hover,.info_des>i>a:hover{
     text-decoration: underline;
 }
 .info_des>font,li>a>font{
@@ -236,6 +237,7 @@ li,li>a{
     width: 55%;
     color: white;
     margin: 0% 6%;
+    margin-bottom: 1.5%;
 }
 .cmt{
     display: flex;
@@ -296,6 +298,7 @@ li,li>a{
     padding-top: 0px;
 }
 .fa-ellipsis-vertical{
+    font-size: 1vw;
     transition: 1s;
 }
 .copy-link:hover> .fa-ellipsis-vertical{
@@ -347,7 +350,7 @@ li,li>a{
     flex-direction: column;
     margin-top: 3%;
     border-top: 2px solid #B2B2B4;
-    width: 96.8%;
+    width: 96%;
 }
 .reply>.cmt{
     margin-top: 3%;
@@ -366,4 +369,78 @@ li,li>a{
 .edited{
     margin-top: 1.5%;
     color: gray;
+}
+.hot_feed{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.hot_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5% 0%;
+    margin-bottom: 8%;
+    border: 2px solid #B2B2B4;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.hot_item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 92%;
+    background-color: #272935;
+    padding: 4%;
+    border-top: 1px solid #B2B2B4;
+    font-size: 1.1vw;
+    font-family: noto-re;
+    cursor: pointer;
+    transition: 1s;
+}
+.hot_item:hover{
+    background-color: #1a1d23;
+    transition: 1s;
+}
+.hot_title:hover{
+    background-color: #deb76c;
+}
+.hot_item:hover>.hot_number{
+    background-color: #deb76c;
+    color: black;
+    transition: 1s;
+}
+.hot_item>a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+.hot_item>a:hover{
+    text-decoration: underline;
+    color: #deb76c;
+    transition: 1s;
+}
+.hot_number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1d23;
+    border: 2px solid #B2B2B4;
+    width: 10%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-right: 4%;
+    transition: 1s;
+}
+.hot_title{
+    justify-content: center;
+    background-color: #deb76c;
+    font-family: noto;
+    font-size: 1.5vw;
+    transition: 1s;
+}
+.hot_title:hover{
+    color: black;
+    transition: 1s;
 }
