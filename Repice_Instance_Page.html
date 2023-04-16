@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEYVATFOOD-REPICE</title>
+    <!-----------------------------font_awesome--------------------------------->
+    <link rel="stylesheet" href="css/css_lib/fontawesome-6.3.0/css/all.css">
+    <link rel="stylesheet" href="css/css_lib/font-awesome-4.7.0/css/font-awesome.css">
+    <!------------------------------------------------------------------------>
+    <link rel="icon" type="image/x-icon" href="./rsc/image/fav_icon.png">
+    <link rel="stylesheet" href="./css/header_footer/header_footer.css">
+    <link rel="stylesheet" href="./css/Repice_Instance/Repice_Instance_Page.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-------------------------------------------------header--------------------------------------------------->
+    <div id="header">
+        <div id="left_header">
+            <div id="logo">
+                <a href="index_VN.html"><img src="rsc/image/logo.gif" alt="" id="logo_img"></a>
+            </div>
+            <div id="Page_name">
+                <div id="Page_name_1">Teyvat</div>
+                <div id="Page_name_2">FOOD</div>
+            </div>
+        </div>
+        <div id="mid_header">
+            <div class="mid_header_item"><a href="index_VN.html" id="home_page">TRANG CHỦ</a></div>
+            <div class="mid_header_item_choose"><a href="Repices_Page.html" id="repices_page">CÔNG THỨC</a></div>
+            <div class="mid_header_item"><a href="Orders_Page.html" id="order_page">ĐẶT HÀNG</a></div>
+            <div class="mid_header_item"><a href="News_Page.html" id="news_page">TIN TỨC</a></div>
+            <div class="mid_header_item"><a href="FAQS_Page.html" id="faqs_page">FAQS</a></div>
+        </div>
+        <div id="right_header">
+            <div id="login_register">
+                <div id="register"><a href="Login_Register_Page.html" id="register_text">Đăng Ký</a></div>
+                <div id="login"><a href="Login_Register_Page.html" id="login_text">Đăng Nhập</a></div>
+            </div>
+            <div class="shopping">
+                <i class="fa fa-shopping-cart" aria-hidden="true" style="color: gray;font-size: 35px;"></i>
+                <div class="shopping_number"> 3</div>
+                <div class="shopping_menu_container">
+                    <div class="shopping_menu">
+                        <div id="cart">GIỎ HÀNG</div>
+                        <div class="item_cart">
+                            <div class="item_cart_img">
+                                <img  src="rsc/image/foods/Order/Invigorating Kitty Meal.webp" alt="">
+                            </div>
+                            <div class="item_cart_info">
+                                <div id="item_cart_title_1" class="item_cart_title">
+                                    Cơm Mèo Năng Động
+                                </div>
+                                <div class="item_cart_type">
+                                    <a class="cart_type_item" href="#">Combo</a>
+                                    <div>&nbsp;,&nbsp;</div>
+                                    <a class="cart_type_item" href="#">Hot</a>
+                                </div>
+                                <div class="cart_item_price_container">
+                                    <div class="cart_item_price">99,999đ <font>(x1)</font></div> 
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_cart">
+                            <div class="item_cart_img">
+                                <img  src="rsc/image/foods/Order/Ramen.jfif" alt="">
+                            </div>
+                            <div class="item_cart_info">
+                                <div id="item_cart_title_2" class="item_cart_title">
+                                    Ramen Xương Hầm
+                                </div>
+                                <div class="item_cart_type">
+                                    <a class="cart_type_item" href="#">Combo</a>
+                                    <div>&nbsp;,&nbsp;</div>
+                                    <a class="cart_type_item" href="#">Hot</a>
+                                </div>
+                                <div class="cart_item_price_container">
+                                    <div class="cart_item_price">50,999đ <font>(x1)</font></div> 
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_cart">
+                            <div class="item_cart_img">
+                                <img  src="rsc/image/foods/Order/Mì Udon Fukuuchi.jfif" alt="">
+                            </div>
+                            <div class="item_cart_info">
+                                <div id="item_cart_title_3" class="item_cart_title">
+                                    Mì Udon Fuukichi
+                                </div>
+                                <div class="item_cart_type">
+                                    <a class="cart_type_item" href="#">Combo</a>
+                                    <div>&nbsp;,&nbsp;</div>
+                                    <a class="cart_type_item" href="#">Hot</a>
+                                </div>
+                                <div class="cart_item_price_container">
+                                    <div class="cart_item_price">60,999đ <font>(x1)</font></div> 
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart_payment">
+                            <div id="total_cart">Tổng tiền : <font>&nbsp;211,997đ</font></div>
+                            <div class="cart_payment_btn">
+                                <div class="cart_payment_item" id="view_bag">Xem Giỏ Hàng</div>
+                            <div class="cart_payment_item" id="purchase">Thanh Toán</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="language">
+                <div id="english" class="unchoose_language" onclick="change_language_english()">EN</div>
+                <div id="/" class="choose_language">/</div>
+                <div id="vietnamese" class="choose_language" onclick="change_language_vietnamese()">VN</div>
+            </div>
+            <div id="three_line_menu" onclick="dropdown_menu()">
+                <i id="icon_menu" class="fa fa-bars" aria-hidden="true" style="color: white;font-size: 32px;"></i>
+                <div id="dropdown-content">
+                    <div id="login_register_mobile">
+                        <div id="register"><a href="Login_Register_Page.html" id="register_text_mobile">Đăng Ký</a></div>
+                        <div id="login"><a href="Login_Register_Page.html" id="login_text_mobile">Đăng Nhập</a></div>
+                    </div>
+                    <div class="mid_header_item"><a href="index_VN.html" id="home_page_mobile">TRANG CHỦ</a></div>
+                    <div class="mid_header_item_choose"><a href="Repices_Page.html" id="repices_page_mobile">CÔNG THỨC</a></div>
+                    <div class="mid_header_item"><a href="Orders_Page.html" id="order_page_mobile">ĐẶT HÀNG</a></div>
+                    <div class="mid_header_item"><a href="News_Page.html" id="news_page_mobile">TIN TỨC</a></div>
+                    <div class="mid_header_item"><a href="FAQS_Page.html" id="faqs_page_mobile">FAQS</a></div>
+                    <div id="language_mobile">
+                        <div id="english_mobile" class="unchoose_language" onclick="change_language_english()">EN</div>
+                        <div id="vietnamese_mobile" class="choose_language" onclick="change_language_vietnamese()">VN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------------------------content--------------------------------------------------------->
+    <div id="content">
+        <div class="repice_container">
+            <div class="repice_and_tag">
+                <div class="repice">
+                    <div class="item_name">
+                        Giấm Táo
+                    </div>
+                    <div class="item_img">
+                        <img src="rsc/image/repices/Item_Apple_Cider.webp" alt="">
+                    </div>
+                    <div class="item_info">
+                        <div class="title">
+                            Mô Tả
+                        </div>
+                        <div class="info">
+                            Đồ uống không cồn tươi ngon sành điệu. Nghe nói có công dụng giải rượu rất tốt, các khách uống rượu thường gọi một ly để kết thúc buổi tụ họp.
+                        </div>
+                    </div>
+                    <div class="item_info">
+                        <div class="title">
+                            Hiệu Ứng
+                        </div>
+                        <div class="info">
+                            Lập tức hồi 26% giới hạn HP cho nhân vật được chọn, trong 30s tiếp theo, mỗi 5s hồi 570 HP.
+                        </div>
+                    </div>
+                    <div class="item_info">
+                        <div class="title">
+                            Phân Loại
+                        </div>
+                        <div class="info">
+                            <img class="info_img" src="rsc/image/foods/Food_buff_type/Icon_Regeneration.webp" alt="">
+                            <a  class="info_type" href="#">Thực Phẩm Hồi Phục</a>
+                        </div>
+                    </div>
+                    <div class="item_info">
+                        <div class="title">
+                            Phẩm Chất
+                        </div>
+                        <div class="info">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="item_info">
+                        <div class="title">
+                            Quốc Gia
+                        </div>
+                        <div class="info">
+                            <a  class="info_type" href="#">Mondstadt</a>
+                        </div>
+                    </div>
+                    <div class="item_info get">
+                        <div class="title">
+                            Cách Lấy
+                        </div>
+                    </div>
+                    <div class="item_info">
+                        <div class="title">
+                            Nguồn 1
+                        </div>
+                        <div class="info">
+                            <a  class="info_type" href="#">Charles</a>&nbsp;,&nbsp;<a class="info_type" href="#">Georg</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tag-container">
+                    <div class="info_title">
+                        Thể Loại
+                    </div>
+                    <div class="tag">
+                        <div class="tag_item">
+                           Thực Phẩm&nbsp;
+                            <font>&nbsp;189&nbsp;</font>
+                        </div>
+                        <div class="tag_item">
+                            Thực Phẩm 2 Sao&nbsp;
+                             <font>&nbsp;92&nbsp;</font>
+                        </div>                        
+                    </div>
+                    <div class="tag">
+                        <div class="tag_item">
+                            Thực Phẩm Không Có Công Thức &nbsp;
+                             <font>&nbsp;68&nbsp;</font>
+                        </div>                       
+                    </div>
+                    <div class="tag">
+                        <div class="tag_item">
+                            Thực Phẩm Hồi Phục &nbsp;
+                             <font>&nbsp;78&nbsp;</font>
+                        </div> 
+                        <div class="tag_item">
+                            Hồi Máu&nbsp;
+                             <font>&nbsp;85&nbsp;</font>
+                        </div>                      
+                    </div>
+                    <div class="tag">
+                        <div class="tag_item">
+                            Thực Phẩm Mondstadt &nbsp;
+                             <font>&nbsp;98&nbsp;</font>
+                        </div> 
+                        <div class="tag_item">
+                            Tái Tạo&nbsp;
+                             <font>&nbsp;85&nbsp;</font>
+                        </div>                      
+                    </div>
+                    <div class="tag">
+                        <div class="tag_item">
+                            Cửa Hàng Có Sẵn &nbsp;
+                             <font>&nbsp;48&nbsp;</font>
+                        </div> 
+                        <div class="tag_item">
+                            Phiên Bản 1.0&nbsp;
+                             <font>&nbsp;105&nbsp;</font>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+            <div class="info_repice">
+                <div class="info_name">
+                    GIẤM TÁO
+                </div>
+                <div class="info_des">
+                    <br><font>Giấm táo</font> là một loại thực phẩm mà người chơi có thể mua. Nó có thể lấy được từ <a href="#">Charles</a> tại Quán <a href="#">'Quà của thiên sứ'</a> với giá <font>1.500 Mora</font>. Tuy nhiên, người chơi chỉ có thể mua tối đa <font>2</font> món hàng ngày.<br><br>Giấm Táo phục hồi <font>26% HP</font> tối đa cho nhân vật đã chọn và phục hồi <font>570 HP</font> cứ sau <font>5 giây trong 30 giây</font>. Giống như hầu hết các loại thực phẩm, thứ này không thể nhắm mục tiêu vào nhân vật của người chơi khác trong Chế độ <a href="#">Co-Op</a>.
+                </div>
+                <div class="info_title">
+                    Cách Nhận
+                </div>
+                <div class="info_title_1">
+                    Cửa Hàng Sẵn Có
+                </div>
+                <div class="info_des">
+                    Có 2 <a href="#">Shop</a> hiện đang bán <font>Giấm Táo</font> :
+                </div>
+                <ul type="number">
+                    <li><a href="#">Charles</a></li>
+                    <li><a href="#">Georg</a></li>
+                </ul>
+                <div class="info_title_1">
+                    Thư
+                </div>
+                <div class="info_des">
+                    Có 3 <a href="#">Thư</a> có <font>Giấm Táo</font> là vật đính kèm :
+                </div>
+                <ul type="number">
+                    <li><a href="#">TCG..</a>&nbsp;x1 từ <font>Keaya</font></li>
+                    <li><a href="#">Bạn Khỏe Chứ ?</a>&nbsp;x5 từ <font>Diluc</font></li>
+                    <li><a href="#">Nói về nhiều điều..</a>&nbsp;x5 từ <font>Keaya</font></li>
+                </ul>
+                <div class="info_title" id="gallery">
+                    Chuyện Bên Lề
+                </div>
+                <ul type="number">
+                    <li><a href="#">Giấm táo</a> ngoài đời thực được sử dụng như một phương pháp giúp tỉnh táo, thường ở dạng pha loãng, nhưng chủ yếu được sử dụng làm nguyên liệu nấu ăn.</li>
+                    <li>Rượu táo là một trong những loại đồ uống không cồn được phát triển bởi Nhà máy rượu Dawn theo lệnh của <a href="#">Diluc</a>. <a href="#">[1]</a></li>
+                </ul>
+                <div class="info_title">
+                    Thư Viện Trưng Bày
+                </div>
+                <div class="gallery">
+                    <img class="gallery_img" src="rsc/image/gallery/applecider.webp" alt="">
+                    <div class="gallery_des">Paimon đang uống Giấm Táo</div>
+                    <div class="gallery_des"><a href="#">Thời Đại Teyvat Quyển 1-4</a></div>
+                </div>
+                <div class="info_title">
+                    Lịch Sử Thay Đổi
+                </div>
+                <div class="info_des">
+                    Ra mắt vào <a href="#">Phiên bản 1.0</a>
+                </div>
+                <div class="version_container">
+                    <div class="version">
+                        <a class="version_link" href="#">Phiên bản 1.2</a>
+                        <ul type="number">
+                            <li><a href="#">Rượu táo</a> đổi tên thành <a href="#">Giấm Táo</a></li>
+                        </ul>
+                    </div>
+                    <div class="version" style="border-bottom: none;">
+                        <a class="version_link" href="#">Phiên bản 1.0</a>
+                        <ul type="number">
+                            <li><a href="#">Rượu táo</a> được ra mắt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info_title">
+                    Cốt Truyện
+                </div>
+                <ul type="number">
+                    <li><a href="#gallery"><i class="fa-solid fa-arrow-up"></i></a>&nbsp;Cốt Truyện Nhân Vật Của Diluc: <a href="#">Rượu Táo Của Tửu Trang Dawn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------footer--------------------------------------------------------->
+    <div id="footer">
+        <div id="Left_footer">
+            <div id="Page_name">
+                <div id="Page_name_1">Teyvat</div>
+                <div id="Page_name_2">FOOD</div>
+            </div>
+            <div id="footer_des_1" class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">CÔNG TY TNHH TEYVATFOOD</font></div>
+            <div id="footer_des_2" class="footer_des"><font style="font-weight: bold;">Địa chỉ</font> 33 Đường X, KDC Bình Hưng A, Ấp 2, Huyện Bình Chánh A, TP.X</div>
+            <div id="footer_des_3" class="footer_des"><font style="font-weight: bold;">Điện thoại</font> (+84) 932 788 120 [hotline]</div>
+            <div id="footer_des_4" class="footer_des"><font style="font-weight: bold;">Email</font> info@TeyvatFood.vn. For business inquiries: business@TeyvatFood.vn</div>
+            <div id="footer_des_5" class="footer_des"><font style="font-weight: bold;">MST</font> 0313272749 do Sở kế hoạch và đầu tư TPHCM cấp ngày dd/mm/yyyy</div>
+            <div id="footer_des_6" class="footer_des" style="margin-top: 2vw;color: gray;">© Copyright 2023 TeyvatFood. All rights reserved.</div>
+        </div>
+        <div id="Right_footer">
+            <div id="Right_footer_1">
+                <div id="footer_des_7" class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">ĐIỀU KHOẢN CHUNG</font></div>
+                <div id="footer_des_8" class="footer_des"><a href="#">Chính Sách Quy Định Chung</a></div>
+                <div id="footer_des_9" class="footer_des"><a href="#">Quy Định Hình Thức Thanh Toán</a></div>
+                <div id="footer_des_10" class="footer_des"><a href="#">Chính Sách Vận Chuyển Giao Hàng</a></div>
+                <div id="footer_des_11" class="footer_des"><a href="#">Chính Sách Bảo Mật Thông Tin</a></div>
+            </div>
+            <div id="Right_footer_1">
+                <div class="footer_des"><font style="font-weight: bold;color: rgb(172, 222, 223);font-size: 1.2vw;">FOLLOW US</font></div>
+                <div id="linking_icon">
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    
+                </div>
+                <div id="linking_icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <img id="paimon" src="rsc/image/Paimon.png" alt="" style="position: absolute;right: 9.5vw;top:-1.5vw;width: 20vw;">
+        <a href="#" id="back_to_top"><i class="fa fa-arrow-up" id="back_to_top_icon" aria-hidden="true"></i></a> 
+    </div>
+    </div>
+    <script src="script/Login_Register.js"></script>
+    <script src="script/Change_language_FAQS_Page.js"></script> 
+</body>
+</html>

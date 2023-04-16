@@ -1,0 +1,225 @@
+*
+#content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../rsc/image/Background.webp);
+    background-size: 100vw auto;
+    background-repeat: repeat;
+    height: max-content;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 14%;
+    font-family: noto;
+}
+@font-face {
+    font-family: noto;
+    src: url(../../rsc/font/NotoSerif-Bold.ttf);
+}
+@font-face {
+    font-family: noto-re;
+    src: url(../../rsc/font/NotoSerif-Regular.ttf);
+}
+.item_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../rsc/image/Background_Item_2_Star.webp);
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-size: 100% 100%;
+}
+.item_img>img{
+    transition: 1s;
+    width: 75%;
+}
+.item_img:hover>img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.repice_container{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    background-color: #272935;
+    border-top: 5px solid #deb76c;
+    border-radius: 5px;
+}
+.info_repice{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #272935;
+    color: white;
+    padding: 3% 3%;
+}
+.repice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+    border: 2px solid #B2B2B4;
+    border-bottom: 1px solid #B2B2B4;
+    border-radius: 4px;
+    overflow: hidden;
+    height: fit-content;
+}
+.tag-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+.tag{
+    width: 100%;
+    display: flex;
+}
+.repice_and_tag{
+    margin: 3% 6%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.item_name{
+    font-size: 1.6vw;
+    color: rgb(0, 0, 0);
+    padding: 3% 0%;
+    text-shadow: 0 0 10px rgb(255, 206, 206);
+    background-color: #deb76c;
+    width: 100%;
+    text-align: center;
+}
+.item_info,.item_img,.item_name{
+    border-bottom: 1px solid #B2B2B4;
+}
+.item_info{
+    background-color: #272935;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.get{
+    background-color: #5e5e5e;
+}
+.get >.title{
+    color: goldenrod;
+}
+.title,.info{
+    color: white;
+    padding: 3%;
+    font-size: 1vw;
+}
+.title{
+    width: 30%;
+}
+.info{
+    width: 70%;
+    font-family: noto-re;
+    display: flex;
+    align-items: center;
+}
+.info>i{
+    color: goldenrod;
+}
+.info_img{
+    width: 10%;
+    margin-right: 5%;
+}
+.info_type{
+    text-decoration: none;
+    color: goldenrod;
+}
+.info_type:hover{
+    text-decoration: underline;
+}
+.info_name{
+    font-size: 3vw;
+}
+.info_des,li>a, li{
+    font-size: 1.3vw;
+    font-family: noto-re;
+}
+li,li>a{
+    font-size: 1vw;
+}
+.info_des>a, li>a, .gallery_des>a, .version_link{
+    text-decoration: none;
+    color: goldenrod;
+}
+.info_des>a:hover, li>a:hover,.gallery_des>a:hover, .version_link:hover{
+    text-decoration: underline;
+}
+.info_des>font,li>a>font{
+    font-family: noto;
+}
+.info_title{
+    font-size: 1.5vw;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+    border-bottom: 2px solid #B2B2B4;
+}
+.info_title_1{
+    font-size: 1.2vw;
+    margin-bottom: 3%;
+}
+.gallery{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery_img{
+    width: 90%;
+    border: 1px solid #B2B2B4;
+}
+.gallery_des{
+    font-size: 0.7vw;
+    text-align: center;
+    margin-top: 2%;
+}
+.version{
+    padding: 2%;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #B2B2B4;
+}
+.version_container{
+    margin-top: 3%;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.tag{
+    display: flex;
+    width: 100%;
+}
+.tag_item{
+    padding: 2%;
+    margin: 0% 1%;
+    margin-top: 2%;
+    background-color: #272935;
+    color: white;
+    font-size: 1vw;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    box-shadow: 1px 1px salmon;
+    cursor: pointer;
+    transition: 1s;
+    font-family: noto-re;
+}
+.tag_item:hover{
+    transform: translateX(1px) translateY(1px);
+    transition: 1s;
+}
+.tag_item>font{
+    background-color: gray;
+    color: white;
+    padding: 2% 0%;
+    border-radius: 5px;
+}
