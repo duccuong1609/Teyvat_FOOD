@@ -553,60 +553,66 @@ body{
     }
 }
 /*-----------------------------------------------screen < 1100px----------------------------------------*/
-@media only screen and (min-width : 651px) and (max-width: 1100px)  {
+@media only screen and (max-width: 1100px) and (min-width : 731px){
     #footer {
         flex-direction: column;
-        height: max-content !important;
+        height: fit-content;
     }
     #Right_footer{
         margin-right: 0%;
         margin-left: 5%;
+        width: 84% !important;
+    }
+    #Left_footer{
+        width: 90% !important;
+        margin-left: 0% !important;
     }
     #Right_footer_1{
         margin-top: 0% !important;
     }
     #Left_footer > #Page_name >#Page_name_1,#Left_footer > #Page_name >#Page_name_2{
-        font-size: 5.5vw !important;
+        font-size: 5vw !important;
     }
     .footer_des{
-        font-size: 1.5vw !important; 
+        font-size: 1.2vw !important; 
     }
     .footer_des>font{
-        font-size: 1.9vw !important;
+        font-size: 1.5vw !important;
     }
     #linking_icon > a > i{
-        font-size: 3.5vw  !important;
+        font-size: 3vw  !important;
+    }
+    #linking_icon{
+        height: 28% !important;
     }
     #back_to_top{
-        border: 0.2vw solid gray !important;
+        border: 2px solid gray !important;
         bottom: 4vw !important;
+        width: 4% !important;
     }
     #back_to_top_icon{
         font-size: 3.8vw !important;
     }
     #paimon{
-        width: 35vw !important;
+        width: 30vw !important;
+        top: 10vw !important;
     }
-    #Left_footer{
-        margin-left: 5% !important;
-    }
+
 }
-/*-----------------------------------------------screen < 650px----------------------------------------*/
-@media only screen and (max-width: 650px) {
+/*-----------------------------------------------screen < 730px----------------------------------------*/
+@media only screen and (max-width: 730px) and (min-width:501px) {
     #footer {
         flex-direction: column;
         height: max-content !important;
     }
     #Right_footer{
         margin-right: 0% !important;
-        margin-left: 5% !important;
-        width: 60% !important;
+        width: 90% !important;
         justify-content: space-between;
     }
     #Left_footer{
         margin-right: 0%;
-        margin-left: 5% !important;
-        width: 60%;
+        width: 94% !important;
     }
     #Right_footer_1{
         margin-top: 0% !important;
@@ -624,15 +630,83 @@ body{
         font-size: 4vw  !important;
     }
     #back_to_top{
-        border: 0.3vw solid gray !important;
+        border: 2px solid gray !important;
         bottom: 4vw !important;
         border-radius: 2.5vw;
+        width: 5% !important;
     }
     #back_to_top_icon{
         font-size: 5vw !important;
     }
     #paimon{
-        width: 40vw !important;
+        width: 35vw !important;
+        top: 25vw !important;
+    }
+    .shopping_number{
+        width: 45% !important;
+        font-size: 13px !important;
+        right: -22%;
+        top: 0%;
+    }
+}
+@media only screen and (max-width:500px){
+    #footer {
+        flex-direction: column;
+        height: max-content !important;
+        z-index: 11;
+    }
+    #Right_footer{
+        margin-right: 0% !important;
+        width: 90% !important;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #Left_footer{
+        margin-right: 0%;
+        width: 94% !important;
+    }
+    #Right_footer_1{
+        margin-top: 0% !important;
+        width: 100% !important;
+    }
+    #Left_footer > #Page_name >#Page_name_1,#Left_footer > #Page_name >#Page_name_2{
+        font-size: 7vw !important;
+    }
+    .footer_des{
+        font-size: 2.3vw !important; 
+    }
+    .footer_des>font{
+        font-size: 2.5vw !important;
+    }
+    #linking_icon > a > i{
+        font-size: 6vw  !important;
+    }
+    #linking_icon > a {
+        margin-right: 2% !important;
+    }
+    #linking_icon{
+        margin-bottom: 1%;
+    }
+    #back_to_top{
+        border: 2px solid gray !important;
+        bottom: 4vw !important;
+        border-radius: 2.5vw;
+        width: 6% !important;
+        padding: 1% !important;
+    }
+    #back_to_top_icon{
+        font-size: 6vw !important;
+    }
+    #paimon{
+        width: 35vw !important;
+        top: 43vw !important;
+        right: 15vw !important;
+    }
+    .shopping_number{
+        width: 42% !important;
+        font-size: 12px !important;
+        right: -15%;
+        top: 5%;
     }
 }
 /*---------------------------------------------login_register---------------------------------------*/
@@ -649,43 +723,48 @@ body{
     font-family: About_des_font;
     src: url(../../rsc/font/MisterGiacco-Medium.ttf) format("truetype");
 }
+@font-face {
+    font-family: hyen;
+    src: url(../../rsc/font/CharisSILR.ttf);
+}
 #footer{
     display: flex;
     position: relative;
+    align-items: center;
     width: 100%;
-    height: 20vw;
+    height: fit-content;
     background-color: black;
     justify-content: space-between;
     color: white;
     overflow: hidden;
-    font-family: About_des_font;
+    font-family: hyen;
 }
 #Left_footer{
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 2%;
     margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
+    width: 40%;
 }
 .footer_des{
-    font-size: 0.9vw;
+    font-size: 0.8vw;
     margin-bottom: 0.6vw;
 }
 #Right_footer{
     display: flex;
     width: 50%;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-right: 12%;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 #Right_footer_1{
-    margin-top: 16.3%;
+    margin-top: 4.3%;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
 }
 #Right_footer_1 >.footer_des > a{
     text-decoration: none;
@@ -709,6 +788,7 @@ body{
     width: 60%;
     justify-content: flex-start;
     z-index: 5;
+    height: 24%;
 }
 #linking_icon > a {
     text-decoration: none;
@@ -725,12 +805,14 @@ body{
     color: gray;
     font-size: 2vw;
     text-align: center;
-    padding: 0.5vw;
+    padding: 3px;
     background-color: black;
-    border: 0.11vw solid gray;
+    border: 2px solid gray;
     border-radius: 1vw;
-    right: 4vw;
-    bottom: 2vw;
+    right: 6vw;
+    bottom: 4vw;
+    width: 3%;
+    aspect-ratio: 1/1;
 }
 #back_to_top > #back_to_top_icon{
     animation-name: up_and_up;
@@ -740,7 +822,7 @@ body{
 }
 #back_to_top:hover{
     color: rgb(172, 222, 223);
-    border: 0.11vw solid rgb(172, 222, 223);
+    border: 2px solid rgb(172, 222, 223);
 }
 @keyframes up_and_up{
     to{
