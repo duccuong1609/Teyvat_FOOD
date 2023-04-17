@@ -444,3 +444,212 @@
     color: black;
     transition: 1s;
 }
+@media only screen and (max-width:1100px) and (min-width:761px) {
+    .repice_and_tag{
+        margin: 3% 3%;
+        width: 33%;
+    }
+    .info_repice{
+        width: 54%;
+    }
+    .item_name,.info_title,.hot_title{
+        font-size: 2vw;
+    }
+    .title,.info,.hot_feed > .info_des , .copy{
+        font-size: 1.3vw;
+    }
+    .tag_item,.user-name,.fa-ellipsis-vertical,.comment,.hot_feed > .info_des>i>a{
+        font-size: 1.25vw;
+    }
+    .info_name{
+        font-size: 4vw;
+    }
+    .info_des, li>a, li, .info_title_1,.version_link,.hot_item{
+        font-size: 1.5vw;
+    }
+    .gallery{
+        width: 40%;
+    }
+    .gallery_des{
+        font-size: 1vw;
+    }
+    .comment_container{
+        margin: 0% 3%;
+        width: 57%;
+    }
+    .hot_feed{
+        width: 33%;
+    }
+    .user-avt{
+        width: 7%;
+    }
+    .fa-circle{
+        font-size: 0.4vw;
+    }
+    .cmt{
+        margin-bottom: 5%;
+    }
+    .copy{
+        width: 20%;
+    }
+}
+@media only screen and (max-width:760px) and (min-width:621px){
+    .repice_and_tag{
+        margin: 3% 2%;
+        width: 37.5%;
+    }
+    .info_repice{
+        width: 54%;
+    }
+    .item_name,.info_title,.hot_title{
+        font-size: 2.1vw;
+    }
+    .title,.info,.hot_feed > .info_des ,.copy{
+        font-size: 1.45vw;
+    }
+    .tag_item,.user-name,.fa-ellipsis-vertical,.comment,.hot_feed > .info_des>i>a{
+        font-size: 1.4vw;
+    }
+    .info_name{
+        font-size: 4.5vw;
+    }
+    .info_des, li>a, li, .info_title_1,.version_link,.hot_item{
+        font-size: 1.7vw;
+    }
+    .gallery{
+        width: 40%;
+    }
+    .gallery_des{
+        font-size: 1.1vw;
+    }
+    .comment_container{
+        margin: 0% 2%;
+        width: 59%;
+    }
+    .hot_feed{
+        width: 34%;
+    }
+    .user-avt{
+        width: 7%;
+    }
+    .fa-circle{
+        font-size: 0.5vw;
+    }
+    .cmt{
+        margin-bottom: 5%;
+    }
+    .copy{
+        width: 22%;
+    }
+}
+@media only screen and (max-width:620px) and (min-width:561px){
+    .repice_and_tag{
+        margin: 3% 2%;
+        width: 37.5%;
+    }
+    .info_repice{
+        width: 54%;
+    }
+    .item_name,.info_title,.hot_title{
+        font-size: 2.3vw;
+    }
+    .title,.info,.hot_feed > .info_des ,.copy{
+        font-size: 1.6vw;
+    }
+    .tag_item,.user-name,.fa-ellipsis-vertical,.comment,.hot_feed > .info_des>i>a{
+        font-size: 1.5vw;
+    }
+    .info_name{
+        font-size: 5vw;
+    }
+    .info_des, li>a, li, .info_title_1,.version_link,.hot_item{
+        font-size: 1.9vw;
+    }
+    .gallery{
+        width: 40%;
+    }
+    .gallery_des{
+        font-size: 1.3vw;
+    }
+    .comment_container{
+        margin: 0% 2%;
+        width: 59%;
+    }
+    .hot_feed{
+        width: 34%;
+    }
+    .user-avt{
+        width: 7%;
+    }
+    .fa-circle{
+        font-size: 0.7vw;
+    }
+    .cmt{
+        margin-bottom: 5%;
+    }
+    .copy{
+        width: 23%;
+    }
+}
+@media only screen and (max-width:560px){
+    .repice_container_1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .repice_and_tag{
+        margin: 3% 2%;
+        width: 75%;
+        margin-top: 8%;
+    }
+    .item_name,.info_title,.hot_title{
+        font-size: 4vw;
+        text-align: center;
+    }
+    .tag{
+        justify-content: center;
+    }
+    .copy{
+        width: 27%;
+    }
+    .title,.info,.hot_feed > .info_des ,.copy{
+        font-size: 3vw;
+    }
+    .tag_item,.user-name,.fa-ellipsis-vertical,.comment{
+        font-size: 3vw;
+    }
+    .info_name{
+        font-size: 6vw;
+        text-align: center;
+    }
+    .info_des, li>a, li, .info_title_1,.version_link,.hot_item,.hot_feed > .info_des>i>a{
+        font-size: 3vw;
+    }
+    .info_repice{
+        width: 90%;
+    }
+    .gallery{
+        width: 50%;
+    }
+    .gallery_des{
+        font-size: 2vw;
+    }
+    .comment_container{
+        margin: 0% 2%;
+        width: 90%;
+    }
+    .hot_feed{
+        width: 90%;
+    }
+    .user-avt{
+        width: 10%;
+    }
+    .fa-circle{
+        font-size: 0.7vw;
+    }
+    .cmt{
+        margin-bottom: 5%;
+    }
+    #faq{
+        margin-bottom: 8%;
+    }
+}

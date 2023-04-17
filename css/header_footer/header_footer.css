@@ -53,6 +53,10 @@ body{
             font-family: Page_name_font;
             src: url(../../rsc/font/MotionPersonalUseBold-2O0od.ttf) format("truetype");
         }
+        @font-face {
+            font-family: noto-re;
+            src: url(../../rsc/font/NotoSerif-Regular.ttf);
+        }
         #Page_name{
             display: flex;
         }
@@ -244,10 +248,11 @@ body{
         top: 90px;
         height: max-content;
         overflow: hidden;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 16px rgba(0,0,0,0.2);
         z-index: 30;
         transition: 1s;
         animation: cart_shopping 1s linear 1;
+        border: 2px solid #B2B2B4;
       }
     #dropdown-content > .mid_header_item,#dropdown-content > .mid_header_item_choose{
         margin-bottom: 8%;
@@ -555,7 +560,7 @@ body{
     }
     #Right_footer{
         margin-right: 0%;
-        margin-left: 10%;
+        margin-left: 5%;
     }
     #Right_footer_1{
         margin-top: 0% !important;
@@ -581,6 +586,9 @@ body{
     }
     #paimon{
         width: 35vw !important;
+    }
+    #Left_footer{
+        margin-left: 5% !important;
     }
 }
 /*-----------------------------------------------screen < 650px----------------------------------------*/

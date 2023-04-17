@@ -711,7 +711,7 @@
                             <a href="#">Canh Măng Trúc</a> 
                         </div>
                     </div>
-                    <div class="info_des">
+                    <div class="info_des" id="faq">
                        <i>* Nội dung cộng đồng có sẵn theo <a href="#">CC-BY-SA</a> trừ khi có ghi chú khác.</i>
                     </div>
                 </div>
@@ -758,6 +758,14 @@
     </div>
     </div>
     <script src="script/Login_Register.js"></script>
-    <script src="script/Change_language_FAQS_Page.js"></script> 
+    <script src="script/Change_language_FAQS_Page.js"></script>
+    <script>
+        function dropdown_menu() {
+        menu = document.getElementById("dropdown-content");
+        menu.classList.toggle("show");
+        document.getElementById("icon_menu").classList.toggle("fa-bars");
+        document.getElementById("icon_menu").classList.toggle("fa-times");
+        }
+    </script> 
 </body>
 </html>
